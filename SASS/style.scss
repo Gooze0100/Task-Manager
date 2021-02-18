@@ -1,0 +1,50 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
+.forms {
+    background: url(../Images/background.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-form {
+    background-color: $background-color;
+    border-radius: 20px;
+    width:35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'mobile';

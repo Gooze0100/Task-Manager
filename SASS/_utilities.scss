@@ -1,0 +1,59 @@
+// Used for general classes
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack;
+    background-color: $background-color;
+    line-height: 1.6;
+    color: $secondary-color;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+// List of margins by rems, original html parent is 16px
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+
+// Loop through $spaceamounts
+@each $space in $spaceamounts {
+    // Margin
+    // all around
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    // top bottom
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    // right left
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    // Padding
+    // all around
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    // top bottom
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    // right left
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}

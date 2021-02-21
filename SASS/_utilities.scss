@@ -11,19 +11,14 @@ body {
     background-color: $background-color;
     line-height: 1.6;
     color: $secondary-color;
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
 }
 
-a {
-    text-decoration: none;
-    color: $primary-color;
-}
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
 
 // List of margins by rems, original html parent is 16px
 $spaceamounts: (1, 2, 3, 4, 5, 6);

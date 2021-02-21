@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/wjj8mlr.css" />
+    <!-- Font-family: Nunito -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Font-family: Ubuntu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Double dots because you need to get out your folder -->
     <link rel="stylesheet" href="../CSS/style.css" />
-    <title>Login</title>
+    <script defer src="../JS/main.js"></script>
+    <title>Login/Register</title>
   </head>
   <body>
     <section class="forms">
-      <div class="container">
-        <form action="#" method="POST" class="sign-form">
-          <div class="sign-in">
-            <div class="sign-titles">
-              <a href="#" class="sign-in active">Sign in</a>
-              <a href="#" class="sign-up">Sign up</a>
-            </div>
-            <div>
-              <hr />
+      <form action="#" method="POST" class="sign-form">
+        <div class="login">
+          <div class="sign-titles">
+            <a href="#" class="sign-in-title active" id="signInTitle"
+              >Sign in</a
+            >
+            <a href="#" class="sign-up-title" id="signUpTitle">Sign up</a>
+          </div>
+          <div class="sign-in" id="signIn">
+            <div class="group">
+              <label for="username" class="small-label">Username</label>
+              <input type="text" id="username" required class="sign-inputs" />
             </div>
             <div class="group">
-              <label for="username">Username</label>
-              <input type="text" id="username" required />
-            </div>
-            <div class="group">
-              <label for="pass">Password</label>
-              <input type="password" id="pass" required />
+              <label for="pass" class="small-label">Password</label>
+              <input type="password" id="pass" required class="sign-inputs" />
             </div>
             <div class="group">
               <input
@@ -36,56 +43,61 @@
                 value="check"
                 id="check"
                 checked
+                class="tick"
               />
-              <label for="check">Keep me Signed in</label>
+              <label for="check" class="check">Keep me Signed in</label>
             </div>
             <div class="group">
-              <button type="submit" name="sign" value="in">Sign in</button>
+              <button type="submit" name="sign" value="in" class="sign-btn">
+                Sign in
+              </button>
             </div>
             <div>
-              <hr />
+              <hr class="my-2" />
             </div>
-            <div class="foot">
+            <div class="foot my-2">
               <a href="#">Forgot Password?</a>
             </div>
           </div>
-          <div class="sign-up">
-            <div class="sign-titles">
-              <a href="#" class="sign-in">Sign in</a>
-              <a href="#" class="sign-up active">Sign up</a>
+          <div class="sign-up" id="signUp">
+            <div class="group">
+              <label for="username" class="small-label">Username</label>
+              <input type="text" id="username" required class="sign-inputs" />
+            </div>
+            <div class="group">
+              <label for="pass" class="small-label">Password</label>
+              <input type="password" id="pass" required class="sign-inputs" />
+            </div>
+            <div class="group">
+              <label for="passRepeat" class="small-label"
+                >Repeat Password</label
+              >
+              <input
+                type="password"
+                id="passRepeat"
+                required
+                class="sign-inputs"
+              />
+            </div>
+            <div class="group">
+              <label for="email" class="small-label">Email Address</label>
+              <input type="email" id="email" required class="sign-inputs" />
+            </div>
+            <div class="group">
+              <button type="submit" name="sign" value="up" class="sign-btn">
+                Sign up
+              </button>
             </div>
             <div>
-              <hr />
+              <hr class="my-2" />
             </div>
-            <div class="group">
-              <label for="username">Username</label>
-              <input type="text" id="username" required />
-            </div>
-            <div class="group">
-              <label for="pass">Password</label>
-              <input type="password" id="pass" required />
-            </div>
-            <div class="group">
-              <label for="passRepeat">Repeat Password</label>
-              <input type="password" id="passRepeat" required />
-            </div>
-            <div class="group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" required />
-            </div>
-            <div class="group">
-              <button type="submit" name="sign" value="up">Sign up</button>
-            </div>
-            <div>
-              <hr />
-            </div>
-            <div class="foot">
+            <div class="foot my-2">
               <!-- atversti i sign in psl -->
-              <a href="#">Already Member?</a>
+              <p id="alreadyMemb">Already Member?</p>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
   </body>
 </html>

@@ -5,22 +5,15 @@
 }
 
 body {
-  font-family: "nunito, sans-serif";
-  background-color: rgba(40, 57, 101, 0.8);
+  font-family: "Ubuntu", nunito, sans-serif;
+  background-color: rgba(40, 57, 101, 0.9);
   line-height: 1.6;
   color: #c8c8c8;
 }
 
-a {
+body a {
   text-decoration: none;
   color: #6a6f8c;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
 }
 
 .m-1 {
@@ -167,18 +160,165 @@ a {
   padding: 0 6rem;
 }
 
+@keyframes openClose {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .forms {
   background: url(../Images/background.jpg) no-repeat center;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sign-form {
-  background-color: rgba(40, 57, 101, 0.8);
-  border-radius: 20px;
-  width: 35%;
+.forms .sign-form {
+  background-color: rgba(40, 57, 101, 0.9);
+  border-radius: 40px;
+  width: 25%;
+  padding: 40px 50px;
+  height: 600px;
+  transition: .3s all ease-in-out;
+}
+
+.forms .sign-form .login {
+  width: 100%;
+  height: 100%;
+}
+
+.forms .sign-form .sign-titles {
+  text-transform: uppercase;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.forms .sign-form .sign-titles .active {
+  color: white;
+  border-bottom: 2px solid #1161ee;
+}
+
+.forms .sign-form .sign-titles .sign-in-title {
+  margin-right: 15px;
+  transition: .3s all ease-in-out;
+}
+
+.forms .sign-form .sign-titles .sign-in-title:hover {
+  color: #c8c8c8;
+}
+
+.forms .sign-form .sign-titles .sign-up-title {
+  transition: .3s all ease-in-out;
+}
+
+.forms .sign-form .sign-titles .sign-up-title:hover {
+  color: #c8c8c8;
+}
+
+.forms .sign-form .sign-in {
+  animation-name: openClose;
+  animation-duration: 1s;
+  transition: .3s all ease-in-out;
+}
+
+.forms .sign-form .sign-up {
+  animation-name: openClose;
+  animation-duration: 1s;
+  display: none;
+  transition: .3s all ease-in-out;
+}
+
+.forms .group {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.forms .group .small-label {
+  font-size: 12px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.forms .group .sign-inputs {
+  width: 100%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  transition: .2s all ease-in;
+}
+
+.forms .group .sign-inputs:active, .forms .group .sign-inputs:focus, .forms .group .sign-inputs:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.forms .group .tick {
+  background: rgba(255, 255, 255, 0.1);
+  transition: .2s all ease-out;
+}
+
+.forms .group .tick:checked + .check {
+  color: white;
+}
+
+.forms .group .check {
+  color: #6a6f8c;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s all ease-out;
+}
+
+.forms .group .sign-btn {
+  background-color: #1161ee;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  transition: .3s all ease-in;
+}
+
+.forms .group .sign-btn:hover {
+  background-color: midnightblue;
+  color: #c8c8c8;
+}
+
+.forms hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.forms .foot {
+  text-align: center;
+}
+
+.forms .foot a {
+  font-size: 18px;
+  transition: .3s all ease-out;
+}
+
+.forms .foot a:hover {
+  color: #c8c8c8;
+}
+
+.forms .foot p {
+  font-size: 18px;
+  transition: .3s all ease-out;
+  color: #6a6f8c;
+}
+
+.forms .foot p:hover {
+  color: #c8c8c8;
 }

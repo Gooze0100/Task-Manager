@@ -1,21 +1,26 @@
 // Used for variables, functions, mixins and others...
 
-$font-stack: 'nunito, sans-serif';
+$font-stack: 'Ubuntu', nunito, sans-serif;
 $primary-color: #6a6f8c;
 $secondary-color: #c8c8c8;
-$btn-color: #1161ee;
-$background-color: rgba(40,57,101,.8);
+$btn-primary: #1161ee;
+$background-color: rgba(40,57,101,.9);
+$light-gray: #aaa;
+$blue: #1161ee;
+$btn-secondary: #0c1e3b85;
 
-@function text-color($color) {
-    @if(lightness($color) > 70) {
-        @return $background-color;
-    }   @else {
-        @return #fff;
-    }
-}
 
-// Background and text color
-@mixin set-background($color) {
-    background-color: $color;
-    color: text-color($color);
-}
+
+// @function text-color($color) {
+//     @if(lightness($color) > 70) {
+//         @return $background-color;
+//     }   @else {
+//         @return #fff;
+//     }
+// }
+
+// // Background and text color
+// @mixin set-background($color) {
+//     background-color: $color;
+//     color: text-color($color);
+// }

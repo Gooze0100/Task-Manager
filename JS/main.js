@@ -1,5 +1,6 @@
 "use strict"
 
+// Functions for Login and Register page ============================================
 const signInTitle = document.querySelector('#signInTitle');
 const signUpTitle = document.querySelector('#signUpTitle');
 const signIn = document.querySelector('#signIn');
@@ -23,3 +24,7 @@ function signUpFunc() {
     signUpTitle.classList.add('active');
     signInTitle.classList.remove('active');
 }
+
+// Functions for Login/Register page ============================================
+
+

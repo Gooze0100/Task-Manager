@@ -136,30 +136,6 @@ body a {
   padding: 0 5rem;
 }
 
-.m-6 {
-  margin: 6rem;
-}
-
-.my-6 {
-  margin: 6rem 0;
-}
-
-.mx-6 {
-  margin: 0 6rem;
-}
-
-.p-6 {
-  padding: 6rem;
-}
-
-.py-6 {
-  padding: 6rem 0;
-}
-
-.px-6 {
-  padding: 0 6rem;
-}
-
 @keyframes openClose {
   from {
     opacity: 0;

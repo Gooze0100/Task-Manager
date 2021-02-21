@@ -1,4 +1,4 @@
-// Used for general classes
+// Used for general classes, loops =================================================
 
 * {
     box-sizing: border-box;
@@ -19,9 +19,8 @@ body {
 }
 
 
-
-// List of margins by rems, original html parent is 16px
-$spaceamounts: (1, 2, 3, 4, 5, 6);
+// List of margins by rems, original html parent is 16px =================================================
+$spaceamounts: (1, 2, 3, 4, 5);
 
 // Loop through $spaceamounts
 @each $space in $spaceamounts {

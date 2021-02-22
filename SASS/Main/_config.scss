@@ -13,40 +13,45 @@ $background-color: rgba(40,57,101,.9);
 $blue: #1161ee;
 
 // Task Manager sidebar variables ==============================
-$aside-back: rgba(22, 70, 22, 0.808);
-$aside-color: lightgray;
-$aside-hover-back: rgba(0, 0, 0, 0.2);
-$aside-hover-color: blanchedalmond;
+$aside-back: #4caf4fa4;
+$aside-color: rgba(255, 255, 255, .8);
+$aside-hover-back: hsla(0,0%,78.4%,.2);
+$aside-hover-color: wheat;
 
 // Task Manager navigation variables ==============================
-$nav-back: rgba(19, 43, 107, 0.808);
+$nav-back: linear-gradient(45deg, #66bb6a, #43a048);
 $nav-color: wheat;
 $nav-hover-back: white;
 $nav-hover-color: rgb(13, 83, 13);
 
 // Task Manager main section variables ==============================
-$cards-back: crimson;
-$cards-txt-color: black;
-$icons-back: rgb(255, 166, 0);
-$icons-color: rgb(27, 117, 207);
-$green-icon: green;
-$red-icon: red;
-$blue-icon: blue;
-$yellow-icon: yellow;
-$hr-color: rgba(255, 255, 255, 0.4);
-$info-txt-color: wheat;
-$tasks-filter-header-back: wheat;
-$tasks-filter-header-color: dodgerblue;
-$tasks-filter-btn-back: lightgray;
+$cards-back: rgba(255, 255, 255, .9);
+$cards-txt-color: #999;
+$icon-back-1: linear-gradient(45deg, #66bb6a, #43a048);
+$icon-back-2: linear-gradient(45deg, #ffa826, #fb8a00);
+$icon-back-3: linear-gradient(45deg, #ef5350, #e53835);
+$icon-back-4: linear-gradient(45deg, #26c5da, #00abc1);
+$icons-color: rgba(255, 255, 255, .8);
+$green-icon: #43a048;
+$red-icon: #e53835;
+$blue-icon: #00abc1;
+$orange-icon: #fb8a00;
+$hr-color: rgba(255, 255, 255, .6);
+$info-txt-color: #999;
+$tasks-filter-header-back: linear-gradient(45deg, #26c5da, #00abc1);
+$tasks-filter-header-color: white;
+$tasks-filter-btn-back: #00abc1;
 $tasks-filter-btn-color: black;
 $task-btn-back: rgb(66, 59, 59);
 $task-btn-color: rgb(255, 255, 255);
+$task-back: rgb(255, 255, 255);
+$task-color: #999;
 
 // Task Manager footer variables ==============================
-$footer-back: rgba(104, 13, 18, 0.808);
+$footer-back: linear-gradient(45deg, #ef5350, #e53835);
 $footer-color: rgb(255, 255, 255);
-$footer-hover-back: rgb(238, 255, 0);
-$footer-hover-color: rgb(238, 9, 161);
+$footer-hover-back: linear-gradient(20deg, #e82723ab, #e53835de);
+$footer-hover-color: rgba(0, 0, 0, .8);
 
 
 @mixin flex() {

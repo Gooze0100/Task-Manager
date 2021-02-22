@@ -6,7 +6,7 @@ footer {
     left: 12%;
     bottom: 0;
     @include flex-sb;
-    background-color: $footer-back;
+    background: $footer-back;
     color: $footer-color;
 
     .info-about-me {
@@ -21,6 +21,7 @@ footer {
             & a {
                 color: $footer-color;
                 font-size: 14px;
+                transition: .3s all ease-out;
 
                 & i {
                     margin-right: 5px;
@@ -28,7 +29,7 @@ footer {
             }
 
             &:hover  {
-                background-color: $footer-hover-back;
+                background: $footer-hover-back;
                 
                 & a{
                     color: $footer-hover-color;

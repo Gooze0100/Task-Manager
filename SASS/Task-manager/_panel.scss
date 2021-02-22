@@ -1,7 +1,7 @@
 // Main Panel styles =================================================
 
 .main-panel {
-    padding: 50px;
+    padding: 20px;
 
     .cards {
         @include flex-sb;
@@ -15,17 +15,31 @@
             margin: 15px;
             
                 .icons {
-                    background-color: $icons-back;
                     position: absolute;
                     padding: 25px 35px;
                     top: -20px;
                     left: 20px;
-                    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
-                    border-radius: 5px;
+                    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .4);
+                    border-radius: 10px;
 
                     & i {
                         font-size: 25px;
                         color: $icons-color;
+                    }
+                }
+
+                .i {
+                    &-1{
+                        background: $icon-back-1;
+                    }
+                    &-2{
+                        background: $icon-back-2;
+                    }
+                    &-3{
+                        background: $icon-back-3;
+                    }
+                    &-4{
+                        background: $icon-back-4;
                     }
                 }
 
@@ -96,9 +110,10 @@
 
         .all-filters {
            @include flex-c;
-           background-color: $tasks-filter-header-back;
+           background: $tasks-filter-header-back;
            border-radius: 15px;
            color: $tasks-filter-header-color;
+           box-shadow: 0 12px 20px 10px rgba(0, 0, 0, .4);
         }
 
         .filters {
@@ -117,30 +132,36 @@
 
                 &:hover {
                     background-color: $tasks-filter-btn-back;
-                    color: $tasks-filter-btn-color;
+
+                    &:hover a {
+                        color: $tasks-filter-btn-color;
+                    }
                 }
 
                 a {
-                    color: $primary-color;
+                    color: $tasks-filter-header-color;
                     
                     & .yellow-color {
-                        color: $yellow-icon;
+                        color: $orange-icon;
+                        margin-right: 5px;
                     }
     
                     & .green-color {
                         color: $green-icon;
+                        margin-right: 5px;
                     }
     
                     & .red-color {
                         color: $red-icon;
+                        margin-right: 5px;
                     }
                 }
             }
         }
 
         .tasks {
-            background-color: $secondary-color;
-            color: $tasks-filter-btn-color;
+            background: $task-back;
+            color: $task-color;
             border-radius: 15px;
 
             .task {

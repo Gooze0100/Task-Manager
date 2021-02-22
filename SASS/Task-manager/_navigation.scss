@@ -1,7 +1,8 @@
 // Task Manager - Navigation styles =================================================
 
 .navigation {
-    background-color: $nav-back;
+    background: $nav-back;
+    box-shadow: 0 12px 20px -10px #00abc19a;
     color: $nav-color;
 
     nav {
@@ -13,7 +14,7 @@
         padding-bottom: 10px;
 
         .name-of-selection {
-            font-size: 20px;
+            font-size: 1rem;
             font-weight: 500;
         }
 
@@ -24,7 +25,7 @@
             justify-content: space-evenly;
 
             .main-nav-icons i {
-                font-size: 22px;
+                font-size: 1rem;
                 padding: 15px;
                 border-radius: 15px;
                 cursor: pointer;
@@ -40,7 +41,7 @@
                 position: relative;
 
                 .person-icon i {
-                    font-size: 22px;
+                    font-size: 1rem;
                     padding: 15px;
                     border-radius: 15px;
                     cursor: pointer;
@@ -56,7 +57,7 @@
                     display: none;
                     position: absolute;
                     right: 0;
-                    background-color: $nav-back;
+                    background: $nav-back;
                     color: $nav-color;
                     border-radius: 15px;
                     z-index: 1;
@@ -66,7 +67,7 @@
                         @include flex-sa;
                         border-radius: 15px;
                         padding: 10px 20px;
-                        font-size: 18px;
+                        font-size: 1rem;
                         transition: .3s all ease-out;
 
                         & i {

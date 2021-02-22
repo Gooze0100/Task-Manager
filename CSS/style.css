@@ -4,12 +4,23 @@
   padding: 0;
 }
 
-body {
-  font-family: "Ubuntu", nunito, sans-serif;
-  line-height: 1.6;
+html {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
-body a {
+html body {
+  font-family: "Ubuntu", nunito, sans-serif;
+  line-height: 1.6;
+  height: 100%;
+  background: url(/Images/main-back.jpg) no-repeat center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #c8c8c8;
+}
+
+html body a {
   text-decoration: none;
 }
 
@@ -380,22 +391,15 @@ body a {
 
 .dashboard {
   position: relative;
-  background: url(../Images/asoggetti-IuSemNxGS88-unsplash.jpg) no-repeat center;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-size: cover;
-  background-blend-mode: multiply;
-  color: #c8c8c8;
-  height: 100vh;
-  width: 100%;
 }
 
-.all-sections {
+.dashboard .all-sections {
   display: flex;
   position: relative;
   height: 100%;
 }
 
-.all-sections .navigation-tasks {
+.dashboard .all-sections .navigation-tasks {
   width: 88%;
   position: relative;
   left: 12%;
@@ -405,8 +409,8 @@ body a {
   width: 12%;
   height: 100%;
   position: fixed;
-  background-color: rgba(22, 70, 22, 0.808);
-  color: lightgray;
+  background-color: #4caf4fa4;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .menu .logo {
@@ -433,8 +437,8 @@ body a {
 }
 
 .menu .menu-selections .menu-groups:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: blanchedalmond;
+  background-color: rgba(200, 200, 200, 0.2);
+  color: wheat;
 }
 
 .menu .menu-selections .menu-groups div i {
@@ -450,7 +454,8 @@ body a {
 }
 
 .navigation {
-  background-color: rgba(19, 43, 107, 0.808);
+  background: linear-gradient(45deg, #66bb6a, #43a048);
+  box-shadow: 0 12px 20px -10px #00abc19a;
   color: wheat;
 }
 
@@ -464,7 +469,7 @@ body a {
 }
 
 .navigation nav .name-of-selection {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -475,7 +480,7 @@ body a {
 }
 
 .navigation nav .nav-icons .main-nav-icons i {
-  font-size: 22px;
+  font-size: 1rem;
   padding: 15px;
   border-radius: 15px;
   cursor: pointer;
@@ -492,7 +497,7 @@ body a {
 }
 
 .navigation nav .nav-icons .profile-settings .person-icon i {
-  font-size: 22px;
+  font-size: 1rem;
   padding: 15px;
   border-radius: 15px;
   cursor: pointer;
@@ -508,7 +513,7 @@ body a {
   display: none;
   position: absolute;
   right: 0;
-  background-color: rgba(19, 43, 107, 0.808);
+  background: linear-gradient(45deg, #66bb6a, #43a048);
   color: wheat;
   border-radius: 15px;
   z-index: 1;
@@ -521,7 +526,7 @@ body a {
   align-items: center;
   border-radius: 15px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 1rem;
   transition: .3s all ease-out;
 }
 
@@ -539,7 +544,7 @@ body a {
 }
 
 .main-panel {
-  padding: 50px;
+  padding: 20px;
 }
 
 .main-panel .cards {
@@ -549,7 +554,7 @@ body a {
 }
 
 .main-panel .cards .card {
-  background-color: crimson;
+  background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   padding: 15px;
   border-radius: 15px;
@@ -558,18 +563,33 @@ body a {
 }
 
 .main-panel .cards .card .icons {
-  background-color: #ffa600;
   position: absolute;
   padding: 25px 35px;
   top: -20px;
   left: 20px;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 .main-panel .cards .card .icons i {
   font-size: 25px;
-  color: #1b75cf;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-panel .cards .card .i-1 {
+  background: linear-gradient(45deg, #66bb6a, #43a048);
+}
+
+.main-panel .cards .card .i-2 {
+  background: linear-gradient(45deg, #ffa826, #fb8a00);
+}
+
+.main-panel .cards .card .i-3 {
+  background: linear-gradient(45deg, #ef5350, #e53835);
+}
+
+.main-panel .cards .card .i-4 {
+  background: linear-gradient(45deg, #26c5da, #00abc1);
 }
 
 .main-panel .cards .card .txt-for-card {
@@ -579,12 +599,12 @@ body a {
 
 .main-panel .cards .card .txt-for-card p {
   font-size: 14px;
-  color: black;
+  color: #999;
   font-weight: 400;
 }
 
 .main-panel .cards .card .txt-for-card h3 {
-  color: black;
+  color: #999;
   font-size: 28px;
 }
 
@@ -595,13 +615,13 @@ body a {
 }
 
 .main-panel .cards .card .txt-for-card .weathers h3 {
-  color: black;
+  color: #999;
   font-size: 28px;
   margin-right: 10px;
 }
 
 .main-panel .cards .card hr {
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   width: 100%;
 }
 
@@ -617,19 +637,19 @@ body a {
 }
 
 .main-panel .cards .card .note .green-color {
-  color: green;
+  color: #43a048;
 }
 
 .main-panel .cards .card .note .red-color {
-  color: red;
+  color: #e53835;
 }
 
 .main-panel .cards .card .note .blue-color {
-  color: blue;
+  color: #00abc1;
 }
 
 .main-panel .cards .card .note p {
-  color: wheat;
+  color: #999;
 }
 
 .main-panel .task-manager {
@@ -641,9 +661,10 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: wheat;
+  background: linear-gradient(45deg, #26c5da, #00abc1);
   border-radius: 15px;
-  color: dodgerblue;
+  color: white;
+  box-shadow: 0 12px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
 .main-panel .task-manager .filters {
@@ -664,29 +685,35 @@ body a {
 }
 
 .main-panel .task-manager .filters .filter:hover {
-  background-color: lightgray;
+  background-color: #00abc1;
+}
+
+.main-panel .task-manager .filters .filter:hover:hover a {
   color: black;
 }
 
 .main-panel .task-manager .filters .filter a {
-  color: #6a6f8c;
+  color: white;
 }
 
 .main-panel .task-manager .filters .filter a .yellow-color {
-  color: yellow;
+  color: #fb8a00;
+  margin-right: 5px;
 }
 
 .main-panel .task-manager .filters .filter a .green-color {
-  color: green;
+  color: #43a048;
+  margin-right: 5px;
 }
 
 .main-panel .task-manager .filters .filter a .red-color {
-  color: red;
+  color: #e53835;
+  margin-right: 5px;
 }
 
 .main-panel .task-manager .tasks {
-  background-color: #c8c8c8;
-  color: black;
+  background: white;
+  color: #999;
   border-radius: 15px;
 }
 
@@ -740,7 +767,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(104, 13, 18, 0.808);
+  background: linear-gradient(45deg, #ef5350, #e53835);
   color: white;
 }
 
@@ -760,6 +787,7 @@ footer .info-about-me .social-links {
 footer .info-about-me .social-links a {
   color: white;
   font-size: 14px;
+  transition: .3s all ease-out;
 }
 
 footer .info-about-me .social-links a i {
@@ -767,11 +795,429 @@ footer .info-about-me .social-links a i {
 }
 
 footer .info-about-me .social-links:hover {
-  background-color: #eeff00;
+  background: linear-gradient(20deg, #e82723ab, #e53835de);
 }
 
 footer .info-about-me .social-links:hover a {
-  color: #ee09a1;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+footer .copyrights {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.dashboard {
+  position: relative;
+}
+
+.dashboard .all-sections {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.dashboard .all-sections .navigation-tasks {
+  width: 88%;
+  position: relative;
+  left: 12%;
+}
+
+.menu {
+  width: 12%;
+  height: 100%;
+  position: fixed;
+  background-color: #4caf4fa4;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.menu .logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu .logo img {
+  width: 50%;
+}
+
+.menu .menu-selections {
+  display: inline-block;
+}
+
+.menu .menu-selections .menu-groups {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  transition: .3s all ease-out;
+}
+
+.menu .menu-selections .menu-groups:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+  color: wheat;
+}
+
+.menu .menu-selections .menu-groups div i {
+  font-size: 20px;
+}
+
+.menu .menu-selections .menu-groups .center-block {
+  margin-left: 20px;
+}
+
+.menu .menu-selections .menu-groups .center-block p {
+  font-size: 18px;
+}
+
+.navigation {
+  background: linear-gradient(45deg, #66bb6a, #43a048);
+  box-shadow: 0 12px 20px -10px #00abc19a;
+  color: wheat;
+}
+
+.navigation nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navigation nav .name-of-selection {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navigation nav .nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigation nav .nav-icons .main-nav-icons i {
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .3s all ease-out;
+}
+
+.navigation nav .nav-icons .main-nav-icons i:hover {
+  background-color: white;
+  color: #0d530d;
+}
+
+.navigation nav .nav-icons .profile-settings {
+  position: relative;
+}
+
+.navigation nav .nav-icons .profile-settings .person-icon i {
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .3s all ease-out;
+}
+
+.navigation nav .nav-icons .profile-settings .person-icon i:hover {
+  background-color: white;
+  color: #0d530d;
+}
+
+.navigation nav .nav-icons .profile-settings .settings {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: linear-gradient(45deg, #66bb6a, #43a048);
+  color: wheat;
+  border-radius: 15px;
+  z-index: 1;
+  transition: .3s all ease-out;
+}
+
+.navigation nav .nav-icons .profile-settings .settings .logout, .navigation nav .nav-icons .profile-settings .settings .profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: .3s all ease-out;
+}
+
+.navigation nav .nav-icons .profile-settings .settings .logout i, .navigation nav .nav-icons .profile-settings .settings .profile i {
+  margin-right: 10px;
+}
+
+.navigation nav .nav-icons .profile-settings .settings .logout:hover, .navigation nav .nav-icons .profile-settings .settings .profile:hover {
+  background-color: white;
+  color: #0d530d;
+}
+
+.navigation nav .nav-icons .profile-settings:hover .settings {
+  display: block;
+}
+
+.main-panel {
+  padding: 20px;
+}
+
+.main-panel .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-panel .cards .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  margin: 15px;
+}
+
+.main-panel .cards .card .icons {
+  position: absolute;
+  padding: 25px 35px;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.main-panel .cards .card .icons i {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-panel .cards .card .i-1 {
+  background: linear-gradient(45deg, #66bb6a, #43a048);
+}
+
+.main-panel .cards .card .i-2 {
+  background: linear-gradient(45deg, #ffa826, #fb8a00);
+}
+
+.main-panel .cards .card .i-3 {
+  background: linear-gradient(45deg, #ef5350, #e53835);
+}
+
+.main-panel .cards .card .i-4 {
+  background: linear-gradient(45deg, #26c5da, #00abc1);
+}
+
+.main-panel .cards .card .txt-for-card {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.main-panel .cards .card .txt-for-card p {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+}
+
+.main-panel .cards .card .txt-for-card h3 {
+  color: #999;
+  font-size: 28px;
+}
+
+.main-panel .cards .card .txt-for-card .weathers {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-panel .cards .card .txt-for-card .weathers h3 {
+  color: #999;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.main-panel .cards .card hr {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  width: 100%;
+}
+
+.main-panel .cards .card .note {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.main-panel .cards .card .note i {
+  margin-right: 5px;
+}
+
+.main-panel .cards .card .note .green-color {
+  color: #43a048;
+}
+
+.main-panel .cards .card .note .red-color {
+  color: #e53835;
+}
+
+.main-panel .cards .card .note .blue-color {
+  color: #00abc1;
+}
+
+.main-panel .cards .card .note p {
+  color: #999;
+}
+
+.main-panel .task-manager {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-panel .task-manager .all-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #26c5da, #00abc1);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 12px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main-panel .task-manager .filters {
+  display: flex;
+  align-items: center;
+}
+
+.main-panel .task-manager .filters h3 {
+  margin-right: 15px;
+  padding: 15px;
+}
+
+.main-panel .task-manager .filters .filter {
+  margin-right: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: .3s all ease-out;
+}
+
+.main-panel .task-manager .filters .filter:hover {
+  background-color: #00abc1;
+}
+
+.main-panel .task-manager .filters .filter:hover:hover a {
+  color: black;
+}
+
+.main-panel .task-manager .filters .filter a {
+  color: white;
+}
+
+.main-panel .task-manager .filters .filter a .yellow-color {
+  color: #fb8a00;
+  margin-right: 5px;
+}
+
+.main-panel .task-manager .filters .filter a .green-color {
+  color: #43a048;
+  margin-right: 5px;
+}
+
+.main-panel .task-manager .filters .filter a .red-color {
+  color: #e53835;
+  margin-right: 5px;
+}
+
+.main-panel .task-manager .tasks {
+  background: white;
+  color: #999;
+  border-radius: 15px;
+}
+
+.main-panel .task-manager .tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.main-panel .task-manager .tasks .task div {
+  display: flex;
+  align-items: center;
+}
+
+.main-panel .task-manager .tasks .task div input {
+  margin-right: 20px;
+  margin-left: 25px;
+}
+
+.main-panel .task-manager .tasks .task input {
+  width: 18px;
+  height: 18px;
+}
+
+.main-panel .task-manager .tasks .task p {
+  font-size: 18px;
+}
+
+.main-panel .task-manager .tasks .task-btns {
+  font-size: 20px;
+}
+
+.main-panel .task-manager .tasks .task-btns div {
+  padding: 15px;
+  margin-right: 25px;
+  border-radius: 15px;
+  transition: .3s all ease-out;
+}
+
+.main-panel .task-manager .tasks .task-btns div:hover {
+  background-color: #423b3b;
+  color: white;
+}
+
+footer {
+  width: 88%;
+  position: fixed;
+  left: 12%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #ef5350, #e53835);
+  color: white;
+}
+
+footer .info-about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+footer .info-about-me .social-links {
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: .3s all ease-out;
+}
+
+footer .info-about-me .social-links a {
+  color: white;
+  font-size: 14px;
+  transition: .3s all ease-out;
+}
+
+footer .info-about-me .social-links a i {
+  margin-right: 5px;
+}
+
+footer .info-about-me .social-links:hover {
+  background: linear-gradient(20deg, #e82723ab, #e53835de);
+}
+
+footer .info-about-me .social-links:hover a {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 footer .copyrights {

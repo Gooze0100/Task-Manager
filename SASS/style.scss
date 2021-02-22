@@ -1,14 +1,17 @@
 // Main styles =================================================
-@import 'config';
-@import 'utilities';
-@import 'buttons';
-@import 'keyframes';
+@import './Main/config';
+@import './Main/utilities';
+@import './Main/buttons';
+@import './Main/keyframes';
 
-// Login and Register form styles =================================================
-@import 'loginRegister';
+// Login and Register Page form styles =================================================
+@import './Login/loginRegister';
 
-// Task Manager styles =================================================
-@import 'taskManager';
+// Task Manager Page styles =================================================
+@import './Task-manager/taskManager';
+
+// Person Page styles =================================================
+@import './Task-manager/taskManager';
 
 // Media styles =================================================
-@import 'mobile';
+@import './Main/mobile';

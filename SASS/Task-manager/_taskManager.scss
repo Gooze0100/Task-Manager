@@ -1,0 +1,29 @@
+// Task Manager styles =================================================
+
+.dashboard {
+    position: relative;
+    
+    .all-sections {
+        display: flex;
+        position: relative;
+        height: 100%;
+    
+        .navigation-tasks {
+            width: 88%;
+            position: relative;
+            left: 12%;
+        }
+    }
+}
+
+// Sidebar styles =================================================
+@import './sidebar';
+
+// Navigation styles =================================================
+@import './navigation';
+
+// Main Panel styles =================================================
+@import './panel';
+
+// Footer styles =================================================
+@import './footer';

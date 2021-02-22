@@ -8,13 +8,10 @@
 
 body {
     font-family: $font-stack;
-    background-color: $background-color;
     line-height: 1.6;
-    color: $secondary-color;
 
     a {
         text-decoration: none;
-        color: $primary-color;
     }
 }
 
@@ -37,6 +34,15 @@ $spaceamounts: (1, 2, 3, 4, 5);
     .mx-#{$space} {
         margin: 0 #{$space}rem;
     }
+    // margin-top
+    .mt-#{$space} {
+        margin-top: #{$space}rem;
+    }
+    // margin-bottom
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+
     // Padding
     // all around
     .p-#{$space} {
@@ -49,5 +55,13 @@ $spaceamounts: (1, 2, 3, 4, 5);
     // right left
     .px-#{$space} {
         padding: 0 #{$space}rem;
+    }
+    // padding-top
+    .pt-#{$space} {
+        padding-top: #{$space}rem;
+    }
+    // padding-bottom
+    .pb-#{$space} {
+        padding-bottom: #{$space}rem;
     }
 }

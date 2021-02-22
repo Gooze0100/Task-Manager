@@ -1,0 +1,38 @@
+// Task Manager styles =================================================
+
+.dashboard {
+    position: relative;
+    background: url(../Images/asoggetti-IuSemNxGS88-unsplash.jpg) no-repeat center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: $secondary-color;
+    height: 100vh;
+    width: 100%;
+}
+
+.all-sections {
+    display: flex;
+    position: relative;
+    height: 100%;
+
+    .navigation-tasks {
+        width: 88%;
+        position: relative;
+        left: 12%;
+    }
+}
+
+// Sidebar styles =================================================
+@import './Task-manager/sidebar';
+
+// Navigation styles =================================================
+@import './Task-manager/navigation';
+
+// Main Panel styles =================================================
+@import './Task-manager/panel';
+
+
+
+// Footer styles =================================================
+@import './Task-manager/footer';

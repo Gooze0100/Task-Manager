@@ -1,6 +1,8 @@
-// Login and Register styles =================================================
+// Login and Register form styles =================================================
 .forms {
     background: url(../Images/background.jpg) no-repeat center;
+    background-color: $background-color;
+    color: $secondary-color;
     background-size: cover;
     position: fixed;
     height: 100%;

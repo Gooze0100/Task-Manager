@@ -1,0 +1,186 @@
+// Main Panel styles =================================================
+
+.main-panel {
+    padding: 50px;
+
+    .cards {
+        @include flex-sb;
+
+        .card {
+            background-color: $cards-back;
+            position: relative;
+            padding: 15px;
+            border-radius: 15px;
+            width: 100%;
+            margin: 15px;
+            
+                .icons {
+                    background-color: $icons-back;
+                    position: absolute;
+                    padding: 25px 35px;
+                    top: -20px;
+                    left: 20px;
+                    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+
+                    & i {
+                        font-size: 25px;
+                        color: $icons-color;
+                    }
+                }
+
+                .txt-for-card {
+                    text-align: right;
+                    margin-bottom: 10px;
+
+                    & p {
+                        font-size: 14px;
+                        color: $cards-txt-color;
+                        font-weight: 400;
+                    }
+
+                    & h3 {
+                        color: $cards-txt-color;
+                        font-size: 28px;
+                    }
+
+                    .weathers {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        
+                        & h3 {
+                            color: $cards-txt-color;
+                            font-size: 28px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+            hr {
+                border: 1px solid $hr-color;
+                width: 100%;
+            }
+
+            .note {
+                @include flex;
+                font-size: 12px;
+                margin-left: 5px;
+
+                & i {
+                    margin-right: 5px;
+                }
+
+                .green-color {
+                    color: $green-icon;
+                }
+
+                .red-color {
+                    color: $red-icon;
+                }
+                
+                .blue-color {
+                    color: $blue-icon;
+                }
+
+                & p {
+                    color: $info-txt-color;
+                }
+            }
+        }
+    }
+
+    .task-manager {
+        width: 1200px;
+        margin: 0 auto;
+
+        .all-filters {
+           @include flex-c;
+           background-color: $tasks-filter-header-back;
+           border-radius: 15px;
+           color: $tasks-filter-header-color;
+        }
+
+        .filters {
+            @include flex;
+
+            & h3 {
+                margin-right: 15px;
+                padding: 15px;
+            }
+
+            .filter {
+                margin-right: 15px;
+                padding: 15px;
+                border-radius: 15px;
+                transition: .3s all ease-out;
+
+                &:hover {
+                    background-color: $tasks-filter-btn-back;
+                    color: $tasks-filter-btn-color;
+                }
+
+                a {
+                    color: $primary-color;
+                    
+                    & .yellow-color {
+                        color: $yellow-icon;
+                    }
+    
+                    & .green-color {
+                        color: $green-icon;
+                    }
+    
+                    & .red-color {
+                        color: $red-icon;
+                    }
+                }
+            }
+        }
+
+        .tasks {
+            background-color: $secondary-color;
+            color: $tasks-filter-btn-color;
+            border-radius: 15px;
+
+            .task {
+                @include flex-sb;
+                padding: 5px;
+
+                div {
+                    @include flex;
+
+                    input {
+                        margin-right: 20px;
+                        margin-left: 25px;
+                    }
+                }
+
+                input {
+                    width: 18px;
+                    height: 18px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .task-btns {
+                font-size: 20px;
+
+                div {
+                    padding: 15px;
+                    margin-right: 25px;
+                    border-radius: 15px;
+                    transition: .3s all ease-out;
+
+                    &:hover {
+                        background-color: $task-btn-back;
+                        color: $task-btn-color;
+                    }
+                }
+            }
+        }
+    }
+}

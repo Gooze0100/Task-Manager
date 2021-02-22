@@ -1,0 +1,89 @@
+// Task Manager - Navigation styles =================================================
+
+.navigation {
+    background-color: $nav-back;
+    color: $nav-color;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .name-of-selection {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .main-nav-icons i {
+                font-size: 22px;
+                padding: 15px;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: .3s all ease-out;
+
+                &:hover {
+                    background-color: $nav-hover-back;
+                    color: $nav-hover-color;
+                }
+            }
+
+            .profile-settings {
+                position: relative;
+
+                .person-icon i {
+                    font-size: 22px;
+                    padding: 15px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    transition: .3s all ease-out;
+    
+                    &:hover {
+                        background-color: $nav-hover-back;
+                        color: $nav-hover-color;
+                    }
+                }
+
+                .settings {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    background-color: $nav-back;
+                    color: $nav-color;
+                    border-radius: 15px;
+                    z-index: 1;
+                    transition: .3s all ease-out;
+                
+                    .logout, .profile {
+                        @include flex-sa;
+                        border-radius: 15px;
+                        padding: 10px 20px;
+                        font-size: 18px;
+                        transition: .3s all ease-out;
+
+                        & i {
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            background-color: $nav-hover-back;
+                            color: $nav-hover-color;
+                        }
+                    }
+                }
+                
+                &:hover .settings {
+                    display: block;
+                }
+            }
+        }
+    }
+}

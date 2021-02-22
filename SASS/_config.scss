@@ -1,15 +1,75 @@
 // Used for variables, functions, mixins and others... =================================================
 
-// Variables =================================================
+// Main Variables =================================================
 $font-stack: 'Ubuntu', nunito, sans-serif;
 $primary-color: #6a6f8c;
 $secondary-color: #c8c8c8;
-$btn-primary: #1161ee;
-$background-color: rgba(40,57,101,.9);
 $light-gray: #aaa;
-$blue: #1161ee;
-$btn-secondary: #0c1e3b85;
 
+// Login/Register Variables =================================================
+$btn-primary: #1161ee;
+$btn-secondary: #0c1e3b85;
+$background-color: rgba(40,57,101,.9);
+$blue: #1161ee;
+
+// Task Manager sidebar variables ==============================
+$aside-back: rgba(22, 70, 22, 0.808);
+$aside-color: lightgray;
+$aside-hover-back: rgba(0, 0, 0, 0.2);
+$aside-hover-color: blanchedalmond;
+
+// Task Manager navigation variables ==============================
+$nav-back: rgba(19, 43, 107, 0.808);
+$nav-color: wheat;
+$nav-hover-back: white;
+$nav-hover-color: rgb(13, 83, 13);
+
+// Task Manager main section variables ==============================
+$cards-back: crimson;
+$cards-txt-color: black;
+$icons-back: rgb(255, 166, 0);
+$icons-color: rgb(27, 117, 207);
+$green-icon: green;
+$red-icon: red;
+$blue-icon: blue;
+$yellow-icon: yellow;
+$hr-color: rgba(255, 255, 255, 0.4);
+$info-txt-color: wheat;
+$tasks-filter-header-back: wheat;
+$tasks-filter-header-color: dodgerblue;
+$tasks-filter-btn-back: lightgray;
+$tasks-filter-btn-color: black;
+$task-btn-back: rgb(66, 59, 59);
+$task-btn-color: rgb(255, 255, 255);
+
+// Task Manager footer variables ==============================
+$footer-back: rgba(104, 13, 18, 0.808);
+$footer-color: rgb(255, 255, 255);
+$footer-hover-back: rgb(238, 255, 0);
+$footer-hover-color: rgb(238, 9, 161);
+
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-sb() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-c() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-sa() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 // @function text-color($color) {

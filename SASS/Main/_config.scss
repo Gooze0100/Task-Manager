@@ -9,23 +9,30 @@ $light-gray: #aaa;
 // Login/Register Variables =================================================
 $btn-primary: #1161ee;
 $btn-secondary: #0c1e3b85;
-$background-color: rgba(40,57,101,.9);
+$background-color: rgba(40, 57, 101, .9);
 $blue: #1161ee;
 
 // Task Manager sidebar variables ==============================
 $aside-back: #4caf4fa4;
 $aside-color: rgba(255, 255, 255, .8);
-$aside-hover-back: hsla(0,0%,78.4%,.2);
+$aside-hover-back: hsla(0, 0, 78.4%, .2);
 $aside-hover-color: wheat;
 
 // Task Manager navigation variables ==============================
+<<<<<<< HEAD
 $nav-back: linear-gradient(45deg, #66bb6a, #43a048);
 $nav-color: wheat;
 $nav-hover-back: white;
 $nav-hover-color: rgb(13, 83, 13);
+=======
+$nav-back: linear-gradient(45deg, #66bb6aa1, #43a048de);
+$nav-color: rgba(255, 255, 255, .8);
+$nav-hover-back: hsla(0, 0, 78.4%, .9);
+$nav-hover-color: wheat;
+>>>>>>> 57b0d50 (updated styles)
 
 // Task Manager main section variables ==============================
-$cards-back: rgba(255, 255, 255, .9);
+$cards-back: rgb(255, 255, 255);
 $cards-txt-color: #999;
 $icon-back-1: linear-gradient(45deg, #66bb6a, #43a048);
 $icon-back-2: linear-gradient(45deg, #ffa826, #fb8a00);
@@ -36,16 +43,17 @@ $green-icon: #43a048;
 $red-icon: #e53835;
 $blue-icon: #00abc1;
 $orange-icon: #fb8a00;
-$hr-color: rgba(255, 255, 255, .6);
+$hr-color: rgba(153, 153, 153, .6);
 $info-txt-color: #999;
+$task-manager-back: rgb(255, 255, 255);
 $tasks-filter-header-back: linear-gradient(45deg, #26c5da, #00abc1);
-$tasks-filter-header-color: white;
-$tasks-filter-btn-back: #00abc1;
-$tasks-filter-btn-color: black;
-$task-btn-back: rgb(66, 59, 59);
-$task-btn-color: rgb(255, 255, 255);
+$tasks-filter-header-color: rgba(255, 255, 255, .8);
+$tasks-filter-btn-back: hsla(0, 0, 78.4%, .9);
+$tasks-filter-btn-color: wheat;
 $task-back: rgb(255, 255, 255);
 $task-color: #999;
+$task-btn-back: rgb(66, 59, 59);
+$task-btn-color: wheat;
 
 // Task Manager footer variables ==============================
 $footer-back: linear-gradient(45deg, #ef5350, #e53835);

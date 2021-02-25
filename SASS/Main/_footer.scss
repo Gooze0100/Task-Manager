@@ -14,17 +14,19 @@ footer {
         margin-left: 20px;
 
         .social-links {
-            padding: 5px 10px;
             border-radius: 15px;
             transition: .3s all ease-out;
 
             & a {
+                @include flex;
+                padding: 5px 10px;
                 color: $footer-color;
                 font-size: 14px;
                 transition: .3s all ease-out;
 
                 & i {
                     margin-right: 5px;
+                    margin-bottom: 2px;
                 }
             }
 
@@ -41,5 +43,10 @@ footer {
     .copyrights {
         margin-right: 20px;
         font-size: 14px;
+        @include flex;
+
+        p {
+            margin-right: 5px;
+        }
     }
 }

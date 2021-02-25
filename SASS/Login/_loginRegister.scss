@@ -1,6 +1,6 @@
 // Login and Register form styles =================================================
 .forms {
-    background: url(../Images/background.jpg) no-repeat center;
+    background: url(/Images/background.jpg) no-repeat center;
     background-color: $background-color;
     color: $secondary-color;
     background-size: cover;
@@ -133,10 +133,13 @@
     }
     
     .foot {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     
         & a {
             font-size: 18px;
+            color: $primary-color;
             transition: .3s all ease-out;
     
             &:hover {
@@ -146,8 +149,8 @@
     
         & p {
             font-size: 18px;
-            transition: .3s all ease-out;
             color: $primary-color;
+            transition: .3s all ease-out;
     
             &:hover {
                 color: $secondary-color;

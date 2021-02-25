@@ -2,6 +2,12 @@
 
 .dashboard {
     position: relative;
+    height: 100%;
+    background: url(/Images/main-back.jpg) no-repeat center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: $secondary-color;
     
     .all-sections {
         display: flex;
@@ -17,13 +23,13 @@
 }
 
 // Sidebar styles =================================================
-@import './sidebar';
+@import '../Main/sidebar';
 
 // Navigation styles =================================================
-@import './navigation';
+@import '../Main/navigation';
 
 // Main Panel styles =================================================
 @import './panel';
 
 // Footer styles =================================================
-@import './footer';
+@import '../Main/footer';

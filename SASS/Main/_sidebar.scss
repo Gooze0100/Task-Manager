@@ -11,6 +11,7 @@
         width: 100%;
         display: flex;
         align-items: center;
+        border-bottom: 1px solid $aside-color;
 
         & img {
             width: 50%;
@@ -18,19 +19,26 @@
     }
 
     .menu-selections {
-        display: inline-block;
 
         .menu-groups {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            padding: 15px;
+            @include flex;
             border-radius: 15px;
             transition: .3s all ease-out;
+
+            & a {
+                @include flex;
+                width: 100%;
+                padding: 15px;
+                transition: .3s all ease-out;
+            }
 
             &:hover {
                 background-color: $aside-hover-back;
                 color: $aside-hover-color;
+
+                & a {
+                    color: $aside-hover-color;
+                }
             }
 
             & div i {

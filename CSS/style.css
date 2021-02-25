@@ -22,6 +22,7 @@ html body {
 
 html body a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .m-1 {
@@ -182,46 +183,6 @@ html body a {
 
 .pb-4 {
   padding-bottom: 4rem;
-}
-
-.m-5 {
-  margin: 5rem;
-}
-
-.my-5 {
-  margin: 5rem 0;
-}
-
-.mx-5 {
-  margin: 0 5rem;
-}
-
-.mt-5 {
-  margin-top: 5rem;
-}
-
-.mb-5 {
-  margin-bottom: 5rem;
-}
-
-.p-5 {
-  padding: 5rem;
-}
-
-.py-5 {
-  padding: 5rem 0;
-}
-
-.px-5 {
-  padding: 0 5rem;
-}
-
-.pt-5 {
-  padding-top: 5rem;
-}
-
-.pb-5 {
-  padding-bottom: 5rem;
 }
 
 @keyframes openClose {
@@ -417,27 +378,34 @@ html body a {
   width: 100%;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .menu .logo img {
   width: 50%;
 }
 
-.menu .menu-selections {
-  display: inline-block;
+.menu .menu-selections .menu-groups {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  transition: .3s all ease-out;
 }
 
-.menu .menu-selections .menu-groups {
+.menu .menu-selections .menu-groups a {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 15px;
-  border-radius: 15px;
   transition: .3s all ease-out;
 }
 
 .menu .menu-selections .menu-groups:hover {
   background-color: rgba(200, 200, 200, 0.2);
+  color: wheat;
+}
+
+.menu .menu-selections .menu-groups:hover a {
   color: wheat;
 }
 
@@ -454,9 +422,15 @@ html body a {
 }
 
 .navigation {
+<<<<<<< HEAD
   background: linear-gradient(45deg, #66bb6a, #43a048);
   box-shadow: 0 12px 20px -10px #00abc19a;
   color: wheat;
+=======
+  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
+  box-shadow: 0 0 25px 15px #00abc19a;
+  color: rgba(255, 255, 255, 0.8);
+>>>>>>> 57b0d50 (updated styles)
 }
 
 .navigation nav {
@@ -464,8 +438,6 @@ html body a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navigation nav .name-of-selection {
@@ -483,13 +455,12 @@ html body a {
   font-size: 1rem;
   padding: 15px;
   border-radius: 15px;
-  cursor: pointer;
   transition: .3s all ease-out;
 }
 
 .navigation nav .nav-icons .main-nav-icons i:hover {
-  background-color: white;
-  color: #0d530d;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings {
@@ -500,21 +471,25 @@ html body a {
   font-size: 1rem;
   padding: 15px;
   border-radius: 15px;
-  cursor: pointer;
   transition: .3s all ease-out;
 }
 
 .navigation nav .nav-icons .profile-settings .person-icon i:hover {
-  background-color: white;
-  color: #0d530d;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings .settings {
   display: none;
   position: absolute;
   right: 0;
+<<<<<<< HEAD
   background: linear-gradient(45deg, #66bb6a, #43a048);
   color: wheat;
+=======
+  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
+  color: rgba(255, 255, 255, 0.8);
+>>>>>>> 57b0d50 (updated styles)
   border-radius: 15px;
   z-index: 1;
   transition: .3s all ease-out;
@@ -535,8 +510,8 @@ html body a {
 }
 
 .navigation nav .nav-icons .profile-settings .settings .logout:hover, .navigation nav .nav-icons .profile-settings .settings .profile:hover {
-  background-color: white;
-  color: #0d530d;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings:hover .settings {
@@ -554,7 +529,7 @@ html body a {
 }
 
 .main-panel .cards .card {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   position: relative;
   padding: 15px;
   border-radius: 15px;
@@ -621,7 +596,7 @@ html body a {
 }
 
 .main-panel .cards .card hr {
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(153, 153, 153, 0.6);
   width: 100%;
 }
 
@@ -655,6 +630,10 @@ html body a {
 .main-panel .task-manager {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: white;
 }
 
 .main-panel .task-manager .all-filters {
@@ -662,9 +641,12 @@ html body a {
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg, #26c5da, #00abc1);
-  border-radius: 15px;
-  color: white;
-  box-shadow: 0 12px 20px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  left: 30px;
 }
 
 .main-panel .task-manager .filters {
@@ -673,48 +655,42 @@ html body a {
 }
 
 .main-panel .task-manager .filters h3 {
-  margin-right: 15px;
   padding: 15px;
 }
 
-.main-panel .task-manager .filters .filter {
-  margin-right: 15px;
+.main-panel .task-manager .filters a .filter {
   padding: 15px;
   border-radius: 15px;
+  color: rgba(255, 255, 255, 0.8);
   transition: .3s all ease-out;
 }
 
-.main-panel .task-manager .filters .filter:hover {
-  background-color: #00abc1;
-}
-
-.main-panel .task-manager .filters .filter:hover:hover a {
-  color: black;
-}
-
-.main-panel .task-manager .filters .filter a {
-  color: white;
-}
-
-.main-panel .task-manager .filters .filter a .yellow-color {
+.main-panel .task-manager .filters a .filter .yellow-color {
   color: #fb8a00;
   margin-right: 5px;
 }
 
-.main-panel .task-manager .filters .filter a .green-color {
+.main-panel .task-manager .filters a .filter .green-color {
   color: #43a048;
   margin-right: 5px;
 }
 
-.main-panel .task-manager .filters .filter a .red-color {
+.main-panel .task-manager .filters a .filter .red-color {
   color: #e53835;
   margin-right: 5px;
+}
+
+.main-panel .task-manager .filters a .filter:hover {
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .main-panel .task-manager .tasks {
   background: white;
   color: #999;
-  border-radius: 15px;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: 1px solid #6a6f8c;
 }
 
 .main-panel .task-manager .tasks .task {
@@ -740,7 +716,7 @@ html body a {
 }
 
 .main-panel .task-manager .tasks .task p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .main-panel .task-manager .tasks .task-btns {
@@ -754,9 +730,13 @@ html body a {
   transition: .3s all ease-out;
 }
 
+.main-panel .task-manager .tasks .task-btns div i {
+  transition: .3s all ease-out;
+}
+
 .main-panel .task-manager .tasks .task-btns div:hover {
   background-color: #423b3b;
-  color: white;
+  color: wheat;
 }
 
 footer {
@@ -779,12 +759,14 @@ footer .info-about-me {
 }
 
 footer .info-about-me .social-links {
-  padding: 5px 10px;
   border-radius: 15px;
   transition: .3s all ease-out;
 }
 
 footer .info-about-me .social-links a {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
   color: white;
   font-size: 14px;
   transition: .3s all ease-out;
@@ -792,6 +774,7 @@ footer .info-about-me .social-links a {
 
 footer .info-about-me .social-links a i {
   margin-right: 5px;
+  margin-bottom: 2px;
 }
 
 footer .info-about-me .social-links:hover {
@@ -805,6 +788,12 @@ footer .info-about-me .social-links:hover a {
 footer .copyrights {
   margin-right: 20px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+footer .copyrights p {
+  margin-right: 5px;
 }
 
 .dashboard {
@@ -835,27 +824,34 @@ footer .copyrights {
   width: 100%;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .menu .logo img {
   width: 50%;
 }
 
-.menu .menu-selections {
-  display: inline-block;
+.menu .menu-selections .menu-groups {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  transition: .3s all ease-out;
 }
 
-.menu .menu-selections .menu-groups {
+.menu .menu-selections .menu-groups a {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 15px;
-  border-radius: 15px;
   transition: .3s all ease-out;
 }
 
 .menu .menu-selections .menu-groups:hover {
   background-color: rgba(200, 200, 200, 0.2);
+  color: wheat;
+}
+
+.menu .menu-selections .menu-groups:hover a {
   color: wheat;
 }
 
@@ -872,9 +868,15 @@ footer .copyrights {
 }
 
 .navigation {
+<<<<<<< HEAD
   background: linear-gradient(45deg, #66bb6a, #43a048);
   box-shadow: 0 12px 20px -10px #00abc19a;
   color: wheat;
+=======
+  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
+  box-shadow: 0 0 25px 15px #00abc19a;
+  color: rgba(255, 255, 255, 0.8);
+>>>>>>> 57b0d50 (updated styles)
 }
 
 .navigation nav {
@@ -882,8 +884,6 @@ footer .copyrights {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navigation nav .name-of-selection {
@@ -901,13 +901,12 @@ footer .copyrights {
   font-size: 1rem;
   padding: 15px;
   border-radius: 15px;
-  cursor: pointer;
   transition: .3s all ease-out;
 }
 
 .navigation nav .nav-icons .main-nav-icons i:hover {
-  background-color: white;
-  color: #0d530d;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings {
@@ -918,21 +917,25 @@ footer .copyrights {
   font-size: 1rem;
   padding: 15px;
   border-radius: 15px;
-  cursor: pointer;
   transition: .3s all ease-out;
 }
 
 .navigation nav .nav-icons .profile-settings .person-icon i:hover {
-  background-color: white;
-  color: #0d530d;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings .settings {
   display: none;
   position: absolute;
   right: 0;
+<<<<<<< HEAD
   background: linear-gradient(45deg, #66bb6a, #43a048);
   color: wheat;
+=======
+  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
+  color: rgba(255, 255, 255, 0.8);
+>>>>>>> 57b0d50 (updated styles)
   border-radius: 15px;
   z-index: 1;
   transition: .3s all ease-out;
@@ -953,8 +956,8 @@ footer .copyrights {
 }
 
 .navigation nav .nav-icons .profile-settings .settings .logout:hover, .navigation nav .nav-icons .profile-settings .settings .profile:hover {
-  background-color: white;
-  color: #0d530d;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings:hover .settings {
@@ -972,7 +975,7 @@ footer .copyrights {
 }
 
 .main-panel .cards .card {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   position: relative;
   padding: 15px;
   border-radius: 15px;
@@ -1039,7 +1042,7 @@ footer .copyrights {
 }
 
 .main-panel .cards .card hr {
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(153, 153, 153, 0.6);
   width: 100%;
 }
 
@@ -1073,6 +1076,10 @@ footer .copyrights {
 .main-panel .task-manager {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: white;
 }
 
 .main-panel .task-manager .all-filters {
@@ -1080,9 +1087,12 @@ footer .copyrights {
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg, #26c5da, #00abc1);
-  border-radius: 15px;
-  color: white;
-  box-shadow: 0 12px 20px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  left: 30px;
 }
 
 .main-panel .task-manager .filters {
@@ -1091,48 +1101,42 @@ footer .copyrights {
 }
 
 .main-panel .task-manager .filters h3 {
-  margin-right: 15px;
   padding: 15px;
 }
 
-.main-panel .task-manager .filters .filter {
-  margin-right: 15px;
+.main-panel .task-manager .filters a .filter {
   padding: 15px;
   border-radius: 15px;
+  color: rgba(255, 255, 255, 0.8);
   transition: .3s all ease-out;
 }
 
-.main-panel .task-manager .filters .filter:hover {
-  background-color: #00abc1;
-}
-
-.main-panel .task-manager .filters .filter:hover:hover a {
-  color: black;
-}
-
-.main-panel .task-manager .filters .filter a {
-  color: white;
-}
-
-.main-panel .task-manager .filters .filter a .yellow-color {
+.main-panel .task-manager .filters a .filter .yellow-color {
   color: #fb8a00;
   margin-right: 5px;
 }
 
-.main-panel .task-manager .filters .filter a .green-color {
+.main-panel .task-manager .filters a .filter .green-color {
   color: #43a048;
   margin-right: 5px;
 }
 
-.main-panel .task-manager .filters .filter a .red-color {
+.main-panel .task-manager .filters a .filter .red-color {
   color: #e53835;
   margin-right: 5px;
+}
+
+.main-panel .task-manager .filters a .filter:hover {
+  background-color: rgba(200, 200, 200, 0.9);
+  color: wheat;
 }
 
 .main-panel .task-manager .tasks {
   background: white;
   color: #999;
-  border-radius: 15px;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: 1px solid #6a6f8c;
 }
 
 .main-panel .task-manager .tasks .task {
@@ -1158,7 +1162,7 @@ footer .copyrights {
 }
 
 .main-panel .task-manager .tasks .task p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .main-panel .task-manager .tasks .task-btns {
@@ -1172,9 +1176,13 @@ footer .copyrights {
   transition: .3s all ease-out;
 }
 
+.main-panel .task-manager .tasks .task-btns div i {
+  transition: .3s all ease-out;
+}
+
 .main-panel .task-manager .tasks .task-btns div:hover {
   background-color: #423b3b;
-  color: white;
+  color: wheat;
 }
 
 footer {
@@ -1197,12 +1205,14 @@ footer .info-about-me {
 }
 
 footer .info-about-me .social-links {
-  padding: 5px 10px;
   border-radius: 15px;
   transition: .3s all ease-out;
 }
 
 footer .info-about-me .social-links a {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
   color: white;
   font-size: 14px;
   transition: .3s all ease-out;
@@ -1210,6 +1220,7 @@ footer .info-about-me .social-links a {
 
 footer .info-about-me .social-links a i {
   margin-right: 5px;
+  margin-bottom: 2px;
 }
 
 footer .info-about-me .social-links:hover {
@@ -1223,4 +1234,10 @@ footer .info-about-me .social-links:hover a {
 footer .copyrights {
   margin-right: 20px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+footer .copyrights p {
+  margin-right: 5px;
 }

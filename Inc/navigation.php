@@ -22,7 +22,7 @@
                     </div>
                     <div class="nav-icons">
                         <div class="main-nav-icons">
-                            <a href="/PHP/dashboard.php">
+                            <a href="/Main/dashboard.php">
                                 <i class="fa fa-cogs" aria-hidden="true"></i>
                             </a>
                             <a href="#">
@@ -34,7 +34,7 @@
                                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             </div>
                             <div class="settings">
-                                <a href="/PHP/profile.php">
+                                <a href="/Main/profile.php">
                                     <div class="profile">
                                         <i class="fa fa-address-card-o" aria-hidden="true"></i>
                                         <p>Profile</p>

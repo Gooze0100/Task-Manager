@@ -1,7 +1,7 @@
 // Login and Register form styles =================================================
 .forms {
-    background: url(/Images/background.jpg) no-repeat center;
-    background-color: $background-color;
+    background: url(../Images/background.jpg) no-repeat center;
+    background-color: blanchedalmond;
     color: $secondary-color;
     background-size: cover;
     position: fixed;
@@ -150,6 +150,7 @@
         & p {
             font-size: 18px;
             color: $primary-color;
+            cursor: pointer;
             transition: .3s all ease-out;
     
             &:hover {

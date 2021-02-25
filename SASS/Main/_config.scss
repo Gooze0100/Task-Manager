@@ -19,10 +19,10 @@ $aside-hover-back: hsla(0, 0, 78.4%, .2);
 $aside-hover-color: wheat;
 
 // Task Manager navigation variables ==============================
-$nav-back: linear-gradient(45deg, #66bb6a, #43a048);
-$nav-color: wheat;
-$nav-hover-back: white;
-$nav-hover-color: rgb(13, 83, 13);
+$nav-back: linear-gradient(45deg, #4caf4fa4, #43a048);
+$nav-color: rgba(255, 255, 255, .8);
+$nav-hover-back: hsla(0, 0, 78.4%, .2);
+$nav-hover-color: wheat;
 
 // Task Manager main section variables ==============================
 $cards-back: rgb(255, 255, 255);
@@ -41,7 +41,7 @@ $info-txt-color: #999;
 $task-manager-back: rgb(255, 255, 255);
 $tasks-filter-header-back: linear-gradient(45deg, #26c5da, #00abc1);
 $tasks-filter-header-color: rgba(255, 255, 255, .8);
-$tasks-filter-btn-back: hsla(0, 0, 78.4%, .9);
+$tasks-filter-btn-back: rgba(0, 0, 0, .6);
 $tasks-filter-btn-color: wheat;
 $task-back: rgb(255, 255, 255);
 $task-color: #999;

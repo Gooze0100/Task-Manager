@@ -134,5 +134,6 @@ require_once '../Inc/navigation.php';
 </section>
 
 <?php
+// Includes - Footer ========================================
 require_once '../Inc/footer.php';
 ?>

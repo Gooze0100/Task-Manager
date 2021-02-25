@@ -13,11 +13,6 @@ html body {
   font-family: "Ubuntu", nunito, sans-serif;
   line-height: 1.6;
   height: 100%;
-  background: url(/Images/main-back.jpg) no-repeat center;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-size: cover;
-  background-blend-mode: multiply;
-  color: #c8c8c8;
 }
 
 html body a {
@@ -196,7 +191,7 @@ html body a {
 
 .forms {
   background: url(../Images/background.jpg) no-repeat center;
-  background-color: rgba(40, 57, 101, 0.9);
+  background-color: blanchedalmond;
   color: #c8c8c8;
   background-size: cover;
   position: fixed;
@@ -328,11 +323,14 @@ html body a {
 }
 
 .forms .foot {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .forms .foot a {
   font-size: 18px;
+  color: #6a6f8c;
   transition: .3s all ease-out;
 }
 
@@ -342,8 +340,9 @@ html body a {
 
 .forms .foot p {
   font-size: 18px;
-  transition: .3s all ease-out;
   color: #6a6f8c;
+  cursor: pointer;
+  transition: .3s all ease-out;
 }
 
 .forms .foot p:hover {
@@ -352,6 +351,12 @@ html body a {
 
 .dashboard {
   position: relative;
+  height: 100%;
+  background: url(../Images/main-back.jpg) no-repeat center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #c8c8c8;
 }
 
 .dashboard .all-sections {
@@ -422,15 +427,9 @@ html body a {
 }
 
 .navigation {
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #66bb6a, #43a048);
-  box-shadow: 0 12px 20px -10px #00abc19a;
-  color: wheat;
-=======
-  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
+  background: linear-gradient(45deg, #4caf4fa4, #43a048);
   box-shadow: 0 0 25px 15px #00abc19a;
   color: rgba(255, 255, 255, 0.8);
->>>>>>> 57b0d50 (updated styles)
 }
 
 .navigation nav {
@@ -459,7 +458,7 @@ html body a {
 }
 
 .navigation nav .nav-icons .main-nav-icons i:hover {
-  background-color: rgba(200, 200, 200, 0.9);
+  background-color: rgba(200, 200, 200, 0.2);
   color: wheat;
 }
 
@@ -475,21 +474,17 @@ html body a {
 }
 
 .navigation nav .nav-icons .profile-settings .person-icon i:hover {
-  background-color: rgba(200, 200, 200, 0.9);
+  background-color: rgba(200, 200, 200, 0.2);
   color: wheat;
 }
 
 .navigation nav .nav-icons .profile-settings .settings {
   display: none;
   position: absolute;
+  padding: 8px;
   right: 0;
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #66bb6a, #43a048);
-  color: wheat;
-=======
-  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
+  background: linear-gradient(45deg, #4caf4fa4, #43a048);
   color: rgba(255, 255, 255, 0.8);
->>>>>>> 57b0d50 (updated styles)
   border-radius: 15px;
   z-index: 1;
   transition: .3s all ease-out;
@@ -510,7 +505,7 @@ html body a {
 }
 
 .navigation nav .nav-icons .profile-settings .settings .logout:hover, .navigation nav .nav-icons .profile-settings .settings .profile:hover {
-  background-color: rgba(200, 200, 200, 0.9);
+  background-color: rgba(200, 200, 200, 0.2);
   color: wheat;
 }
 
@@ -681,453 +676,7 @@ html body a {
 }
 
 .main-panel .task-manager .filters a .filter:hover {
-  background-color: rgba(200, 200, 200, 0.9);
-  color: wheat;
-}
-
-.main-panel .task-manager .tasks {
-  background: white;
-  color: #999;
-  margin: 0 auto;
-  width: 95%;
-  border-bottom: 1px solid #6a6f8c;
-}
-
-.main-panel .task-manager .tasks .task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-}
-
-.main-panel .task-manager .tasks .task div {
-  display: flex;
-  align-items: center;
-}
-
-.main-panel .task-manager .tasks .task div input {
-  margin-right: 20px;
-  margin-left: 25px;
-}
-
-.main-panel .task-manager .tasks .task input {
-  width: 18px;
-  height: 18px;
-}
-
-.main-panel .task-manager .tasks .task p {
-  font-size: 16px;
-}
-
-.main-panel .task-manager .tasks .task-btns {
-  font-size: 20px;
-}
-
-.main-panel .task-manager .tasks .task-btns div {
-  padding: 15px;
-  margin-right: 25px;
-  border-radius: 15px;
-  transition: .3s all ease-out;
-}
-
-.main-panel .task-manager .tasks .task-btns div i {
-  transition: .3s all ease-out;
-}
-
-.main-panel .task-manager .tasks .task-btns div:hover {
-  background-color: #423b3b;
-  color: wheat;
-}
-
-footer {
-  width: 88%;
-  position: fixed;
-  left: 12%;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(45deg, #ef5350, #e53835);
-  color: white;
-}
-
-footer .info-about-me {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 20px;
-}
-
-footer .info-about-me .social-links {
-  border-radius: 15px;
-  transition: .3s all ease-out;
-}
-
-footer .info-about-me .social-links a {
-  display: flex;
-  align-items: center;
-  padding: 5px 10px;
-  color: white;
-  font-size: 14px;
-  transition: .3s all ease-out;
-}
-
-footer .info-about-me .social-links a i {
-  margin-right: 5px;
-  margin-bottom: 2px;
-}
-
-footer .info-about-me .social-links:hover {
-  background: linear-gradient(20deg, #e82723ab, #e53835de);
-}
-
-footer .info-about-me .social-links:hover a {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-footer .copyrights {
-  margin-right: 20px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-}
-
-footer .copyrights p {
-  margin-right: 5px;
-}
-
-.dashboard {
-  position: relative;
-}
-
-.dashboard .all-sections {
-  display: flex;
-  position: relative;
-  height: 100%;
-}
-
-.dashboard .all-sections .navigation-tasks {
-  width: 88%;
-  position: relative;
-  left: 12%;
-}
-
-.menu {
-  width: 12%;
-  height: 100%;
-  position: fixed;
-  background-color: #4caf4fa4;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.menu .logo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-}
-
-.menu .logo img {
-  width: 50%;
-}
-
-.menu .menu-selections .menu-groups {
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  transition: .3s all ease-out;
-}
-
-.menu .menu-selections .menu-groups a {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-  transition: .3s all ease-out;
-}
-
-.menu .menu-selections .menu-groups:hover {
-  background-color: rgba(200, 200, 200, 0.2);
-  color: wheat;
-}
-
-.menu .menu-selections .menu-groups:hover a {
-  color: wheat;
-}
-
-.menu .menu-selections .menu-groups div i {
-  font-size: 20px;
-}
-
-.menu .menu-selections .menu-groups .center-block {
-  margin-left: 20px;
-}
-
-.menu .menu-selections .menu-groups .center-block p {
-  font-size: 18px;
-}
-
-.navigation {
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #66bb6a, #43a048);
-  box-shadow: 0 12px 20px -10px #00abc19a;
-  color: wheat;
-=======
-  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
-  box-shadow: 0 0 25px 15px #00abc19a;
-  color: rgba(255, 255, 255, 0.8);
->>>>>>> 57b0d50 (updated styles)
-}
-
-.navigation nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.navigation nav .name-of-selection {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.navigation nav .nav-icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.navigation nav .nav-icons .main-nav-icons i {
-  font-size: 1rem;
-  padding: 15px;
-  border-radius: 15px;
-  transition: .3s all ease-out;
-}
-
-.navigation nav .nav-icons .main-nav-icons i:hover {
-  background-color: rgba(200, 200, 200, 0.9);
-  color: wheat;
-}
-
-.navigation nav .nav-icons .profile-settings {
-  position: relative;
-}
-
-.navigation nav .nav-icons .profile-settings .person-icon i {
-  font-size: 1rem;
-  padding: 15px;
-  border-radius: 15px;
-  transition: .3s all ease-out;
-}
-
-.navigation nav .nav-icons .profile-settings .person-icon i:hover {
-  background-color: rgba(200, 200, 200, 0.9);
-  color: wheat;
-}
-
-.navigation nav .nav-icons .profile-settings .settings {
-  display: none;
-  position: absolute;
-  right: 0;
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #66bb6a, #43a048);
-  color: wheat;
-=======
-  background: linear-gradient(45deg, #66bb6aa1, #43a048de);
-  color: rgba(255, 255, 255, 0.8);
->>>>>>> 57b0d50 (updated styles)
-  border-radius: 15px;
-  z-index: 1;
-  transition: .3s all ease-out;
-}
-
-.navigation nav .nav-icons .profile-settings .settings .logout, .navigation nav .nav-icons .profile-settings .settings .profile {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 15px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  transition: .3s all ease-out;
-}
-
-.navigation nav .nav-icons .profile-settings .settings .logout i, .navigation nav .nav-icons .profile-settings .settings .profile i {
-  margin-right: 10px;
-}
-
-.navigation nav .nav-icons .profile-settings .settings .logout:hover, .navigation nav .nav-icons .profile-settings .settings .profile:hover {
-  background-color: rgba(200, 200, 200, 0.9);
-  color: wheat;
-}
-
-.navigation nav .nav-icons .profile-settings:hover .settings {
-  display: block;
-}
-
-.main-panel {
-  padding: 20px;
-}
-
-.main-panel .cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-panel .cards .card {
-  background-color: white;
-  position: relative;
-  padding: 15px;
-  border-radius: 15px;
-  width: 100%;
-  margin: 15px;
-}
-
-.main-panel .cards .card .icons {
-  position: absolute;
-  padding: 25px 35px;
-  top: -20px;
-  left: 20px;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-
-.main-panel .cards .card .icons i {
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.main-panel .cards .card .i-1 {
-  background: linear-gradient(45deg, #66bb6a, #43a048);
-}
-
-.main-panel .cards .card .i-2 {
-  background: linear-gradient(45deg, #ffa826, #fb8a00);
-}
-
-.main-panel .cards .card .i-3 {
-  background: linear-gradient(45deg, #ef5350, #e53835);
-}
-
-.main-panel .cards .card .i-4 {
-  background: linear-gradient(45deg, #26c5da, #00abc1);
-}
-
-.main-panel .cards .card .txt-for-card {
-  text-align: right;
-  margin-bottom: 10px;
-}
-
-.main-panel .cards .card .txt-for-card p {
-  font-size: 14px;
-  color: #999;
-  font-weight: 400;
-}
-
-.main-panel .cards .card .txt-for-card h3 {
-  color: #999;
-  font-size: 28px;
-}
-
-.main-panel .cards .card .txt-for-card .weathers {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.main-panel .cards .card .txt-for-card .weathers h3 {
-  color: #999;
-  font-size: 28px;
-  margin-right: 10px;
-}
-
-.main-panel .cards .card hr {
-  border: 1px solid rgba(153, 153, 153, 0.6);
-  width: 100%;
-}
-
-.main-panel .cards .card .note {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  margin-left: 5px;
-}
-
-.main-panel .cards .card .note i {
-  margin-right: 5px;
-}
-
-.main-panel .cards .card .note .green-color {
-  color: #43a048;
-}
-
-.main-panel .cards .card .note .red-color {
-  color: #e53835;
-}
-
-.main-panel .cards .card .note .blue-color {
-  color: #00abc1;
-}
-
-.main-panel .cards .card .note p {
-  color: #999;
-}
-
-.main-panel .task-manager {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding: 40px 20px;
-  border-radius: 20px;
-  background: white;
-}
-
-.main-panel .task-manager .all-filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(45deg, #26c5da, #00abc1);
-  border-radius: 10px;
-  color: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: -30px;
-  right: 30px;
-  left: 30px;
-}
-
-.main-panel .task-manager .filters {
-  display: flex;
-  align-items: center;
-}
-
-.main-panel .task-manager .filters h3 {
-  padding: 15px;
-}
-
-.main-panel .task-manager .filters a .filter {
-  padding: 15px;
-  border-radius: 15px;
-  color: rgba(255, 255, 255, 0.8);
-  transition: .3s all ease-out;
-}
-
-.main-panel .task-manager .filters a .filter .yellow-color {
-  color: #fb8a00;
-  margin-right: 5px;
-}
-
-.main-panel .task-manager .filters a .filter .green-color {
-  color: #43a048;
-  margin-right: 5px;
-}
-
-.main-panel .task-manager .filters a .filter .red-color {
-  color: #e53835;
-  margin-right: 5px;
-}
-
-.main-panel .task-manager .filters a .filter:hover {
-  background-color: rgba(200, 200, 200, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   color: wheat;
 }
 

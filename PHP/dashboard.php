@@ -2,10 +2,10 @@
 // Title ========================================
 $title = 'Dashboard';
 // Includes ========================================
-require_once '../Inc/head.php';
-require_once '../Inc/main.php';
-require_once '../Inc/sidebar.php';
-require_once '../Inc/navigation.php';
+require_once './Inc/head.php';
+require_once './Inc/main.php';
+require_once './Inc/sidebar.php';
+require_once './Inc/navigation.php';
 ?>
 <!-- Main Panel ===================================================================== -->
 <section class="main-panel">
@@ -135,5 +135,5 @@ require_once '../Inc/navigation.php';
 
 <?php
 // Includes - Footer ========================================
-require_once '../Inc/footer.php';
+require_once './Inc/footer.php';
 ?>

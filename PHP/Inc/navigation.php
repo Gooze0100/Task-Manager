@@ -22,7 +22,7 @@
                     </div>
                     <div class="nav-icons">
                         <div class="main-nav-icons">
-                            <a href="../Main/dashboard.php">
+                            <a href="./dashboard.php">
                                 <i class="fa fa-cogs" aria-hidden="true"></i>
                             </a>
                             <a href="#">
@@ -34,13 +34,13 @@
                                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             </div>
                             <div class="settings">
-                                <a href="../Main/profile.php">
+                                <a href="./profile.php">
                                     <div class="profile">
                                         <i class="fa fa-address-card-o" aria-hidden="true"></i>
                                         <p>Profile</p>
                                     </div>
                                 </a>
-                                <a href="../Login/login.php">
+                                <a href="./login.php">
                                     <div class="logout">
                                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                                         <p>Logout</p>

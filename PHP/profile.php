@@ -7,6 +7,7 @@ require_once './Inc/main.php';
 require_once './Inc/sidebar.php';
 require_once './Inc/navigation.php';
 ?>
+
 <!-- Main Panel ===================================================================== -->
 <main class="profile-all">
     <article class="avatar-theme">
@@ -114,7 +115,6 @@ require_once './Inc/navigation.php';
         </form>
     </section>
 </main>
-
 
 <?php
 // Includes - Footer ========================================

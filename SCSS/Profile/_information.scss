@@ -1,0 +1,47 @@
+// Variables ===========================================================
+
+
+// Information ===========================================================
+.information {
+    width: 50%;
+
+    .information-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .form-group {
+            position: relative;
+            margin-bottom: 10px;
+
+            label {
+                position: absolute;
+                top: 20%;
+                left: 5%;
+                transition: .3s all ease-in;
+            }
+
+            input {
+                padding: 20px 18px 5px 10px;
+                outline: none;
+                border-radius: 10px;
+                background-color: salmon;
+                color: lightslategray;
+                width: 100%;
+                transition: .2s all ease-in;
+
+                &:focus {
+                   background-color: rgb(254, 254, 255);
+                }
+            }
+
+            // Makes changes when input active
+            &:focus-within label, &:focus-visible label, &:focus label {
+                top: 6%;
+                left: 6%;
+                font-size: 12px;
+            }
+        }
+    }
+}

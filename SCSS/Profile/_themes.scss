@@ -31,23 +31,10 @@ $bubles-img: '../Images/pexels-lumn-167699.jpg';
             overflow: hidden;
             border-radius: 10px;
 
-            // &::after {
-            //     content: 'Add Theme';
-            //     color: crimson;
-            //     z-index: 2;
-            //     opacity: 0;
-            //     visibility: hidden;
-
-            //     &:hover {
-            //         visibility: visible;
-            //         opacity: 1;
-            //     }
-                
-            // }
-
             .theme {
                 height: 250px;
                 width: 150px;
+                cursor: pointer;
                 position: relative;
 
                 &::after {

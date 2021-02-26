@@ -815,6 +815,7 @@ footer .copyrights p {
 .themes .themes-background .overflow-change .theme {
   height: 250px;
   width: 150px;
+  cursor: pointer;
   position: relative;
 }
 
@@ -883,6 +884,49 @@ footer .copyrights p {
   transition: .3s all ease-in;
 }
 
+.information {
+  width: 50%;
+}
+
+.information .information-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information .information-form .form-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.information .information-form .form-group label {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  transition: .3s all ease-in;
+}
+
+.information .information-form .form-group input {
+  padding: 20px 18px 5px 10px;
+  outline: none;
+  border-radius: 10px;
+  background-color: salmon;
+  color: lightslategray;
+  width: 100%;
+  transition: .2s all ease-in;
+}
+
+.information .information-form .form-group input:focus {
+  background-color: #fefeff;
+}
+
+.information .information-form .form-group:focus-within label, .information .information-form .form-group:focus-visible label, .information .information-form .form-group:focus label {
+  top: 6%;
+  left: 6%;
+  font-size: 12px;
+}
+
 .profile-all {
   padding: 40px;
 }
@@ -909,10 +953,21 @@ footer .copyrights p {
   padding: 20px;
 }
 
+.profile-all .avatar-theme .avatars .avatars-img .avatar-img {
+  background: lightcyan;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s all ease-out;
+}
+
 .profile-all .avatar-theme .avatars .avatars-img .avatar-img img {
   vertical-align: middle;
   width: 80px;
   height: 80px;
+}
+
+.profile-all .avatar-theme .avatars .avatars-img .avatar-img:hover {
+  transform: translateY(-10px);
 }
 
 .person-titles {

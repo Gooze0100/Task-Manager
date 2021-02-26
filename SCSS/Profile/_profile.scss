@@ -24,16 +24,23 @@
                 padding: 20px;
                 
                 .avatar-img {
+                    background: lightcyan;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: .2s all ease-out;
                     
                     & img {
                         vertical-align: middle;
                         width: 80px;
                         height: 80px;
                     }
+
+                    &:hover {
+                        transform: translateY(-10px);
+
+                    }
                 }
             }
-
-
         }
     }
 }

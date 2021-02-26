@@ -11,52 +11,64 @@ require_once './Inc/navigation.php';
 <main class="profile-all">
     <article class="avatar-theme">
         <section class="avatars">
-            <div class="avatars-title">
-                <h3>Avatar</h3>
+            <div class="person-titles">
+                <h3>Avatars</h3>
             </div>
             <div class="avatars-img">
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/avatar-1295831_1920.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/avatar-1300582_1280.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/witch-155291.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/avatar-1300583.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/amazed-1295833.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/avatar-1295575.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/avatar-1295573.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="avatar-img">
-                    <img src="#" alt="">
+                <div class="avatar-img mx-1">
+                    <img src="../Images/anthropomorphized-animals-1295774.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
             </div>
         </section>
         <section class="themes">
-            <div class="themes-title">
-                <h3>Theme</h3>
+            <div class="person-titles">
+                <h3>Themes</h3>
             </div>
             <div class="themes-background">
-                <div class="theme mountain"></div>
-                <div class="theme forest"></div>
-                <div class="theme building"></div>
-                <div class="theme flowers"></div>
-                <div class="theme abstract"></div>
-                <div class="theme bubles"></div>
+                <div class="overflow-change">
+                    <div class="theme mountain"></div>
+                </div>
+                <div class="overflow-change">
+                    <div class="theme forest"></div>
+                </div>
+                <div class="overflow-change">
+                    <div class="theme building"></div>
+                </div>
+                <div class="overflow-change">
+                    <div class="theme flowers"></div>
+                </div>
+                <div class="overflow-change">
+                    <div class="theme abstract"></div>
+                </div>
+                <div class="overflow-change">
+                    <div class="theme bubles"></div>
+                </div>
             </div>
         </section>
     </article>
     <section class="information">
-        <div class="your-info">
+        <div class="person-titles">
             <h3>Your Information</h3>
         </div>
         <form action="#">

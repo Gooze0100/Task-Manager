@@ -9,7 +9,7 @@ require_once './Inc/navigation.php';
 ?>
 <!-- Main Panel ===================================================================== -->
 <section class="main-panel">
-    <article class="cards m-4">
+    <article class="cards m-3">
         <div class="card">
             <div class="icons-txt">
                 <div class="icons i-1">

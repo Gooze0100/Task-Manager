@@ -1,2 +1,44 @@
+@import './themes';
+@import './information';
+
 // Profile styles =================================================
 
+.profile-all {
+    padding: 40px;
+
+    .avatar-theme {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        flex-wrap: wrap;
+
+        .avatars {
+            width: 32%;
+
+            .avatars-img {
+                @include flex-c;
+                flex-wrap: wrap;
+                width: 100%;
+                background: white;
+                border-radius: 10px;
+                padding: 20px;
+                
+                .avatar-img {
+                    
+                    & img {
+                        vertical-align: middle;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.person-titles {
+    color: blanchedalmond;
+    margin: 20px 0;
+}

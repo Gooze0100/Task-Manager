@@ -4,7 +4,7 @@
     position: relative;
     height: 100%;
     background: url(../Images/main-back.jpg) no-repeat center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     background-size: cover;
     background-blend-mode: multiply;
     color: $secondary-color;
@@ -12,7 +12,6 @@
     .all-sections {
         display: flex;
         position: relative;
-        height: 100%;
     
         .navigation-tasks {
             width: 88%;

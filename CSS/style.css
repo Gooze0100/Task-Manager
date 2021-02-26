@@ -13,6 +13,7 @@ html body {
   font-family: "Ubuntu", nunito, sans-serif;
   line-height: 1.6;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 html body a {
@@ -353,7 +354,7 @@ html body a {
   position: relative;
   height: 100%;
   background: url(../Images/main-back.jpg) no-repeat center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-blend-mode: multiply;
   color: #c8c8c8;
@@ -362,7 +363,6 @@ html body a {
 .dashboard .all-sections {
   display: flex;
   position: relative;
-  height: 100%;
 }
 
 .dashboard .all-sections .navigation-tasks {
@@ -514,7 +514,7 @@ html body a {
 }
 
 .main-panel {
-  padding: 20px;
+  padding: 40px;
 }
 
 .main-panel .cards {
@@ -789,4 +789,133 @@ footer .copyrights {
 
 footer .copyrights p {
   margin-right: 5px;
+}
+
+.themes {
+  width: 61%;
+}
+
+.themes .themes-background {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.themes .themes-background .overflow-change {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.themes .themes-background .overflow-change .theme {
+  height: 250px;
+  width: 150px;
+  position: relative;
+}
+
+.themes .themes-background .overflow-change .theme::after {
+  content: 'Theme';
+  color: crimson;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: 600;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease-in;
+}
+
+.themes .themes-background .overflow-change .theme:hover {
+  transform: scale(1.2);
+}
+
+.themes .themes-background .overflow-change .theme:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.themes .themes-background .overflow-change .mountain {
+  background: rgba(0, 0, 0, 0.301) url("../Images/pexels-kelsey-johnson-2331575.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: .3s all ease-in;
+}
+
+.themes .themes-background .overflow-change .forest {
+  background: rgba(0, 0, 0, 0.452) url("../Images/pexels-arthouse-studio-4534200.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: .3s all ease-in;
+}
+
+.themes .themes-background .overflow-change .building {
+  background: rgba(0, 0, 0, 0.322) url("../Images/pexels-sanaan-mazhar-3075993.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: .3s all ease-in;
+}
+
+.themes .themes-background .overflow-change .flowers {
+  background: rgba(0, 0, 0, 0.233) url("../Images/pexels-irina-iriser-1408221.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: .3s all ease-in;
+}
+
+.themes .themes-background .overflow-change .abstract {
+  background: rgba(0, 0, 0, 0.322) url("../Images/pexels-davide-baraldi-5088435.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: .3s all ease-in;
+}
+
+.themes .themes-background .overflow-change .bubles {
+  background: rgba(0, 0, 0, 0.322) url("../Images/pexels-lumn-167699.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: .3s all ease-in;
+}
+
+.profile-all {
+  padding: 40px;
+}
+
+.profile-all .avatar-theme {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.profile-all .avatar-theme .avatars {
+  width: 32%;
+}
+
+.profile-all .avatar-theme .avatars .avatars-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profile-all .avatar-theme .avatars .avatars-img .avatar-img img {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+}
+
+.person-titles {
+  color: blanchedalmond;
+  margin: 20px 0;
 }

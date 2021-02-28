@@ -1,1 +1,47 @@
+// Variables
+$btn-primary-color: white;
+$btn-primary-background-color: #1161ee;
+$btn-primary-hover-background-color: midnightblue;
+$btn-primary-hover-color: #999;
+
+$btn-secondary-color: white;
+$btn-secondary-background-color: crimson;
+$btn-secondary-hover-background-color: rgb(104, 104, 104);
+$btn-secondary-hover-color: whitesmoke;
+
 // Used for buttons =================================================
+%btn {
+    display: block;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: .3s all ease-in;
+
+    &:hover {
+        transform: scale(.98);
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    color: $btn-primary-color;
+    background-color: $btn-primary-background-color;
+
+    &:hover {
+        background-color: $btn-primary-hover-background-color;
+        color: $btn-primary-hover-color;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-background-color;
+
+    &:hover {
+        background-color: $btn-secondary-hover-background-color;
+        color: $btn-secondary-hover-color;
+    }
+}

@@ -1,0 +1,40 @@
+// Variables ===========================================================
+$avatar-back: rgba(245, 245, 245, .6);
+$avatar-box-shadow-color: whitesmoke;
+
+// Avatar ===========================================================
+.avatar-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .avatars {
+        width: 50%;
+
+        .avatars-img {
+            @include flex-c;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+            
+            .avatar-img {
+                background-color: $avatar-back;
+                box-shadow: 0 0 15px 5px $avatar-box-shadow-color;
+                cursor: pointer;
+                transition: .2s all ease-out;
+                
+                & img {
+                    vertical-align: middle;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}

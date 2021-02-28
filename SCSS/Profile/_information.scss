@@ -1,5 +1,11 @@
 // Variables ===========================================================
-
+$label-color: whitesmoke;
+$input-color: white;
+$input-background-color: rgb(36, 36, 36);
+$input-background-hover-color: rgba(94, 94, 94, 0.5);
+$information-form-background-color: rgba(34, 34, 34, 0.3);
+$information-form-box-shadow-color: whitesmoke;
+$input-box-shadow-color: whitesmoke;
 
 // Information ===========================================================
 .information {
@@ -8,8 +14,12 @@
     .information-form {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $information-form-background-color;
+        box-shadow: 0 0 15px 5px $information-form-box-shadow-color;
 
         .form-group {
             position: relative;
@@ -17,31 +27,37 @@
 
             label {
                 position: absolute;
-                top: 20%;
-                left: 5%;
-                transition: .3s all ease-in;
+                top: 25%;
+                left: 8%;
+                color: $label-color;
+                transition: .2s all ease-in;
             }
 
             input {
-                padding: 20px 18px 5px 10px;
+                padding: 25px 18px 10px 15px;
                 outline: none;
-                border-radius: 10px;
-                background-color: salmon;
-                color: lightslategray;
+                border: none;
+                border-radius: 25px;
+                background-color: $input-background-color;
+                color: $input-color;
                 width: 100%;
-                transition: .2s all ease-in;
+                box-shadow: 0 0 15px 5px $input-box-shadow-color;
+                transition: .3s all ease-in;
 
-                &:focus {
-                   background-color: rgb(254, 254, 255);
+                &:active, &:focus, &:hover {
+                    background-color: $input-background-hover-color;
                 }
             }
 
-            // Makes changes when input active
-            &:focus-within label, &:focus-visible label, &:focus label {
-                top: 6%;
-                left: 6%;
+            &:focus-within label, &:focus-visible label {
                 font-size: 12px;
+                top: 6%;
+                left: 8%;
             }
+        }
+
+        .information-btn {
+            width: 100%;
         }
     }
 }

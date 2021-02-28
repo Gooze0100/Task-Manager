@@ -7,10 +7,59 @@ require_once './Inc/main.php';
 require_once './Inc/sidebar.php';
 require_once './Inc/navigation.php';
 ?>
-
 <!-- Main Panel ===================================================================== -->
-<main class="profile-all">
-    <article class="avatar-theme">
+<section class="profile-all">
+    <article class="avatar-information">
+        <section class="information">
+            <div class="person-titles">
+                <h3>Your Information</h3>
+            </div>
+            <form action="#" class="information-form">
+                <div class="form-group">
+                    <label for="fName" id="labelFname">First Name</label>
+                    <input type="text" id="fName">
+                </div>
+                <div class="form-group">
+                    <label for="lName" id="labelLastName">Last Name</label>
+                    <input type="text" id="lName">
+                </div>
+                <div class="form-group">
+                    <label for="username" id="labelUsername">User Name</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="pEmail" id="labelEmail">Email Address</label>
+                    <input type="email" id="pEmail">
+                </div>
+                <div class="form-group">
+                    <label for="pAddress" id="labeAddress">Address</label>
+                    <input type="text" id="pAddress">
+                </div>
+                <div class="form-group">
+                    <label for="country" id="labelCountry">Country</label>
+                    <input type="text" id="country">
+                </div>
+                <div class="form-group">
+                    <label for="city" id="labelCity">First City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="form-group">
+                    <label for="city2" id="labelCity2">Second City</label>
+                    <input type="text" id="city2">
+                </div>
+                <div class="form-group">
+                    <label for="changePassword" id="labelChangePassword">Change Password</label>
+                    <input type="password" id="changePassword">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" id="labelRepeatPassword">Repeat Password</label>
+                    <input type="password" id="confirmPassword">
+                </div>
+                <div class="information-btn">
+                    <button type="submit" class="btn-primary">Update profile</button>
+                </div>
+            </form>
+        </section>
         <section class="avatars">
             <div class="person-titles">
                 <h3>Avatars</h3>
@@ -40,82 +89,47 @@ require_once './Inc/navigation.php';
                 <div class="avatar-img m-1">
                     <img src="../Images/anthropomorphized-animals-1295774.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-            </div>
-        </section>
-        <section class="themes">
-            <div class="person-titles">
-                <h3>Themes</h3>
-            </div>
-            <div class="themes-background">
-                <div class="overflow-change">
-                    <div class="theme mountain"></div>
+                <div class="avatar-img m-1">
+                    <img src="../Images/amazed-1295833.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="overflow-change">
-                    <div class="theme forest"></div>
+                <div class="avatar-img m-1">
+                    <img src="../Images/avatar-1295575.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="overflow-change">
-                    <div class="theme building"></div>
+                <div class="avatar-img m-1">
+                    <img src="../Images/avatar-1295573.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
-                <div class="overflow-change">
-                    <div class="theme flowers"></div>
-                </div>
-                <div class="overflow-change">
-                    <div class="theme abstract"></div>
-                </div>
-                <div class="overflow-change">
-                    <div class="theme bubles"></div>
+                <div class="avatar-img m-1">
+                    <img src="../Images/anthropomorphized-animals-1295774.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
             </div>
         </section>
     </article>
-    <section class="information">
+    <section class="themes">
         <div class="person-titles">
-            <h3>Your Information</h3>
+            <h3>Themes</h3>
         </div>
-        <form action="#" class="information-form">
-            <div class="form-group">
-                <label for="fName">Name</label>
-                <input type="text" id="fName">
+        <div class="themes-background">
+            <div class="overflow-change">
+                <div class="theme mountain"></div>
             </div>
-            <div class="form-group">
-                <label for="pEmail">Email</label>
-                <input type="email" id="pEmail">
+            <div class="overflow-change">
+                <div class="theme forest"></div>
             </div>
-            <div class="form-group">
-                <label for="lName">Last Name</label>
-                <input type="text" id="lName">
+            <div class="overflow-change">
+                <div class="theme building"></div>
             </div>
-            <div class="form-group">
-                <label for="country">Country</label>
-                <input type="text" id="country">
+            <div class="overflow-change">
+                <div class="theme flowers"></div>
             </div>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username">
+            <div class="overflow-change">
+                <div class="theme abstract"></div>
             </div>
-            <div class="form-group">
-                <label for="city">City</label>
-                <input type="text" id="city">
+            <div class="overflow-change">
+                <div class="theme bubles"></div>
             </div>
-            <div class="form-group">
-                <!-- <label for="birthday">Birthday</label> -->
-                <input type="date" id="birthday">
-            </div>
-            <div class="form-group">
-                <label for="changePassword">Change Password</label>
-                <input type="password" id="changePassword">
-            </div>
-            <div class="form-group">
-                <label for="confirmPassword">Repeat Password</label>
-                <input type="password" id="confirmPassword">
-            </div>
-            <div class="form-group">
-                <button type="submit">Update profile</button>
-            </div>
-        </form>
+        </div>
     </section>
-</main>
-
+</section>
 <?php
 // Includes - Footer ========================================
 require_once './Inc/footer.php';

@@ -25,7 +25,7 @@ require_once './Inc/head.php';
                     <label for="check" class="check">Keep me Signed in</label>
                 </div>
                 <div class="group">
-                    <button type="submit" name="sign" value="in" class="sign-btn">
+                    <button type="submit" name="sign" value="in" class="btn-primary">
                         Sign in
                     </button>
                 </div>
@@ -54,7 +54,7 @@ require_once './Inc/head.php';
                     <input type="email" id="email" class="sign-inputs" autocomplete="off" />
                 </div>
                 <div class="group">
-                    <button type="submit" name="sign" value="up" class="sign-btn">
+                    <button type="submit" name="sign" value="up" class="btn-primary">
                         Sign up
                     </button>
                 </div>

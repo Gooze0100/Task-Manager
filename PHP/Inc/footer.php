@@ -1,5 +1,6 @@
 </section>
 </section>
+</section>
 <!-- Footer ===================================================================== -->
 <footer>
     <div class="info-about-me">
@@ -15,7 +16,6 @@
         &copy; Giedrius Kalnius
     </div>
 </footer>
-</main>
 </body>
 
 </html>

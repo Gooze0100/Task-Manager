@@ -12,9 +12,13 @@ $abstract-img: '../Images/pexels-davide-baraldi-5088435.jpg';
 $bubles-back: rgba(0, 0, 0, 0.322);
 $bubles-img: '../Images/pexels-lumn-167699.jpg';
 
+$shadow-color: rgba(245, 245, 245, 0.8);
+$text-shadow: crimson;
+$text-color: rgba(245, 245, 245, 0.8);
+
 // Themes ===========================================================
 .themes {
-    width: 61%;
+    width: 100%;
 
     .themes-background {
         display: flex;
@@ -23,13 +27,13 @@ $bubles-img: '../Images/pexels-lumn-167699.jpg';
         flex-wrap: wrap;
         width: 100%;
         position: relative;
-        background: white;
         border-radius: 10px;
         padding: 20px;
 
         .overflow-change {
             overflow: hidden;
             border-radius: 10px;
+            box-shadow: 0 0 15px 5px $shadow-color;
 
             .theme {
                 height: 250px;
@@ -39,7 +43,8 @@ $bubles-img: '../Images/pexels-lumn-167699.jpg';
 
                 &::after {
                     content: 'Theme';
-                    color: crimson;
+                    color: $text-color;
+                    text-shadow: 2px 2px $text-shadow;
                     position: absolute;
                     top: 50%;
                     left: 50%;

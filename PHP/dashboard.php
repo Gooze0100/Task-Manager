@@ -132,7 +132,6 @@ require_once './Inc/navigation.php';
         </div>
     </article>
 </section>
-
 <?php
 // Includes - Footer ========================================
 require_once './Inc/footer.php';

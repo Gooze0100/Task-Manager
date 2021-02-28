@@ -6,14 +6,21 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 html body {
   font-family: "Ubuntu", nunito, sans-serif;
   line-height: 1.6;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+}
+
+html body .backgrounds {
+  background: url(../Images/main-back.jpg) no-repeat center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
 }
 
 html body a {
@@ -181,6 +188,40 @@ html body a {
   padding-bottom: 4rem;
 }
 
+.btn-primary, .btn-secondary {
+  display: block;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  width: 100%;
+  text-transform: uppercase;
+  transition: .3s all ease-in;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  color: white;
+  background-color: #1161ee;
+}
+
+.btn-primary:hover {
+  background-color: midnightblue;
+  color: #999;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: crimson;
+}
+
+.btn-secondary:hover {
+  background-color: #686868;
+  color: whitesmoke;
+}
+
 @keyframes openClose {
   from {
     opacity: 0;
@@ -237,7 +278,7 @@ html body a {
 }
 
 .forms .sign-form .sign-titles .sign-in-title:hover {
-  color: #c8c8c8;
+  color: #c8c8c88f;
 }
 
 .forms .sign-form .sign-titles .sign-up-title {
@@ -245,7 +286,7 @@ html body a {
 }
 
 .forms .sign-form .sign-titles .sign-up-title:hover {
-  color: #c8c8c8;
+  color: #c8c8c88f;
 }
 
 .forms .sign-form .sign-in {
@@ -303,22 +344,6 @@ html body a {
   transition: .3s all ease-out;
 }
 
-.forms .group .sign-btn {
-  background-color: #1161ee;
-  border: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-  color: white;
-  width: 100%;
-  text-transform: uppercase;
-  transition: .3s all ease-in;
-}
-
-.forms .group .sign-btn:hover {
-  background-color: midnightblue;
-  color: #c8c8c8;
-}
-
 .forms hr {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -350,21 +375,6 @@ html body a {
   color: #c8c8c8;
 }
 
-.dashboard {
-  position: relative;
-  height: 100%;
-  background: url(../Images/main-back.jpg) no-repeat center;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  background-blend-mode: multiply;
-  color: #c8c8c8;
-}
-
-.dashboard .all-sections {
-  display: flex;
-  position: relative;
-}
-
 .dashboard .all-sections .navigation-tasks {
   width: 88%;
   position: relative;
@@ -373,7 +383,7 @@ html body a {
 
 .menu {
   width: 12%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   background-color: #4caf4fa4;
   color: rgba(255, 255, 255, 0.8);
@@ -791,8 +801,100 @@ footer .copyrights p {
   margin-right: 5px;
 }
 
+.avatar-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.avatar-information .avatars {
+  width: 50%;
+}
+
+.avatar-information .avatars .avatars-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.avatar-information .avatars .avatars-img .avatar-img {
+  background-color: rgba(245, 245, 245, 0.6);
+  box-shadow: 0 0 15px 5px whitesmoke;
+  cursor: pointer;
+  transition: .2s all ease-out;
+}
+
+.avatar-information .avatars .avatars-img .avatar-img img {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-information .avatars .avatars-img .avatar-img:hover {
+  transform: translateY(-10px);
+}
+
+.information {
+  width: 50%;
+}
+
+.information .information-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(34, 34, 34, 0.3);
+  box-shadow: 0 0 15px 5px whitesmoke;
+}
+
+.information .information-form .form-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.information .information-form .form-group label {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  color: whitesmoke;
+  transition: .2s all ease-in;
+}
+
+.information .information-form .form-group input {
+  padding: 25px 18px 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: #242424;
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 15px 5px whitesmoke;
+  transition: .3s all ease-in;
+}
+
+.information .information-form .form-group input:active, .information .information-form .form-group input:focus, .information .information-form .form-group input:hover {
+  background-color: rgba(94, 94, 94, 0.5);
+}
+
+.information .information-form .form-group:focus-within label, .information .information-form .form-group:focus-visible label {
+  font-size: 12px;
+  top: 6%;
+  left: 8%;
+}
+
+.information .information-form .information-btn {
+  width: 100%;
+}
+
 .themes {
-  width: 61%;
+  width: 100%;
 }
 
 .themes .themes-background {
@@ -802,7 +904,6 @@ footer .copyrights p {
   flex-wrap: wrap;
   width: 100%;
   position: relative;
-  background: white;
   border-radius: 10px;
   padding: 20px;
 }
@@ -810,6 +911,7 @@ footer .copyrights p {
 .themes .themes-background .overflow-change {
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 0 15px 5px rgba(245, 245, 245, 0.8);
 }
 
 .themes .themes-background .overflow-change .theme {
@@ -821,7 +923,8 @@ footer .copyrights p {
 
 .themes .themes-background .overflow-change .theme::after {
   content: 'Theme';
-  color: crimson;
+  color: rgba(245, 245, 245, 0.8);
+  text-shadow: 2px 2px crimson;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -884,93 +987,14 @@ footer .copyrights p {
   transition: .3s all ease-in;
 }
 
-.information {
-  width: 50%;
-}
-
-.information .information-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.information .information-form .form-group {
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.information .information-form .form-group label {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  transition: .3s all ease-in;
-}
-
-.information .information-form .form-group input {
-  padding: 20px 18px 5px 10px;
-  outline: none;
-  border-radius: 10px;
-  background-color: salmon;
-  color: lightslategray;
-  width: 100%;
-  transition: .2s all ease-in;
-}
-
-.information .information-form .form-group input:focus {
-  background-color: #fefeff;
-}
-
-.information .information-form .form-group:focus-within label, .information .information-form .form-group:focus-visible label, .information .information-form .form-group:focus label {
-  top: 6%;
-  left: 6%;
-  font-size: 12px;
-}
-
 .profile-all {
   padding: 40px;
-}
-
-.profile-all .avatar-theme {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-.profile-all .avatar-theme .avatars {
-  width: 32%;
-}
-
-.profile-all .avatar-theme .avatars .avatars-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.profile-all .avatar-theme .avatars .avatars-img .avatar-img {
-  background: lightcyan;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: .2s all ease-out;
-}
-
-.profile-all .avatar-theme .avatars .avatars-img .avatar-img img {
-  vertical-align: middle;
-  width: 80px;
-  height: 80px;
-}
-
-.profile-all .avatar-theme .avatars .avatars-img .avatar-img:hover {
-  transform: translateY(-10px);
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .person-titles {
-  color: blanchedalmond;
-  margin: 20px 0;
+  color: whitesmoke;
+  margin: 15px 0;
+  text-align: center;
 }

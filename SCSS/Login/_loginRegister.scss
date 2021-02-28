@@ -1,8 +1,21 @@
+// Variables =================================================
+$form-color: #c8c8c8;
+$sign-form-background: rgba(40, 57, 101, .9);
+$border-bottom-sign-title: #1161ee;
+$sign-title-hover-color: #c8c8c88f;
+$sign-label-color: #aaa;
+$sign-input-background-color: rgba(255, 255, 255, 0.1);
+$sign-input-background-hover-color: rgba(255, 255, 255, 0.25);
+$tick-color: rgba(255, 255, 255, .1);
+$tick-checked-color: white;
+$check-color: #6a6f8c;
+$hr-border-color: rgba(255, 255, 255, .2);
+
 // Login and Register form styles =================================================
 .forms {
     background: url(../Images/background.jpg) no-repeat center;
     background-color: blanchedalmond;
-    color: $secondary-color;
+    color: $form-color;
     background-size: cover;
     position: fixed;
     height: 100%;
@@ -12,7 +25,7 @@
     align-items: center;
 
     .sign-form {
-        background-color: $background-color;
+        background-color: $sign-form-background;
         border-radius: 40px;
         width: 25%;
         padding: 40px 50px;
@@ -34,7 +47,7 @@
         
             .active {
                 color: white;
-                border-bottom: 2px solid $blue;
+                border-bottom: 2px solid $border-bottom-sign-title;
             }
             
             .sign-in-title {
@@ -42,7 +55,7 @@
                 transition: .3s all ease-in-out;
     
                 &:hover {
-                    color: $secondary-color;
+                    color: $sign-title-hover-color;
                 }
             }
     
@@ -50,7 +63,7 @@
                 transition: .3s all ease-in-out;
     
                 &:hover {
-                    color: $secondary-color;
+                    color: $sign-title-hover-color;
                 }
             }
         }
@@ -68,10 +81,9 @@
             transition: .3s all ease-in-out;
         }
     }
-    
-    
+
     .group {
-        color: $light-gray;
+        color: $sign-label-color;
         margin-bottom: 15px;
     
         .small-label {
@@ -83,7 +95,7 @@
         .sign-inputs {
             width: 100%;
             color: white;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: $sign-input-background-color;
             border-radius: 25px;
             padding: 15px 20px;
             border: none;
@@ -91,45 +103,29 @@
             transition: .2s all ease-in;
     
             &:active, &:focus, &:hover {
-                background-color: rgba(255, 255, 255, 0.25);
+                background-color: $sign-input-background-hover-color;
             }
         }
         
         .tick {
-            background: rgba(255, 255, 255, .1);
+            background: $tick-color;
             transition: .2s all ease-out;
         
             &:checked + .check {
-                color: white;
+                color: $tick-checked-color;
             }
         }
         
         .check {
-            color: $primary-color;
+            color: $check-color;
             font-size: 18px;
             cursor: pointer;
             transition: .3s all ease-out;
         }
-    
-        .sign-btn {
-            background-color: $btn-primary;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 25px;
-            color: white;
-            width: 100%;
-            text-transform: uppercase;
-            transition: .3s all ease-in;
-    
-            &:hover {
-                background-color: midnightblue;
-                color: $secondary-color;
-            }
-        }
     }
     
     hr {
-        border: 1px solid rgba(255, 255, 255, .2);
+        border: 1px solid $hr-border-color;
     }
     
     .foot {

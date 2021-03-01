@@ -6,6 +6,9 @@ $input-background-hover-color: rgba(94, 94, 94, 0.5);
 $information-form-background-color: rgba(34, 34, 34, 0.3);
 $information-form-box-shadow-color: whitesmoke;
 $input-box-shadow-color: whitesmoke;
+$information-input-background-color: rgb(36, 36, 36);
+$information-input-color: crimson;
+$input-info-box-shadow-color: whitesmoke;
 
 // Information ===========================================================
 .information {
@@ -53,6 +56,66 @@ $input-box-shadow-color: whitesmoke;
                 font-size: 12px;
                 top: 6%;
                 left: 8%;
+            }
+
+            .information-about-input {
+
+                &-left {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    text-transform: uppercase;
+                    color: $information-input-color;
+                    top: 0;
+                    left: -300px;
+                    right: 40px;
+                    bottom: 0;
+                    padding: 10px 15px;
+                    width: 300px;
+                    height: 80px;
+                    border-radius: 25px;
+                    background-color: $information-input-background-color;
+                    z-index: 2;
+                    box-shadow: 0 0 15px 5px $input-info-box-shadow-color;
+                    animation-name: infoAnimeLeft;
+                    animation-duration: .8s;
+
+                    & i {
+                        margin-right: 10px;
+                    }
+                }
+
+                &-right {
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    text-transform: uppercase;
+                    color: $information-input-color;
+                    top: 0;
+                    left: 202px;
+                    right: 0;
+                    bottom: 0;
+                    padding: 10px 15px;
+                    width: 300px;
+                    height: 80px;
+                    border-radius: 25px;
+                    background-color: $information-input-background-color;
+                    z-index: 2;
+                    box-shadow: 0 0 15px 5px $input-info-box-shadow-color;
+                    animation-name: infoAnimeRight;
+                    animation-duration: .8s;
+
+                    & i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            &:hover .information-about-input-left, 
+            &:hover .information-about-input-right {
+                display: flex;
             }
         }
 

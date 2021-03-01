@@ -11,3 +11,28 @@
     }
 }
 
+// Information input info animation =================================================
+@keyframes infoAnimeLeft {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+
+    to {
+        left: -300px;
+        opacity: 1;
+    }
+}
+
+@keyframes infoAnimeRight {
+    from {
+        left: 0;
+        opacity: 0;
+    }
+
+    to {
+        left: 202px;
+        opacity: 1;
+    }
+}
+

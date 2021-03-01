@@ -1,0 +1,14 @@
+// Profile dashboard imports =================================================
+@import './weatherSidebar';
+@import './byHours';
+@import './miniDashboards';
+
+// Variables =================================================
+
+// Weather dashboard main styles =================================================
+
+.all-weathers {
+    padding: 40px;
+    color: whitesmoke;
+    @include flex-sa-nc;
+}

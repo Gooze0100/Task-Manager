@@ -1,8 +1,15 @@
+// Navigation variables ==============================
+$nav-back: rgba(34, 34, 34, 0.3);
+$nav-color: rgba(255, 255, 255, .8);
+$nav-hover-back: hsla(0, 0, 78.4%, .2);
+$nav-hover-color: wheat;
+$nav-box-shadow-color: whitesmoke;
+
 // Task Manager - Navigation styles =================================================
 
 .navigation {
     background: $nav-back;
-    box-shadow: 0 0 25px 15px #00abc19a;
+    box-shadow: 0 0 15px 0px $nav-box-shadow-color;
     color: $nav-color;
 
     nav {
@@ -15,7 +22,6 @@
             font-size: 1rem;
             font-weight: 500;
         }
-
 
         .nav-icons {
             display: flex;

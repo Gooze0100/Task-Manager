@@ -18,42 +18,52 @@ require_once './Inc/navigation.php';
                 <div class="form-group">
                     <label for="fName" id="labelFname">First Name</label>
                     <input type="text" id="fName">
+                    <p class="information-about-input-left"><i class="fa fa-info" aria-hidden="true"></i>Enter your First Name</p>
                 </div>
                 <div class="form-group">
                     <label for="lName" id="labelLastName">Last Name</label>
                     <input type="text" id="lName">
+                    <p class="information-about-input-right"><i class="fa fa-info" aria-hidden="true"></i>Enter your Last Name</p>
                 </div>
                 <div class="form-group">
                     <label for="username" id="labelUsername">User Name</label>
                     <input type="text" id="username">
+                    <p class="information-about-input-left"><i class="fa fa-info" aria-hidden="true"></i>Enter your User Name</p>
                 </div>
                 <div class="form-group">
                     <label for="pEmail" id="labelEmail">Email Address</label>
                     <input type="email" id="pEmail">
+                    <p class="information-about-input-right"><i class="fa fa-info" aria-hidden="true"></i>Enter your Email Address</p>
                 </div>
                 <div class="form-group">
                     <label for="pAddress" id="labeAddress">Address</label>
                     <input type="text" id="pAddress">
+                    <p class="information-about-input-left"><i class="fa fa-info" aria-hidden="true"></i>Enter your Address</p>
                 </div>
                 <div class="form-group">
                     <label for="country" id="labelCountry">Country</label>
                     <input type="text" id="country">
+                    <p class="information-about-input-right"><i class="fa fa-info" aria-hidden="true"></i>Enter your Country</p>
                 </div>
                 <div class="form-group">
                     <label for="city" id="labelCity">First City</label>
                     <input type="text" id="city">
+                    <p class="information-about-input-left"><i class="fa fa-info" aria-hidden="true"></i>Enter your First City for Weathers</p>
                 </div>
                 <div class="form-group">
                     <label for="city2" id="labelCity2">Second City</label>
                     <input type="text" id="city2">
+                    <p class="information-about-input-right"><i class="fa fa-info" aria-hidden="true"></i>Enter your Second City for Weather</p>
                 </div>
                 <div class="form-group">
                     <label for="changePassword" id="labelChangePassword">Change Password</label>
                     <input type="password" id="changePassword">
+                    <p class="information-about-input-left"><i class="fa fa-info" aria-hidden="true"></i>Enter your Password to Change it 8 min alphabetic symbols</p>
                 </div>
                 <div class="form-group">
                     <label for="confirmPassword" id="labelRepeatPassword">Repeat Password</label>
                     <input type="password" id="confirmPassword">
+                    <p class="information-about-input-right"><i class="fa fa-info" aria-hidden="true"></i>Enter your Password to Change it 8 min alphabetic symbols</p>
                 </div>
                 <div class="information-btn">
                     <button type="submit" class="btn-primary">Update profile</button>

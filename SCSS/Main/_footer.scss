@@ -1,4 +1,11 @@
-// Task Manager - Footer styles =================================================
+// Footer variables ==============================
+$footer-back: rgba(34, 34, 34, 0.3);
+$footer-color: rgba(255, 255, 255, 0.8);
+$footer-hover-back: hsla(0, 0, 78.4%, .2);
+$footer-hover-color: crimson;
+$footer-box-shadow-color: whitesmoke;
+
+// Footer styles =================================================
 
 footer {
     width: 88%;
@@ -8,6 +15,7 @@ footer {
     @include flex-sb;
     background: $footer-back;
     color: $footer-color;
+    box-shadow: 0 0 15px 0 $footer-box-shadow-color;
 
     .info-about-me {
         @include flex-sb;

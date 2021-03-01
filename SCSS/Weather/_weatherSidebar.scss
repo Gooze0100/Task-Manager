@@ -1,0 +1,160 @@
+// Variables =================================================
+
+// Weather sidebar styles =================================================
+.weathers-sidebar {
+    width: 20%;
+    padding: 20px;
+
+    .main-weathers {
+        border-bottom: 1px solid whitesmoke;
+        margin-bottom: 25px;
+        
+        .select-days {
+            @include flex-sb;
+            margin-bottom: 15px;
+
+            .backwards {
+                text-align: left;
+
+                & i {
+                    font-size: 30px;
+                }
+            }
+
+            .forwards {
+                text-align: right;
+
+                & i {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .todays-date {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .first-city {
+
+            .main-info-first-city {
+                text-align: center;
+
+                .selected-city-first {
+                    font-size: 30px;
+                }
+    
+                .info-about-todays-weather {
+                    font-size: 25px;
+                }
+    
+                .temp-by-celsius {
+                    font-size: 30px;
+                }
+            }
+
+            .night-temp-sunrise-sundown-first {
+                @include flex-sb;
+                margin-bottom: 15px;
+
+                .night-first-city {
+                    font-size: 25px;
+                }
+
+                .sunrise-first {
+                    font-size: 20px;
+
+                    .sunrise-up-first {
+                        @include flex-sb;
+
+                        & i {
+                            margin-right: 5px
+                        }
+                    }
+
+                    .sunrise-down-first {
+                        @include flex-sb;
+
+                        & i {
+                            margin-right: 5px
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .additional-weather {
+        @include flex-sb;
+
+        .second-city {
+            border-right: 1px solid whitesmoke;
+            padding: 20px;
+
+            .main-info-second-city {
+                text-align: center;
+                font-size: 20px;
+
+                .selected-second-city {
+                    font-size: 20px;
+                }
+            }
+
+            .night-temp-sunrise-sundown-second {
+                @include flex-sb;
+                text-align: center;
+
+                .night-temp-second-city {
+                    font-size: 18px;
+                }
+
+                .sunrise-second {
+                    font-size: 14px;
+
+                    .sunrise-up-second {
+                        @include flex-sb;
+                    }
+
+                    .sunrise-down-second {
+                        @include flex-sb;
+                    }
+                }
+            }
+        }
+
+        .third-city {
+            border-right: 1px solid whitesmoke;
+            padding: 20px;
+
+            .main-info-third-city {
+                text-align: center;
+                font-size: 20px;
+
+                .selected-third-city {
+                    font-size: 20px;
+                }
+            }
+
+            .night-temp-sunrise-sundown-third {
+                @include flex-sb;
+                text-align: center;
+
+                .night-temp-third-city {
+                    font-size: 18px;
+                }
+
+                .sunrise-third {
+                    font-size: 14px;
+
+                    .sunrise-up-third {
+                        @include flex-sb;
+                    }
+
+                    .sunrise-down-third {
+                        @include flex-sb;
+                    }
+                }
+            }
+        }
+    }
+}

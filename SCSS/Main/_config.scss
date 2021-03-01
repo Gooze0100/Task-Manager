@@ -4,24 +4,7 @@
 $font-stack: 'Ubuntu', nunito, sans-serif;
 $primary-color: #6a6f8c;
 $secondary-color: #c8c8c8;
-
-// Sidebar variables ==============================
-$aside-back: #4caf4fa4;
-$aside-color: rgba(255, 255, 255, .8);
-$aside-hover-back: hsla(0, 0, 78.4%, .2);
-$aside-hover-color: wheat;
-
-// Navigation variables ==============================
-$nav-back: linear-gradient(45deg, #4caf4fa4, #43a048);
-$nav-color: rgba(255, 255, 255, .8);
-$nav-hover-back: hsla(0, 0, 78.4%, .2);
-$nav-hover-color: wheat;
-
-// Footer variables ==============================
-$footer-back: linear-gradient(45deg, #ef5350, #e53835);
-$footer-color: rgb(255, 255, 255);
-$footer-hover-back: linear-gradient(20deg, #e82723ab, #e53835de);
-$footer-hover-color: rgba(0, 0, 0, .8);
+$anchor-links-color: rgba(255, 255, 255, 0.8);
 
 // Mixins ==============================
 @mixin flex() {
@@ -44,6 +27,11 @@ $footer-hover-color: rgba(0, 0, 0, .8);
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@mixin flex-sa-nc() {
+    display: flex;
+    justify-content: space-around;
 }
 
 

@@ -1,4 +1,6 @@
-// Variables
+// Variables =================================================
+$btn-box-shadow-color: whitesmoke;
+
 $btn-primary-color: white;
 $btn-primary-background-color: #1161ee;
 $btn-primary-hover-background-color: midnightblue;
@@ -28,10 +30,11 @@ $btn-secondary-hover-color: whitesmoke;
     @extend %btn;
     color: $btn-primary-color;
     background-color: $btn-primary-background-color;
-
+    
     &:hover {
         background-color: $btn-primary-hover-background-color;
         color: $btn-primary-hover-color;
+        box-shadow: 0 0 15px 5px $btn-box-shadow-color;
     }
 }
 

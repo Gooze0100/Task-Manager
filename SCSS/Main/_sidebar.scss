@@ -1,4 +1,11 @@
-// Task Manager - Sidebar styles =================================================
+// Variables ==============================
+$aside-color: crimson;
+$aside-back: rgba(34, 34, 34, 0.3);
+$aside-hover-color: wheat;
+$aside-hover-back: hsla(0, 0, 78.4%, .2);
+$aside-box-shadow-color: whitesmoke;
+
+// Sidebar styles =================================================
 
 .menu {
     width: 12%;
@@ -6,6 +13,7 @@
     position: fixed;
     background-color: $aside-back;
     color: $aside-color;
+    box-shadow: 0 0 15px 5px $aside-box-shadow-color;
 
     .logo {
         width: 100%;
@@ -15,6 +23,10 @@
 
         & img {
             width: 50%;
+        }
+
+        h1 {
+            font-size: 20px
         }
     }
 

@@ -5,6 +5,9 @@ $font-stack: 'Ubuntu', nunito, sans-serif;
 $primary-color: #6a6f8c;
 $secondary-color: #c8c8c8;
 $anchor-links-color: rgba(255, 255, 255, 0.8);
+$scroll-background-color: crimson;
+$scroll-background-hover-color: rgba(34, 34, 34, 0.9);
+$scroll-box-shadow-color: black;
 
 // Mixins ==============================
 @mixin flex() {
@@ -26,6 +29,12 @@ $anchor-links-color: rgba(255, 255, 255, 0.8);
 @mixin flex-sa() {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-se() {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 

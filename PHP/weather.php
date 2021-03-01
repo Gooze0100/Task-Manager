@@ -113,70 +113,218 @@ require_once './Inc/navigation.php';
                 turetu orai buti bet nera reiks issiaiskinti kaip issitraukti tada tik daryti su css
             </div>
         </section>
-        <section class="mini-weather-dashboards">
-            <p class="title-of-all-mini-dashboards">More details of today's weather</p>
-            <div class="mini-weather-dashboard">
-                <div class="mini-weather-dashboard-title">
-                    <p>Feels like</p>
-                    <div>
-                        ikonele termometro
-                    </div>
-                </div>
-                <div class="info">28&#8451;</div>
-                <div class="line-of-temp">linija su temp nuo 0 burbuliukas iki 50 burbuliukas</div>
+        <section class="mini-weather-dashboards-all">
+            <div class="title-of-all-mini-dashboards-all">
+                <p class="title-of-all-mini-dashboards">More details of today's weather</p>
             </div>
-            <div class="mini-weather-dashboard">
-                <div class="mini-weather-dashboard-title">
-                    <p>Wind</p>
-                    <div>
-                        ikonele puciancio velo
+            <div class="mini-weather-dashboards">
+                <div class="mini-weather-dashboard">
+                    <div class="mini-weather-dashboard-title">
+                        <p>Feels like</p>
+                        <div>
+                            ikonele termometro
+                        </div>
+                    </div>
+                    <div class="mini-dashboard-main-info">
+                        <div class="info">28&#8451;</div>
+                        <div class="line-of-temp">
+                            <div class="temp-by-celsius">
+                                <small>0&#8451;</small>
+                                <small>25&#8451;</small>
+                                <small>50&#8451;</small>
+                            </div>
+                            <div class="feels-like-temp-back">
+                                <div class="feels-like-temp-progress"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="line-of-temp">apskritimas su rodykle ir m/h matuojama nuo 0 iki 40 ar daugiau</div>
-                <div class="info">8km/h</div>
-            </div>
-            <div class="mini-weather-dashboard">
-                <div class="mini-weather-dashboard-title">
-                    <p>UV Index</p>
-                    <div>
-                        ikonele saules svieciancions
+                <div class="mini-weather-dashboard">
+                    <div class="mini-weather-dashboard-title">
+                        <p>Wind</p>
+                        <div>
+                            ikonele puciancio velo
+                        </div>
+                    </div>
+                    <div class="mini-dashboard-main-info">
+                        <div class="line-of-wind">
+                            <div class="wind-both-numbers-progress">
+                                <div class="wind-by-meters">
+                                    <small class="wind-1">0</small>
+                                    <small class="wind-2">5</small>
+                                    <small class="wind-3">10</small>
+                                    <small class="wind-4">20</small>
+                                    <small class="wind-5">30</small>
+                                    <small class="wind-6">40</small>
+                                </div>
+                                <div class="wind-speed-back">
+                                    <div class="wind-speed-progress-1"></div>
+                                    <div class="wind-speed-progress-2"></div>
+                                    <div class="wind-speed-progress-3"></div>
+                                    <div class="wind-speed-progress-4"></div>
+                                    <div class="wind-speed-progress-5"></div>
+                                </div>
+                            </div>
+                            <div class="custom-arrow">
+                                <div class="arrow-front"></div>
+                                <div class="arrow-back"></div>
+                            </div>
+                        </div>
+                        <div class="info">8m/s</div>
                     </div>
                 </div>
-                <div class="info">4 medium</div>
-                <div class="line-of-temp">linija is mazu burbuliuku ir skaiciukai virsuje po du suskirstyti nuo 0 iki 11+ </div>
-            </div>
-            <div class="mini-weather-dashboard">
-                <div class="mini-weather-dashboard-title">
-                    <p>Chance of Rain</p>
-                    <div>
-                        ikonele debeselis ir is jo lasas
+                <div class="mini-weather-dashboard">
+                    <div class="mini-weather-dashboard-title">
+                        <p>UV Index</p>
+                        <div>
+                            ikonele sauls svieciancianti
+                        </div>
+                    </div>
+                    <div class="mini-dashboard-main-info">
+                        <div class="info">4 medium</div>
+                        <div class="line-of-uv-index">
+                            <div class="uv-index-by-range">
+                                <small>0-2</small>
+                                <small>3-5</small>
+                                <small>6-7</small>
+                                <small>8-10</small>
+                                <small>11+</small>
+                            </div>
+                            <div class="uv-index-range-back">
+                                <div class="uv-index-range-progress">
+                                    <div class="uv-index-progress-1"></div>
+                                </div>
+                                <div class="uv-index-range-progress">
+                                    <div class="uv-index-progress-2"></div>
+                                </div>
+                                <div class="uv-index-range-progress">
+                                    <div class="uv-index-progress-3"></div>
+                                </div>
+                                <div class="uv-index-range-progress">
+                                    <div class="uv-index-progress-4"></div>
+                                </div>
+                                <div class="uv-index-range-progress">
+                                    <div class="uv-index-progress-5"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="info">42%</div>
-                <div class="line-of-temp">linija su procentais nuo 0% burbuliukas iki 100%</div>
-            </div>
-            <div class="mini-weather-dashboard">
-                <div class="mini-weather-dashboard-title">
-                    <p>Precipitation</p>
-                    <div>
-                        ikonele lietus is debeselio
+                <div class="mini-weather-dashboard">
+                    <div class="mini-weather-dashboard-title">
+                        <p>Chance of Rain</p>
+                        <div>
+                            ikonele debeselis ir is jo lasas
+                        </div>
+                    </div>
+                    <div class="mini-dashboard-main-info">
+                        <div class="info">42%</div>
+                        <div class="line-of-chance-of-rain">
+                            <div class="chance-of-rain-by-percentage">
+                                <small>0%</small>
+                                <small>25%</small>
+                                <small>50%</small>
+                                <small>75%</small>
+                                <small>100%</small>
+                            </div>
+                            <div class="chance-of-rain-back">
+                                <div class="chance-of-rain-progress"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="info">1.4 cm</div>
-                <div class="line-of-temp">linija sudaryta is burbuliuku nuo 0 iki 90 kas desimti burbuliukai</div>
-            </div>
-            <div class="mini-weather-dashboard">
-                <div class="mini-weather-dashboard-title">
-                    <p>Humidity</p>
-                    <div>
-                        ikonele du dideli lasai vienas po kito
+                <div class="mini-weather-dashboard">
+                    <div class="mini-weather-dashboard-title">
+                        <p>Precipitation</p>
+                        <div>
+                            ikonele lietus is debeselio
+                        </div>
+                    </div>
+                    <div class="mini-dashboard-main-info">
+                        <div class="info">1.4 cm</div>
+                        <div class="line-of-precipitation">
+                            <div class="precipitation-by-range">
+                                <small>0</small>
+                                <small>10</small>
+                                <small>20</small>
+                                <small>30</small>
+                                <small>40</small>
+                                <small>50</small>
+                                <small>60</small>
+                                <small>70</small>
+                                <small>80</small>
+                                <small>90</small>
+                            </div>
+                            <div class="precipitation-range-back">
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-1"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-2"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-3"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-4"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-5"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-6"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-7"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-8"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-9"></div>
+                                </div>
+                                <div class="precipitation-range-progress">
+                                    <div class="precipitation-progress-10"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="info">82% bad</div>
-                <div class="line-of-temp">linija sudaryta is triju burbuliuku su uzrasais good normal bad</div>
+                <div class="mini-weather-dashboard">
+                    <div class="mini-weather-dashboard-title">
+                        <p>Humidity</p>
+                        <div>
+                            ikonele du dideli lasai vienas po kito
+                        </div>
+                    </div>
+                    <div class="mini-dashboard-main-info">
+                        <div class="info">82% bad</div>
+                        <div class="line-of-humidity">
+                            <div class="humidity-by-range">
+                                <small>good</small>
+                                <small>normal</small>
+                                <small>bad</small>
+                            </div>
+                            <div class="humidity-range-back">
+                                <div class="humidity-range-progress">
+                                    <div class="humidity-progress-1"></div>
+                                </div>
+                                <div class="humidity-range-progress">
+                                    <div class="humidity-progress-2"></div>
+                                </div>
+                                <div class="humidity-range-progress">
+                                    <div class="humidity-progress-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="weathers-map">
+        <section class="weathers-maps">
+            <div class="weather-map-title">
+                <p>Weather Map</p>
+            </div>
             <div class="weather-map">
                 sukurti kazkoki map tik paziureti kaip jis atsivaizduoja :)
             </div>

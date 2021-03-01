@@ -4,6 +4,8 @@
 .weathers-sidebar {
     width: 20%;
     padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
 
     .main-weathers {
         border-bottom: 1px solid whitesmoke;
@@ -15,17 +17,25 @@
 
             .backwards {
                 text-align: left;
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 5px;
+                border: 1px solid whitesmoke;
 
                 & i {
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
 
             .forwards {
                 text-align: right;
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 5px;
+                border: 1px solid whitesmoke;
 
                 & i {
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
         }
@@ -89,7 +99,9 @@
 
         .second-city {
             border-right: 1px solid whitesmoke;
-            padding: 20px;
+            padding: 10px;
+            @include flex-c;
+            flex-wrap: wrap;
 
             .main-info-second-city {
                 text-align: center;
@@ -106,10 +118,11 @@
 
                 .night-temp-second-city {
                     font-size: 18px;
+                    margin-right: 15px;
                 }
 
                 .sunrise-second {
-                    font-size: 14px;
+                    font-size: 16px;
 
                     .sunrise-up-second {
                         @include flex-sb;
@@ -118,13 +131,19 @@
                     .sunrise-down-second {
                         @include flex-sb;
                     }
+
+                    & i {
+                        margin-right: 5px;
+                    }
                 }
             }
         }
 
         .third-city {
             border-right: 1px solid whitesmoke;
-            padding: 20px;
+            padding: 10px;
+            @include flex-c;
+            flex-wrap: wrap;
 
             .main-info-third-city {
                 text-align: center;
@@ -141,10 +160,11 @@
 
                 .night-temp-third-city {
                     font-size: 18px;
+                    margin-right: 15px;
                 }
 
                 .sunrise-third {
-                    font-size: 14px;
+                    font-size: 16px;
 
                     .sunrise-up-third {
                         @include flex-sb;
@@ -152,6 +172,10 @@
 
                     .sunrise-down-third {
                         @include flex-sb;
+                    }
+
+                    & i {
+                        margin-right: 5px;
                     }
                 }
             }

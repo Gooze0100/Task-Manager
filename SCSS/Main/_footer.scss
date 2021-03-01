@@ -9,7 +9,7 @@ $footer-box-shadow-color: whitesmoke;
 
 footer {
     width: 88%;
-    position: fixed;
+    position: relative;
     left: 12%;
     bottom: 0;
     @include flex-sb;
@@ -22,7 +22,7 @@ footer {
         margin-left: 20px;
 
         .social-links {
-            border-radius: 15px;
+            border-radius: 10px;
             transition: .3s all ease-out;
 
             & a {

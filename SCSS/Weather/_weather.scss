@@ -2,13 +2,21 @@
 @import './weatherSidebar';
 @import './byHours';
 @import './miniDashboards';
+@import './weatherMap';
 
 // Variables =================================================
 
 // Weather dashboard main styles =================================================
-
 .all-weathers {
     padding: 40px;
     color: whitesmoke;
     @include flex-sa-nc;
+}
+
+.main-todays-weathers-info {
+    width: 80%;
+    @include flex-c;
+    flex-wrap: wrap;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
 }

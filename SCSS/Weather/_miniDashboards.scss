@@ -1,0 +1,406 @@
+// Variables =================================================
+
+// Weather Mini Dashboards main styles =================================================
+.mini-weather-dashboards-all {
+    position: relative;
+    border: 1px solid whitesmoke;
+    width: 95%;
+    @include flex-c;
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+    .title-of-all-mini-dashboards-all {
+        position: absolute;
+        top: -20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 95%;
+        margin: 0 auto;
+        height: 40px;
+        background-color: $primary-color;
+        border: 1px solid whitesmoke;
+        border-radius: 10px;
+        @include flex-c;
+    }
+
+    .mini-weather-dashboards {
+        padding: 20px;
+        margin-top: 20px;
+        @include flex-se;
+        flex-wrap: wrap;
+
+        .mini-weather-dashboard {
+            position: relative;
+            width: 30%;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
+
+            .mini-weather-dashboard-title {
+                @include flex-se;
+                position: absolute;
+                top: -20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 95%;
+                margin: 0 auto;
+                height: 40px;
+                background-color: $primary-color;
+                border: 1px solid whitesmoke;
+                border-radius: 10px;
+            }
+
+            .mini-dashboard-main-info {
+                padding: 10px;
+                margin-top: 10px;
+
+                .info {
+                    text-align: center;
+                    font-size: 24px;
+                    margin: 10px;
+                }
+
+                .line-of-temp {
+                    @include flex-c;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .temp-by-celsius {
+                        @include flex-sb;
+                        width: 100%;
+                    }
+
+                    .feels-like-temp-back {
+                        background: aliceblue;
+                        width: 100%;
+                        height: 10px;
+                        border-radius: 10px;
+
+                        .feels-like-temp-progress {
+                            background: crimson;
+                            width: 60%;
+                            height: 10px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .line-of-wind {
+                    @include flex-c;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    
+                    .wind-both-numbers-progress {
+
+                        .wind-by-meters {
+                            @include flex-sb;
+                            width: 100%;
+
+                            .wind {
+
+                                // &-1 {
+                                //     transform: translate(20px, 85px) rotate(-30deg); 
+                                // }
+
+                                // &-2 {
+                                //     transform: translate(3px, 23px) rotate(-15deg); 
+                                // }
+
+                                // &-3 {
+                                //     transform: translate(0px, 5px) rotate(0deg); 
+                                // }
+
+                                // &-4 {
+                                //     transform: translate(-2px, 14px) rotate(10deg); 
+                                // }
+
+                                // &-5 {
+                                //     transform: translate(-6px, 40px) rotate(20deg);
+                                // }
+
+                                // &-6 {
+                                //     transform: translate(-20px, 80px) rotate(30deg);  
+                                // }
+                            }
+                        }
+    
+                        .wind-speed-back {
+                            @include flex-se;
+                            background: aliceblue;
+                            width: 100%;
+                            height: 8px;
+                            border-radius: 10px / 140px;
+                            // transform: translate(20px, 85px) rotate(-30deg);
+    
+                            .wind-speed-progress {
+                                @include flex-c;
+    
+                                // &-1 {
+                                //     width: 60%;
+                                //     background: crimson;
+                                //     height: 8px;
+                                //     border-radius: 10px / 140px;
+                                //     @include flex-c;
+                                // }
+
+                                // &-2 {
+                                //     width: 100%;
+                                //     transform: translate(3px, 23px) rotate(-15deg); 
+                                // }
+
+                                // &-3 {
+                                //     width: 20%;
+                                //     transform: translate(0px, 5px) rotate(0deg); 
+                                // }
+
+                                // &-4 {
+                                //     width: 0%;
+                                //     transform: translate(-2px, 14px) rotate(10deg); 
+                                // }
+
+                                // &-5 {
+                                //     width: 0%;
+                                //     transform: translate(-20px, 80px) rotate(30deg); 
+                                // }
+                            }
+                        }
+                    }
+
+                    .custom-arrow {
+
+                        .arrow-front {
+
+                        }
+
+                        .arrow-back {
+
+                        }
+                    }
+                }
+
+                .line-of-uv-index {
+                    @include flex-c;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .uv-index-by-range {
+                        @include flex-sa;
+                        width: 100%;
+                    }
+
+                    .uv-index-range-back {
+                        @include flex-sb;
+                        width: 100%;
+
+                        .uv-index-range-progress {
+                            background: aliceblue;
+                            width: 18%;
+                            height: 10px;
+                            border-radius: 10px;
+
+                            .uv-index-progress-1 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 100%;
+                            }
+
+                            .uv-index-progress-2 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 50%;
+                            }
+
+                            .uv-index-progress-3 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .uv-index-progress-4 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .uv-index-progress-5 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+                        }
+                    }
+                }
+
+                .line-of-chance-of-rain {
+                    @include flex-c;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .chance-of-rain-by-percentage {
+                        @include flex-sb;
+                        width: 100%;
+                    }
+
+                    .chance-of-rain-back {
+                        background: aliceblue;
+                        width: 100%;
+                        height: 10px;
+                        border-radius: 10px;
+
+                        .chance-of-rain-progress {
+                            background: crimson;
+                            width: 42%;
+                            height: 10px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .line-of-precipitation {
+                    @include flex-c;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .precipitation-by-range {
+                        @include flex-se;
+                        width: 100%;
+                    }
+
+                    .precipitation-range-back {
+                        @include flex-se;
+                        width: 100%;
+
+                        .precipitation-range-progress {
+                            background: aliceblue;
+                            width: 9%;
+                            height: 10px;
+                            border-radius: 10px;
+
+                            .precipitation-progress-1 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 100%;
+                            }
+
+                            .precipitation-progress-2 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 40%;
+                            }
+
+                            .precipitation-progress-3 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .precipitation-progress-4 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+                            
+                            .precipitation-progress-5 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .precipitation-progress-6 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .precipitation-progress-7 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .precipitation-progress-8 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .precipitation-progress-9 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+
+                            .precipitation-progress-10 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 0%;
+                            }
+                        }
+                    }
+                }
+
+                .line-of-humidity {
+                    @include flex-c;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .humidity-by-range {
+                        @include flex-sa;
+                        width: 100%;
+                    }
+
+                    .humidity-range-back {
+                        @include flex-sb;
+                        width: 100%;
+
+                        .humidity-range-progress {
+                            background: aliceblue;
+                            width: 30%;
+                            height: 10px;
+                            border-radius: 10px;
+
+                            .humidity-progress-1 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 100%;
+                            }
+
+                            .humidity-progress-2 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 100%;
+                            }
+
+                            .humidity-progress-3 {
+                                background: crimson;
+                                height: 10px;
+                                border-radius: 10px;
+                                width: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

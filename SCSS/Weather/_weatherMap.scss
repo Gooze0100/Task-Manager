@@ -1,14 +1,14 @@
 // Variables =================================================
 
-// Weather By Hours main styles =================================================
-.upcoming-hours {
+// Weather Map main styles =================================================
+.weathers-maps {
     position: relative;
-    width: 80%;
+    width: 95%;
     margin-bottom: 40px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
-
-    .upcoming-hours-title {
+    
+    .weather-map-title {
         position: absolute;
         top: -20px;
         bottom: 0;
@@ -23,7 +23,7 @@
         @include flex-c;
     }
 
-    .weathers-by-hours {
+    .weather-map {
         margin-top: 20px;
         padding: 20px;
         height: 300px;

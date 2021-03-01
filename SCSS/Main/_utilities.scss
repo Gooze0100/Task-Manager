@@ -4,6 +4,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 5px 0 15px $scroll-box-shadow-color; 
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $scroll-background-color;
+        border-radius: 10px;
+
+         /* Handle on hover */
+        &:hover {
+            background: $scroll-background-hover-color; 
+        }
+    }
 }
 
 html {

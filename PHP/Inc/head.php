@@ -16,9 +16,10 @@
     <?php
     if ($title === 'Login/Register') {
         echo '<script defer src="../JS/login.js"></script>';
+    } else if ($title === 'Profile') {
+        echo '<script defer src="../JS/profile.js"></script>';
     } else {
         echo '<script defer src="../JS/main.js"></script>';
-        echo '<script defer src="../JS/profile.js"></script>';
     }
     ?>
     <title><?php echo $title ?></title>

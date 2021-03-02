@@ -20,6 +20,7 @@ $btn-secondary-hover-color: whitesmoke;
     width: 100%;
     text-transform: uppercase;
     transition: .3s all ease-in;
+    cursor: pointer;
 
     &:hover {
         transform: scale(.98);

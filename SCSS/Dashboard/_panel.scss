@@ -127,6 +127,57 @@ $task-btn-color: wheat;
         }
     }
 
+    .insert-task-dorm-section {
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        padding: 40px 20px;
+        border-radius: 20px;
+        margin-bottom: 60px;
+        background: $task-manager-back;
+
+        .insert-task-title {
+            @include flex-c;
+            background: $tasks-filter-header-back;
+            border-radius: 10px;
+            color: $tasks-filter-header-color;
+            position: absolute;
+            top: -30px;
+            right: 30px;
+            left: 30px;
+            height: 60px;
+
+            & h1 {
+                font-size: 18px;
+            }
+        }
+
+        .insert-task-form {
+            background: $task-back;
+            color: $task-color;
+            margin: 0 auto;
+            width: 95%;
+
+            .insert-task {
+
+                & textarea {
+                    width: 100%;
+                    resize: vertical;
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 15px;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    transition: .2s all ease-in-out;
+
+                    &:focus, &:hover {
+                        border: 1px solid crimson;
+                    }
+                }
+            }
+        }
+    }
+
     .task-manager {
         width: 1200px;
         margin: 0 auto;
@@ -144,10 +195,12 @@ $task-btn-color: wheat;
            top: -30px;
            right: 30px;
            left: 30px;
+           height: 60px
         }
 
         .filters {
             @include flex;
+            font-size: 18px;
 
             & h3 {
                 padding: 15px;

@@ -86,9 +86,12 @@ require_once './Inc/navigation.php';
         </div>
     </article>
     <section class="insert-task-dorm-section">
+        <div class="insert-task-title">
+            <h1>Insert task</h1>
+        </div>
         <div class="insert-task-form">
             <form action="" class="insert-task" method="POST">
-                <input type="text" class="tasks-input">
+                <textarea cols="30" rows="2"></textarea>
                 <button class="btn-primary">Add Task</button>
             </form>
         </div>

@@ -18,6 +18,8 @@
         echo '<script defer src="../JS/login.js"></script>';
     } else if ($title === 'Profile') {
         echo '<script defer src="../JS/profile.js"></script>';
+    } else if ($title === 'Weather') {
+        echo '<script defer src="../JS/weather.js"></script>';
     } else {
         echo '<script defer src="../JS/main.js"></script>';
     }

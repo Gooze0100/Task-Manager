@@ -218,6 +218,7 @@ html body a {
   width: 100%;
   text-transform: uppercase;
   transition: .3s all ease-in;
+  cursor: pointer;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
@@ -682,6 +683,56 @@ html body a {
   color: #999;
 }
 
+.main-panel .insert-task-dorm-section {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  background: white;
+}
+
+.main-panel .insert-task-dorm-section .insert-task-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(34, 34, 34, 0.8);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  left: 30px;
+  height: 60px;
+}
+
+.main-panel .insert-task-dorm-section .insert-task-title h1 {
+  font-size: 18px;
+}
+
+.main-panel .insert-task-dorm-section .insert-task-form {
+  background: white;
+  color: #999;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.main-panel .insert-task-dorm-section .insert-task-form .insert-task textarea {
+  width: 100%;
+  resize: vertical;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: .2s all ease-in-out;
+}
+
+.main-panel .insert-task-dorm-section .insert-task-form .insert-task textarea:focus, .main-panel .insert-task-dorm-section .insert-task-form .insert-task textarea:hover {
+  border: 1px solid crimson;
+}
+
 .main-panel .task-manager {
   width: 1200px;
   margin: 0 auto;
@@ -702,11 +753,13 @@ html body a {
   top: -30px;
   right: 30px;
   left: 30px;
+  height: 60px;
 }
 
 .main-panel .task-manager .filters {
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .main-panel .task-manager .filters h3 {
@@ -796,9 +849,12 @@ html body a {
 
 footer {
   width: 88%;
-  position: relative;
+  position: fixed;
   left: 12%;
   bottom: 0;
+}
+
+footer .footer-info-about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -807,19 +863,19 @@ footer {
   box-shadow: 0 0 15px 0 whitesmoke;
 }
 
-footer .info-about-me {
+footer .footer-info-about-me .info-about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 20px;
 }
 
-footer .info-about-me .social-links {
+footer .footer-info-about-me .info-about-me .social-links {
   border-radius: 10px;
   transition: .3s all ease-out;
 }
 
-footer .info-about-me .social-links a {
+footer .footer-info-about-me .info-about-me .social-links a {
   display: flex;
   align-items: center;
   padding: 5px 10px;
@@ -828,27 +884,27 @@ footer .info-about-me .social-links a {
   transition: .3s all ease-out;
 }
 
-footer .info-about-me .social-links a i {
+footer .footer-info-about-me .info-about-me .social-links a i {
   margin-right: 5px;
   margin-bottom: 2px;
 }
 
-footer .info-about-me .social-links:hover {
+footer .footer-info-about-me .info-about-me .social-links:hover {
   background: rgba(200, 200, 200, 0.2);
 }
 
-footer .info-about-me .social-links:hover a {
+footer .footer-info-about-me .info-about-me .social-links:hover a {
   color: crimson;
 }
 
-footer .copyrights {
+footer .footer-info-about-me .copyrights {
   margin-right: 20px;
   font-size: 14px;
   display: flex;
   align-items: center;
 }
 
-footer .copyrights p {
+footer .footer-info-about-me .copyrights p {
   margin-right: 5px;
 }
 

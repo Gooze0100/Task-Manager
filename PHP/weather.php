@@ -22,8 +22,8 @@ require_once './Inc/navigation.php';
                 </div>
             </div>
             <div class="todays-date">
-                <p>Weekday JS</p>
-                <p>Todays date JS</p>
+                <p id="todaysWeekday">Weekday JS</p>
+                <p id="todaysDate"></p>
             </div>
             <div class="first-city">
                 <div class="main-info-first-city">

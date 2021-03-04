@@ -13,39 +13,42 @@ require_once './Inc/navigation.php';
         <section class="main-weathers">
             <div class="select-days">
                 <div class="backwards">
-                    <p>weekDay JS</p>
+                    <p id="backwards"></p>
                     <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                 </div>
                 <div class="forwards">
-                    <p>weekDay JS</p>
+                    <p id="forwards"></p>
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="todays-date">
-                <p id="todaysWeekday">Weekday JS</p>
+                <p id="todaysWeekday"></p>
                 <p id="todaysDate"></p>
             </div>
             <div class="first-city">
                 <div class="main-info-first-city">
-                    <h1 class="selected-city-first">Vilnius</h1>
-                    <p class="info-about-todays-weather">Sunny</p>
-                    <p class="temp-by-celsius">27&#8451;</p>
+                    <h1 class="selected-city-first" id="mainFirstSelectedCity"></h1>
+                    <div class="info-about-todays-weather">
+                        <p id="mainWeatherDesc"></p>
+                        <img id="mainWeathersIcons" src="" alt="Weather image not found">
+                    </div>
+                    <p class="temp-by-celsius" id="mainTempFirstCity"></p>
                 </div>
                 <div class="night-temp-sunrise-sundown-first">
                     <div class="night-first-city">
-                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        <img src="../Images/Weather/002-moon.png" alt="Sunset">
                         <p>27&#8451;</p>
                     </div>
                     <div class="sunrise-first">
                         <div class="sunrise-up-first">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <img src="../Images/Weather/004-cloudy.png" alt="Sunrise">
                             <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-                            <p>time</p>
+                            <p id="sunrise"></p>
                         </div>
                         <div class="sunrise-down-first">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <img src="../Images/Weather/002-half-moon.png" alt="Sunset">
                             <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-                            <p>time</p>
+                            <p id="sunset"></p>
                         </div>
                     </div>
                 </div>
@@ -59,18 +62,18 @@ require_once './Inc/navigation.php';
                     <p>Sunny</p>
                 </div>
                 <div class="night-temp-sunrise-sundown-second">
-                    <div class="night-temp-second-city">
+                    <!-- <div class="night-temp-second-city">
                         <i class="fa fa-moon-o" aria-hidden="true"></i>
                         <p>27&#8451;</p>
-                    </div>
+                    </div> -->
                     <div class="sunrise-second">
                         <div class="sunrise-up-second">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <img src="../Images/Weather/004-cloudy.png" alt="Sunrise">
                             <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
                             <p>time</p>
                         </div>
                         <div class="sunrise-down-second">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <img src="../Images/Weather/002-half-moon.png" alt="Sunset">
                             <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
                             <p>time</p>
                         </div>
@@ -84,18 +87,18 @@ require_once './Inc/navigation.php';
                     <p>Sunny</p>
                 </div>
                 <div class="night-temp-sunrise-sundown-third">
-                    <div class="night-temp-third-city">
+                    <!-- <div class="night-temp-third-city">
                         <i class="fa fa-moon-o" aria-hidden="true"></i>
                         <p>27&#8451;</p>
-                    </div>
+                    </div> -->
                     <div class="sunrise-third">
                         <div class="sunrise-up-third">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <img src="../Images/Weather/004-cloudy.png" alt="Sunrise">
                             <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
                             <p>time</p>
                         </div>
                         <div class="sunrise-down-third">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <img src="../Images/Weather/002-half-moon.png" alt="Sunset">
                             <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
                             <p>time</p>
                         </div>
@@ -122,19 +125,21 @@ require_once './Inc/navigation.php';
                     <div class="mini-weather-dashboard-title">
                         <p>Feels like</p>
                         <div>
-                            ikonele termometro
+                            <img src="../Images/Weather/005-thermometer.png" alt="Thermometer">
                         </div>
                     </div>
                     <div class="mini-dashboard-main-info">
-                        <div class="info">28&#8451;</div>
+                        <div class="info" id="feelsLikeTempMini"></div>
                         <div class="line-of-temp">
                             <div class="temp-by-celsius">
+                                <small>-50&#8451;</small>
+                                <small>-25&#8451;</small>
                                 <small>0&#8451;</small>
                                 <small>25&#8451;</small>
                                 <small>50&#8451;</small>
                             </div>
                             <div class="feels-like-temp-back">
-                                <div class="feels-like-temp-progress"></div>
+                                <div class="feels-like-temp-progress" id='feelsLikeTempProgress'></div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +148,7 @@ require_once './Inc/navigation.php';
                     <div class="mini-weather-dashboard-title">
                         <p>Wind</p>
                         <div>
-                            ikonele puciancio velo
+                            <img src="../Images/Weather/003-wind.png" alt="Wind">
                         </div>
                     </div>
                     <div class="mini-dashboard-main-info">
@@ -170,18 +175,18 @@ require_once './Inc/navigation.php';
                                 <div class="arrow-back"></div>
                             </div>
                         </div>
-                        <div class="info">8m/s</div>
+                        <div class="info" id="windSpeedMini">8m/s</div>
                     </div>
                 </div>
                 <div class="mini-weather-dashboard">
                     <div class="mini-weather-dashboard-title">
                         <p>UV Index</p>
                         <div>
-                            ikonele sauls svieciancianti
+                            <img src="../Images/Weather/007-sun-1.png" alt="Strong sun">
                         </div>
                     </div>
                     <div class="mini-dashboard-main-info">
-                        <div class="info">4 medium</div>
+                        <div class="info" id="uvIndexMini">4 medium</div>
                         <div class="line-of-uv-index">
                             <div class="uv-index-by-range">
                                 <small>0-2</small>
@@ -214,11 +219,11 @@ require_once './Inc/navigation.php';
                     <div class="mini-weather-dashboard-title">
                         <p>Chance of Rain</p>
                         <div>
-                            ikonele debeselis ir is jo lasas
+                            <img src="../Images/Weather/006-rain.png" alt="Chance of rain">
                         </div>
                     </div>
                     <div class="mini-dashboard-main-info">
-                        <div class="info">42%</div>
+                        <div class="info" id="chanceOfRainMini">42%</div>
                         <div class="line-of-chance-of-rain">
                             <div class="chance-of-rain-by-percentage">
                                 <small>0%</small>
@@ -237,11 +242,11 @@ require_once './Inc/navigation.php';
                     <div class="mini-weather-dashboard-title">
                         <p>Precipitation</p>
                         <div>
-                            ikonele lietus is debeselio
+                            <img src="../Images/Weather/008-clouds.png" alt="Precipitation">
                         </div>
                     </div>
                     <div class="mini-dashboard-main-info">
-                        <div class="info">1.4 cm</div>
+                        <div class="info" id="precipitationpMini">1.4 cm</div>
                         <div class="line-of-precipitation">
                             <div class="precipitation-by-range">
                                 <small>0</small>
@@ -294,11 +299,11 @@ require_once './Inc/navigation.php';
                     <div class="mini-weather-dashboard-title">
                         <p>Humidity</p>
                         <div>
-                            ikonele du dideli lasai vienas po kito
+                            <img src="../Images/Weather/004-water-drop.png" alt="Humidity">
                         </div>
                     </div>
                     <div class="mini-dashboard-main-info">
-                        <div class="info">82% bad</div>
+                        <div class="info" id="humidityMini">82% bad</div>
                         <div class="line-of-humidity">
                             <div class="humidity-by-range">
                                 <small>good</small>
@@ -326,7 +331,7 @@ require_once './Inc/navigation.php';
                 <p>Weather Map</p>
             </div>
             <div class="weather-map">
-                sukurti kazkoki map tik paziureti kaip jis atsivaizduoja :)
+                <iframe id="weatherMap" src="" frameborder="0"></iframe>
             </div>
         </section>
     </section>

@@ -1221,6 +1221,13 @@ footer .footer-info-about-me .copyrights p {
 
 .weathers-sidebar .main-weathers .first-city .main-info-first-city .info-about-todays-weather {
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weathers-sidebar .main-weathers .first-city .main-info-first-city .info-about-todays-weather p {
+  text-transform: capitalize;
 }
 
 .weathers-sidebar .main-weathers .first-city .main-info-first-city .temp-by-celsius {
@@ -1236,6 +1243,9 @@ footer .footer-info-about-me .copyrights p {
 
 .weathers-sidebar .main-weathers .first-city .night-temp-sunrise-sundown-first .night-first-city {
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .weathers-sidebar .main-weathers .first-city .night-temp-sunrise-sundown-first .sunrise-first {
@@ -1447,7 +1457,7 @@ footer .footer-info-about-me .copyrights p {
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-weather-dashboard-title {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   top: -20px;
@@ -1497,7 +1507,6 @@ footer .footer-info-about-me .copyrights p {
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-temp .feels-like-temp-back .feels-like-temp-progress {
   background: crimson;
-  width: 60%;
   height: 10px;
   border-radius: 10px;
 }

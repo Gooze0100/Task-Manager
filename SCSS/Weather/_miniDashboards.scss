@@ -39,7 +39,7 @@
             padding: 10px;
 
             .mini-weather-dashboard-title {
-                @include flex-se;
+                @include flex-sa;
                 position: absolute;
                 top: -20px;
                 bottom: 0;
@@ -81,7 +81,6 @@
 
                         .feels-like-temp-progress {
                             background: crimson;
-                            width: 60%;
                             height: 10px;
                             border-radius: 10px;
                         }

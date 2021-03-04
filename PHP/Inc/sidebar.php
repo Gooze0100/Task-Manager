@@ -1,7 +1,7 @@
  <!-- Sidebar ===================================================================== -->
  <aside class="menu p-1">
      <div class="logo mb-1">
-         <img src="../Images/logo.png" alt="Oops not found!" />
+         <img id="selectedAvatar" src="../Images/logo.png" alt="Oops not found!" />
          <h1>Gooze</h1>
      </div>
      <div class="menu-selections">

@@ -28,4 +28,4 @@
 </head>
 
 <body>
-    <section class="backgrounds"></section>
+    <section id="allBackgroundImage" class="backgrounds"></section>

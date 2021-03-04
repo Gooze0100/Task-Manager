@@ -76,40 +76,40 @@ require_once './Inc/navigation.php';
             </div>
             <div class="avatars-img">
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1295831_1920.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar1" src="../Images//Avatars/avatar-1.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1300582_1280.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar2" src="../Images//Avatars/avatar-2.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/witch-155291.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar3" src="../Images//Avatars/avatar-3.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1300583.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar4" src="../Images//Avatars/avatar-4.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/amazed-1295833.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar5" src="../Images//Avatars/avatar-5.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1295575.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar6" src="../Images//Avatars/avatar-6.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1295573.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar7" src="../Images//Avatars/avatar-7.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/anthropomorphized-animals-1295774.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar8" src="../Images//Avatars/avatar-8.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/amazed-1295833.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar9" src="../Images//Avatars/avatar-9.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1295575.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar10" src="../Images//Avatars/avatar-10.webp" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/avatar-1295573.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar11" src="../Images//Avatars/avatar-11.webp" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
                 <div class="avatar-img m-1">
-                    <img src="../Images/anthropomorphized-animals-1295774.png" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
+                    <img id="avatar12" src="../Images//Avatars/avatar-12.webp" alt="Avatar is temporarily unavailable, can't sit here all day anyways">
                 </div>
             </div>
         </section>
@@ -120,22 +120,22 @@ require_once './Inc/navigation.php';
         </div>
         <div class="themes-background">
             <div class="overflow-change">
-                <div class="theme mountain"></div>
+                <div id="theme1" class="theme theme-img-1"></div>
             </div>
             <div class="overflow-change">
-                <div class="theme forest"></div>
+                <div id="theme2" class="theme theme-img-2"></div>
             </div>
             <div class="overflow-change">
-                <div class="theme building"></div>
+                <div id="theme3" class="theme theme-img-3"></div>
             </div>
             <div class="overflow-change">
-                <div class="theme flowers"></div>
+                <div id="theme4" class="theme theme-img-4"></div>
             </div>
             <div class="overflow-change">
-                <div class="theme abstract"></div>
+                <div id="theme5" class="theme theme-img-5"></div>
             </div>
             <div class="overflow-change">
-                <div class="theme bubles"></div>
+                <div id="theme6" class="theme theme-img-6"></div>
             </div>
         </div>
     </section>

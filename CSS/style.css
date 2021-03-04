@@ -36,8 +36,7 @@ html body {
 }
 
 html body .backgrounds {
-  background: url(../Images/main-back.jpg) no-repeat center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6) url(../Images/main-back.jpg) no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   width: 100%;
@@ -444,7 +443,10 @@ html body a {
 }
 
 .menu .logo img {
-  width: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .menu .logo h1 {
@@ -1109,43 +1111,43 @@ footer .footer-info-about-me .copyrights p {
   opacity: 1;
 }
 
-.themes .themes-background .overflow-change .mountain {
-  background: rgba(0, 0, 0, 0.301) url("../Images/pexels-kelsey-johnson-2331575.jpg") no-repeat center;
+.themes .themes-background .overflow-change .theme-img-1 {
+  background: rgba(0, 0, 0, 0.301) url("../Images/Themes/theme-1.jpg") no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: .3s all ease-in;
 }
 
-.themes .themes-background .overflow-change .forest {
-  background: rgba(0, 0, 0, 0.452) url("../Images/pexels-arthouse-studio-4534200.jpg") no-repeat center;
+.themes .themes-background .overflow-change .theme-img-2 {
+  background: rgba(0, 0, 0, 0.452) url("../Images/Themes/theme-2.jpg") no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: .3s all ease-in;
 }
 
-.themes .themes-background .overflow-change .building {
-  background: rgba(0, 0, 0, 0.322) url("../Images/pexels-sanaan-mazhar-3075993.jpg") no-repeat center;
+.themes .themes-background .overflow-change .theme-img-3 {
+  background: rgba(0, 0, 0, 0.322) url("../Images/Themes/theme-3.jpg") no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: .3s all ease-in;
 }
 
-.themes .themes-background .overflow-change .flowers {
-  background: rgba(0, 0, 0, 0.233) url("../Images/pexels-irina-iriser-1408221.jpg") no-repeat center;
+.themes .themes-background .overflow-change .theme-img-4 {
+  background: rgba(0, 0, 0, 0.233) url("../Images/Themes/theme-4.jpg") no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: .3s all ease-in;
 }
 
-.themes .themes-background .overflow-change .abstract {
-  background: rgba(0, 0, 0, 0.322) url("../Images/pexels-davide-baraldi-5088435.jpg") no-repeat center;
+.themes .themes-background .overflow-change .theme-img-5 {
+  background: rgba(0, 0, 0, 0.322) url("../Images/Themes/theme-5.jpg") no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: .3s all ease-in;
 }
 
-.themes .themes-background .overflow-change .bubles {
-  background: rgba(0, 0, 0, 0.322) url("../Images/pexels-lumn-167699.jpg") no-repeat center;
+.themes .themes-background .overflow-change .theme-img-6 {
+  background: rgba(0, 0, 0, 0.322) url("../Images/Themes/theme-6.jpg") no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   transition: .3s all ease-in;
@@ -1187,11 +1189,10 @@ footer .footer-info-about-me .copyrights p {
   cursor: pointer;
   border-radius: 10px;
   padding: 5px;
-  border: 1px solid whitesmoke;
 }
 
 .weathers-sidebar .main-weathers .select-days .backwards i {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .weathers-sidebar .main-weathers .select-days .forwards {
@@ -1199,11 +1200,10 @@ footer .footer-info-about-me .copyrights p {
   cursor: pointer;
   border-radius: 10px;
   padding: 5px;
-  border: 1px solid whitesmoke;
 }
 
 .weathers-sidebar .main-weathers .select-days .forwards i {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .weathers-sidebar .main-weathers .todays-date {
@@ -1813,6 +1813,11 @@ footer .footer-info-about-me .copyrights p {
   margin-top: 20px;
   padding: 20px;
   height: 300px;
+}
+
+.weathers-maps .weather-map img {
+  height: 256px;
+  width: 256px;
 }
 
 .all-weathers {

@@ -331,7 +331,7 @@ require_once './Inc/navigation.php';
                 <p>Weather Map</p>
             </div>
             <div class="weather-map">
-                <iframe id="weatherMap" src="" frameborder="0"></iframe>
+                <img id="weatherMap" src="https://tile.openweathermap.org/map/temp_new/7/72/40.png?appid=d56f587af66879843da809947c13fb2f" alt="">
             </div>
         </section>
     </section>

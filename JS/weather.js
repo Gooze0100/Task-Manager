@@ -15,7 +15,7 @@ const feelsLikeTempMini = document.querySelector('#feelsLikeTempMini');
 const windSpeedMini = document.querySelector('#windSpeedMini');
 const uvIndexMini = document.querySelector('#uvIndexMini');
 const chanceOfRainMini = document.querySelector('#chanceOfRainMini');
-const precipitationpMini = document.querySelector('#precipitationpMini');
+const precipitationMini = document.querySelector('#precipitationpMini');
 const humidityMini = document.querySelector('#humidityMini');
 const feelsLikeTempProgress = document.querySelector('#feelsLikeTempProgress');
 const feelsLikeTempWidth = 50;
@@ -89,19 +89,20 @@ function getCurrentWeather(cityName) {
     
 getCurrentWeather('Vilnius');
 
-function weatherMaps() {
-    const fetchDataForMaps = 'https://tile.openweathermap.org/map/precipitation_new/6/36/26.png?appid=d56f587af66879843da809947c13fb2f';
-    console.log(fetch(fetchDataForMaps));
+// function weatherMaps() {
+//     const fetchDataForMaps = 'https://tile.openweathermap.org/map/temp_new/7/72/40.png?appid=d56f587af66879843da809947c13fb2f';
+//     console.log(fetch(fetchDataForMaps));
+    
+//     fetch(fetchDataForMaps)
+//     .then(res => {const objectURL = Request.url(res);
+// 		weatherMap.src = objectURL;})
+//     .then(res => {
+// 		const objectURL = Request.url(res);
+// 		weatherMap.src = objectURL;
+// })
+// }
 
-    fetch(fetchDataForMaps)
-    .then(function (response) {
-        weatherMap.src = response
-        // return response.json();
-    })
-    .then(function (data) {
-    })
-}
-weatherMaps()
+// weatherMaps()
 
 function sun(sunriseAPI, sunsetAPI) {
     
@@ -129,14 +130,24 @@ function insertWeatherInformation(data) {
     mainTempFirstCity.innerHTML = `${data.main.temp}&#8451;`;
 
     // Mini dashboards ============================================
+    // Feels like ======================
     feelsLikeTempMini.innerHTML = `${data.main.feels_like}&#8451;`;
     const feelsLikeTempFinalWidth = data.main.feels_like + feelsLikeTempWidth;
     feelsLikeTempProgress.style.width = `${feelsLikeTempFinalWidth}%`;
-    windSpeedMini.innerHTML = `${data.wind.speed}m/s`;
-    uvIndexMini.innerHTML =
-    chanceOfRainMini.innerHTML = data.rain1h;
-    precipitationpMini.innerHTML =
-    humidityMini.innerHTML = `${data.main.humidity}%`;
 
+    // Wind ======================
+    windSpeedMini.innerHTML = `${data.wind.speed}m/s`;
+
+    // UV Index ======================
+    uvIndexMini.innerHTML =
+
+    // Chance of Rain ======================
+    chanceOfRainMini.innerHTML = data.rain1h;
+
+    // Precipitation ======================
+    precipitationMini.innerHTML =
+
+    // Humidity ======================
+    humidityMini.innerHTML = `${data.main.humidity}%`;
 }
 

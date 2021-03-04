@@ -36,8 +36,7 @@ html {
         line-height: 1.6;
 
         .backgrounds {
-            background: url(../Images/main-back.jpg) no-repeat center;
-            background-color: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.6) url(../Images/main-back.jpg) no-repeat center;
             background-size: cover;
             background-blend-mode: multiply;
             width: 100%;

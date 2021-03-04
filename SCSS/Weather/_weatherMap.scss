@@ -27,5 +27,10 @@
         margin-top: 20px;
         padding: 20px;
         height: 300px;
+
+        & img {
+            height: 256px;
+            width: 256px;
+        }
     }
 }

@@ -1,16 +1,16 @@
 // Variables ===========================================================
-$mountain-back: rgba(0, 0, 0, 0.301);
-$mountain-img: '../Images/pexels-kelsey-johnson-2331575.jpg';
-$forest-back: rgba(0, 0, 0, 0.452);
-$forest-img: '../Images/pexels-arthouse-studio-4534200.jpg';
-$building-back: rgba(0, 0, 0, 0.322);
-$building-img: '../Images/pexels-sanaan-mazhar-3075993.jpg';
-$flowers-back: rgba(0, 0, 0, 0.233);
-$flowers-img: '../Images/pexels-irina-iriser-1408221.jpg';
-$abstract-back: rgba(0, 0, 0, 0.322);
-$abstract-img: '../Images/pexels-davide-baraldi-5088435.jpg';
-$bubles-back: rgba(0, 0, 0, 0.322);
-$bubles-img: '../Images/pexels-lumn-167699.jpg';
+$theme-back-1: rgba(0, 0, 0, 0.301);
+$theme-img-1: '../Images/Themes/theme-1.jpg';
+$theme-back-2: rgba(0, 0, 0, 0.452);
+$theme-img-2: '../Images/Themes/theme-2.jpg';
+$theme-back-3: rgba(0, 0, 0, 0.322);
+$theme-img-3: '../Images/Themes/theme-3.jpg';
+$theme-back-4: rgba(0, 0, 0, 0.233);
+$theme-img-4: '../Images/Themes/theme-4.jpg';
+$theme-back-5: rgba(0, 0, 0, 0.322);
+$theme-img-5: '../Images/Themes/theme-5.jpg';
+$theme-back-6: rgba(0, 0, 0, 0.322);
+$theme-img-6: '../Images/Themes/theme-6.jpg';
 
 $shadow-color: rgba(245, 245, 245, 0.8);
 $text-shadow: crimson;
@@ -66,43 +66,43 @@ $text-color: rgba(245, 245, 245, 0.8);
                 }
             }
     
-            .mountain {
-                background: $mountain-back url($mountain-img) no-repeat center;
+            .theme-img-1 {
+                background: $theme-back-1 url($theme-img-1) no-repeat center;
                 background-size: cover;
                 background-blend-mode: multiply;
                 transition: .3s all ease-in;
             }
             
-            .forest {
-                background: $forest-back url($forest-img) no-repeat center;
+            .theme-img-2 {
+                background: $theme-back-2 url($theme-img-2) no-repeat center;
                 background-size: cover;
                 background-blend-mode: multiply;
                 transition: .3s all ease-in;
             }
     
-            .building {
-                background: $building-back url($building-img) no-repeat center;
+            .theme-img-3 {
+                background: $theme-back-3 url($theme-img-3) no-repeat center;
                 background-size: cover;
                 background-blend-mode: multiply;
                 transition: .3s all ease-in;
             }
     
-            .flowers {
-                background: $flowers-back url($flowers-img) no-repeat center;
+            .theme-img-4 {
+                background: $theme-back-4 url($theme-img-4) no-repeat center;
                 background-size: cover;
                 background-blend-mode: multiply;
                 transition: .3s all ease-in;
             }
     
-            .abstract {
-                background: $abstract-back url($abstract-img) no-repeat center;
+            .theme-img-5 {
+                background: $theme-back-5 url($theme-img-5) no-repeat center;
                 background-size: cover;
                 background-blend-mode: multiply;
                 transition: .3s all ease-in;
             }
     
-            .bubles {
-                background: $bubles-back url($bubles-img) no-repeat center;
+            .theme-img-6 {
+                background: $theme-back-6 url($theme-img-6) no-repeat center;
                 background-size: cover;
                 background-blend-mode: multiply;
                 transition: .3s all ease-in;

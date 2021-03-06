@@ -443,8 +443,8 @@ html body a {
 }
 
 .menu .logo img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 10px;
   margin-right: 10px;
 }
@@ -1835,4 +1835,90 @@ footer .footer-info-about-me .copyrights p {
   flex-wrap: wrap;
   border: 1px solid whitesmoke;
   border-radius: 10px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 48px;
+  margin: 40px;
+}
+
+.contact h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  margin-bottom: 48px;
+}
+
+.col-6, .col-12 {
+  color: black;
+  font-size: 16px;
+  line-height: 27.2px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.col-6 {
+  display: inline-block;
+  width: 48%;
+  margin-right: 30px;
+}
+
+.col--6 {
+  display: inline-block;
+  width: 48%;
+}
+
+.col--6 .form-control {
+  width: 100%;
+}
+
+.col-6 .form-control {
+  width: 100%;
+}
+
+.form-control {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 30px;
+  color: #495057;
+  font-size: 16px;
+  height: 43px;
+  line-height: 24px;
+  padding: 6px 12px;
+}
+
+.col-12 .form-control {
+  width: 100%;
+}
+
+.col-12 textarea {
+  height: 182px;
+}
+
+.form-control:active, .form-control:focus {
+  border: 1px solid #007bff;
+}
+
+.form-control:focus {
+  background-color: white;
+  color: #495057;
+  /* nuima ta slykstu apibrezima :D  ziauriai cool reiktu isidemeti kuriant */
+  outline: 0;
+}
+
+.btn-send {
+  background-color: #007bff;
+  border: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background-color: black;
 }

@@ -142,7 +142,7 @@ function insertWeatherInformation(data) {
     uvIndexMini.innerHTML =
 
     // Chance of Rain ======================
-    chanceOfRainMini.innerHTML = data.rain1h;
+    chanceOfRainMini.innerHTML = data.rain;
 
     // Precipitation ======================
     precipitationMini.innerHTML =

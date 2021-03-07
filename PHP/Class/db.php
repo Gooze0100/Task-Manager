@@ -7,6 +7,7 @@ class DB
     protected $password = '';
     protected $db = 'taskManager';
     protected $conn;
+    public $feedback = '';
 
     // Connect to Database ================
     private function __construct()

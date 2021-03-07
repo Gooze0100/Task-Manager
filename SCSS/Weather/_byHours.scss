@@ -26,6 +26,60 @@
     .weathers-by-hours {
         margin-top: 20px;
         padding: 20px;
-        height: 300px;
+        height: 330px;
+        background: grey;
+        border-radius: 10px;
+
+        .upcoming-hours-selections {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .weathers-by-hours-time {
+            @include flex-sb;
+            width: 100%;
+        }
+
+        .weathers-by-hours-icons {
+            @include flex-sb;
+            width: 100%;
+        }
+
+        .weathers-by-hours-info {
+            @include flex-sb;
+            width: 100%;
+        }
+
+        .weathers-by-hours-rain-info {
+            @include flex-sb;
+            width: 100%;
+            height: 130px;
+            padding: 0 10px;
+
+            .weathers-by-hours-rain-back {
+                @include flex-sb;
+                border-right: 1px solid aliceblue;
+                border-left: 1px solid aliceblue;
+                height: 100px;
+                width: 100%;
+                position: relative;
+
+                .weathers-by-hours-rain-progress {
+                    background: crimson;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transition: .5s all ease-in-out;
+                }
+            }
+        }
+
+        .weathers-by-hours-rain-by-percentage {
+            @include flex-sb;
+            width: 100%;
+        }
     }
 }

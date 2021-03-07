@@ -214,10 +214,10 @@ html body a {
   border: none;
   padding: 15px 20px;
   border-radius: 25px;
-  width: 100%;
   text-transform: uppercase;
-  transition: .3s all ease-in;
   cursor: pointer;
+  outline: none;
+  transition: .3s all ease-in;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
@@ -225,6 +225,7 @@ html body a {
 }
 
 .btn-primary {
+  width: 100%;
   color: white;
   background-color: #1161ee;
 }
@@ -238,6 +239,7 @@ html body a {
 .btn-secondary {
   color: white;
   background-color: crimson;
+  padding: 8px 16px;
 }
 
 .btn-secondary:hover {
@@ -1236,7 +1238,7 @@ footer .footer-info-about-me .copyrights p {
 
 .weathers-sidebar .main-weathers .first-city .night-temp-sunrise-sundown-first {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -1406,7 +1408,73 @@ footer .footer-info-about-me .copyrights p {
 .upcoming-hours .weathers-by-hours {
   margin-top: 20px;
   padding: 20px;
-  height: 300px;
+  height: 330px;
+  background: grey;
+  border-radius: 10px;
+}
+
+.upcoming-hours .weathers-by-hours .upcoming-hours-selections {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-rain-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  padding: 0 10px;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-rain-info .weathers-by-hours-rain-back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid aliceblue;
+  border-left: 1px solid aliceblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-rain-info .weathers-by-hours-rain-back .weathers-by-hours-rain-progress {
+  background: crimson;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .5s all ease-in-out;
+}
+
+.upcoming-hours .weathers-by-hours .weathers-by-hours-rain-by-percentage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .mini-weather-dashboards-all {
@@ -1575,35 +1643,30 @@ footer .footer-info-about-me .copyrights p {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 100%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-uv-index .uv-index-range-back .uv-index-range-progress .uv-index-progress-2 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 50%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-uv-index .uv-index-range-back .uv-index-range-progress .uv-index-progress-3 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-uv-index .uv-index-range-back .uv-index-range-progress .uv-index-progress-4 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-uv-index .uv-index-range-back .uv-index-range-progress .uv-index-progress-5 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-chance-of-rain {
@@ -1630,7 +1693,6 @@ footer .footer-info-about-me .copyrights p {
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-chance-of-rain .chance-of-rain-back .chance-of-rain-progress {
   background: crimson;
-  width: 42%;
   height: 10px;
   border-radius: 10px;
 }
@@ -1668,70 +1730,60 @@ footer .footer-info-about-me .copyrights p {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 100%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-2 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 40%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-3 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-4 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-5 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-6 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-7 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-8 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-9 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-precipitation .precipitation-range-back .precipitation-range-progress .precipitation-progress-10 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 0%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-humidity {
@@ -1767,21 +1819,18 @@ footer .footer-info-about-me .copyrights p {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 100%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-humidity .humidity-range-back .humidity-range-progress .humidity-progress-2 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 100%;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-humidity .humidity-range-back .humidity-range-progress .humidity-progress-3 {
   background: crimson;
   height: 10px;
   border-radius: 10px;
-  width: 20%;
 }
 
 .weathers-maps {

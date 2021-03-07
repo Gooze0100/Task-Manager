@@ -17,10 +17,10 @@ $btn-secondary-hover-color: whitesmoke;
     border: none;
     padding: 15px 20px;
     border-radius: 25px;
-    width: 100%;
     text-transform: uppercase;
-    transition: .3s all ease-in;
     cursor: pointer;
+    outline: none;
+    transition: .3s all ease-in;
 
     &:hover {
         transform: scale(.98);
@@ -29,6 +29,7 @@ $btn-secondary-hover-color: whitesmoke;
 
 .btn-primary {
     @extend %btn;
+    width: 100%;
     color: $btn-primary-color;
     background-color: $btn-primary-background-color;
     
@@ -43,6 +44,7 @@ $btn-secondary-hover-color: whitesmoke;
     @extend %btn;
     color: $btn-secondary-color;
     background-color: $btn-secondary-background-color;
+    padding: 8px 16px;
 
     &:hover {
         background-color: $btn-secondary-hover-background-color;

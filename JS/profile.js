@@ -30,7 +30,7 @@ function firstNameF () {
         labelFname.style.fontSize = '12px';
         labelFname.style.top = '6%';
         labelFname.style.left = '8%';
-    }   else if (firstNameInput.length < 1) {
+    }   else {
         labelFname.style.fontSize = '16px';
         labelFname.style.top = '20%';
         labelFname.style.left = '8%';
@@ -44,7 +44,7 @@ function lastNameF () {
         labelLastName.style.fontSize = '12px';
         labelLastName.style.top = '6%';
         labelLastName.style.left = '8%';
-    }   else if (lastNameInput.length < 1) {
+    }   else {
         labelLastName.style.fontSize = '16px';
         labelLastName.style.top = '25%';
         labelLastName.style.left = '8%';
@@ -58,7 +58,7 @@ function usernameF () {
         labelUsername.style.fontSize = '12px';
         labelUsername.style.top = '6%';
         labelUsername.style.left = '8%';
-    }   else if (usernameInput.length < 1) {
+    }   else {
         labelUsername.style.fontSize = '16px';
         labelUsername.style.top = '25%';
         labelUsername.style.left = '8%';
@@ -72,7 +72,7 @@ function emailF () {
         labelEmail.style.fontSize = '12px';
         labelEmail.style.top = '6%';
         labelEmail.style.left = '8%';
-    }   else if (emailInput.length < 1) {
+    }   else {
         labelEmail.style.fontSize = '16px';
         labelEmail.style.top = '25%';
         labelEmail.style.left = '8%';
@@ -86,7 +86,7 @@ function addressF () {
         labelAddress.style.fontSize = '12px';
         labelAddress.style.top = '6%';
         labelAddress.style.left = '8%';
-    }   else if (addressInput.length < 1) {
+    }   else {
         labelAddress.style.fontSize = '16px';
         labelAddress.style.top = '25%';
         labelAddress.style.left = '8%';
@@ -100,7 +100,7 @@ function countryF () {
         labelCountry.style.fontSize = '12px';
         labelCountry.style.top = '6%';
         labelCountry.style.left = '8%';
-    }   else if (countryInput.length < 1) {
+    }   else {
         labelCountry.style.fontSize = '16px';
         labelCountry.style.top = '25%';
         labelCountry.style.left = '8%';
@@ -114,7 +114,7 @@ function cityF () {
         labelCity.style.fontSize = '12px';
         labelCity.style.top = '6%';
         labelCity.style.left = '8%';
-    }   else if (cityInput.length < 1) {
+    }   else {
         labelCity.style.fontSize = '16px';
         labelCity.style.top = '25%';
         labelCity.style.left = '8%';

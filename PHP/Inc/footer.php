@@ -18,6 +18,12 @@
         </div>
     </section>
 </footer>
+
+<?php
+if ($title === 'Weather') {
+    echo '<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR6HCDCPXPJSkOLiXsub_kKS6Y-xpYzqI&callback=initMap"></script>';
+}
+?>
 </body>
 
 </html>

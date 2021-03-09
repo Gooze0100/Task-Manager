@@ -36,7 +36,7 @@ require_once './Inc/navigation.php';
                     <p class="information-about-input-right"><i class="fa fa-info" aria-hidden="true"></i>Enter your Email Address</p>
                 </div>
                 <div class="form-group">
-                    <label for="pAddress" id="labeAddress">Address</label>
+                    <label for="pAddress" id="labelAddress">Address</label>
                     <input type="text" id="pAddress">
                     <p class="information-about-input-left"><i class="fa fa-info" aria-hidden="true"></i>Enter your Address</p>
                 </div>

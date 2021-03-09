@@ -1409,8 +1409,6 @@ footer .footer-info-about-me .copyrights p {
   margin-top: 20px;
   padding: 20px;
   height: 330px;
-  background: grey;
-  border-radius: 10px;
 }
 
 .upcoming-hours .weathers-by-hours .upcoming-hours-selections {
@@ -1839,6 +1837,7 @@ footer .footer-info-about-me .copyrights p {
   margin-bottom: 40px;
   border: 1px solid whitesmoke;
   border-radius: 10px;
+  height: 500px;
 }
 
 .weathers-maps .weather-map-title {
@@ -1861,12 +1860,9 @@ footer .footer-info-about-me .copyrights p {
 .weathers-maps .weather-map {
   margin-top: 20px;
   padding: 20px;
-  height: 300px;
-}
-
-.weathers-maps .weather-map img {
-  height: 256px;
-  width: 256px;
+  height: 96%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .all-weathers {

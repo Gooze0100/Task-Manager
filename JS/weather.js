@@ -1,14 +1,10 @@
 "use strict"
 
-// Variables ============================================
-const todaysWeekdayPar = document.querySelector('#todaysWeekday');
-const todaysDatePar = document.querySelector('#todaysDate');
-const backwards = document.querySelector('#backwards');
-const forwards = document.querySelector('#forwards');
-
 // Functions ============================================
 
 // Dates ============================================
+const todaysDatePar = document.querySelector('#todaysDate');
+const todaysWeekdayPar = document.querySelector('#todaysWeekday');
 function todaysDate() {
     const now = new Date();
 
@@ -31,6 +27,12 @@ function todaysDate() {
     todaysWeekdayPar.innerHTML = localWeekday;
 }
 
+todaysDate();
+setInterval(todaysDate, 1000);
+
+const backwards = document.querySelector('#backwards');
+const forwards = document.querySelector('#forwards');
+
 function weekdays() {
     const myOptions = {
         weekday: 'long'
@@ -48,9 +50,6 @@ function weekdays() {
     backwards.innerHTML = weekDayBackward;
     forwards.innerHTML = weekDayForward;
 }
-
-todaysDate();
-setInterval(todaysDate, 1000);
 
 weekdays();
 setInterval(weekdays, 43200000);
@@ -96,20 +95,29 @@ getOneCallWeather(54.687157, 25.279652);
 // }
 
 
-// weather maps ==========================================
+// Weather maps ==========================================
 const weatherMap = document.querySelector('#weatherMap');
-// function weatherMaps() {
-//     const fetchDataForMaps = 'https://tile.openweathermap.org/map/temp_new/7/72/40.png?appid=d56f587af66879843da809947c13fb2f';
-//     console.log(fetch(fetchDataForMaps));
+let map;
+
+function initMap() {
+    map = new google.maps.Map(weatherMap, {
+        center: { lat: 55.2147363, lng: 23.481464 },
+        zoom: 7,
+      });
+}
+
+function weatherMaps() {
+    const fetchDataForMaps = 'https://tile.openweathermap.org/map/temp_new/7/72/40.png?appid=d56f587af66879843da809947c13fb2f';
+    console.log(fetch(fetchDataForMaps));
     
-//     fetch(fetchDataForMaps)
-//     .then(res => {const objectURL = Request.url(res);
-// 		weatherMap.src = objectURL;})
-//     .then(res => {
-// 		const objectURL = Request.url(res);
-// 		weatherMap.src = objectURL;
-// })
-// }
+    fetch(fetchDataForMaps)
+    .then(res => {const objectURL = Request.url(res);
+		weatherMap.src = objectURL;})
+    .then(res => {
+		const objectURL = Request.url(res);
+		weatherMap.src = objectURL;
+    })
+}
 
 // weatherMaps()
 

@@ -7,6 +7,7 @@
     margin-bottom: 40px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
+    height: 500px;
     
     .weather-map-title {
         position: absolute;
@@ -26,11 +27,8 @@
     .weather-map {
         margin-top: 20px;
         padding: 20px;
-        height: 300px;
-
-        & img {
-            height: 256px;
-            width: 256px;
-        }
+        height: 96%;
+        width: 100%;
+        border-radius: 10px;
     }
 }

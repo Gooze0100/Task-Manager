@@ -412,8 +412,7 @@ require_once './Inc/navigation.php';
                 <p>Weather Map</p>
                 <div class="demo"></div>
             </div>
-            <div class="weather-map">
-                <img id="weatherMap" src="https://tile.openweathermap.org/map/temp_new/7/72/40.png?appid=d56f587af66879843da809947c13fb2f" alt="">
+            <div class="weather-map" id="weatherMap">
             </div>
         </section>
     </section>

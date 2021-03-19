@@ -99,6 +99,7 @@ getOneCallWeather(54.687157, 25.279652);
 const weatherMap = document.querySelector('#weatherMap');
 let map;
 
+// padaryti kad centruotu pagal tavo lat lng
 function initMap() {
     map = new google.maps.Map(weatherMap, {
         center: { lat: 55.2147363, lng: 23.481464 },
@@ -162,8 +163,8 @@ function insertDataFirstCitySidebar(data) {
 
     mainWeatherDesc.innerHTML = data.current.weather[0].main;
     mainFirstSelectedCity.innerHTML = 'Vilnius Turbut';
-    mainTempFirstCity.innerHTML = `${data.current.temp}&#8451;`;
-    nightTempFirstCity.innerHTML = `${data.daily[0].temp.night}&#8451;`;
+    mainTempFirstCity.innerHTML = `${Math.round(data.current.temp)}&#8451;`;
+    nightTempFirstCity.innerHTML = `${Math.round(data.daily[0].temp.night)}&#8451;`;
 }
 
 // Variables weather by hours ============================================
@@ -188,37 +189,30 @@ function weatherByHours(data) {
     previousHour.addEventListener('click', previousHours);
 
     function nextHours() {
-        let i = 0;
-        let j = 1;
-        console.log(i++, j++);
+        console.log(document.querySelector(`#weatherByHoursRainBar${1}`));
     }
 
     function previousHours() {
         console.log('clicked');
     }
 
-    let i = 0;
-    let j = 1;
-    let k = 1;
-    // let arrLength = data.hourly.length / 4.8
-
-    for(i, j, k; i < 10, j <= 10, k <= 10; i++, j++, k++) {
+    for(let i = 0 , j = 1, k = 1; i < 10, j <= 10, k <= 10; i++, j++, k++) {
         document.querySelector(`#weatherByHour${j}`).innerHTML = changeTime(data.hourly[i].dt);
         document.querySelector(`#weatherByHoursIcon${j}`).src = getIcons(data.hourly[i].weather[0].icon);
         document.querySelector(`#weatherByHoursInfo${j}`).innerHTML = `${Math.round(data.hourly[i].temp)}&#8451;`;
-        // document.querySelector(`#weatherByHoursRainBar${j}`).style.height = `${(data.hourly[i].pop + data.hourly[k].pop) / 2}%`;
+        // document.querySelector(`#weatherByHoursRainBar${j}`).style.height = `${((data.hourly[i].pop + data.hourly[k].pop) / 2)}%`;
         document.querySelector(`#weatherByHoursRain${j}`).innerHTML = `${Math.round(data.hourly[i].pop)}%`
     }
 
-    weatherByHoursRainBar1.style.height = `${(data.hourly[0].pop + data.hourly[1].pop) / 2}%`;
-    weatherByHoursRainBar2.style.height = `${(data.hourly[1].pop + data.hourly[2].pop) / 2}%`;
-    weatherByHoursRainBar3.style.height = `${(data.hourly[2].pop + data.hourly[3].pop) / 2}%`;
-    weatherByHoursRainBar4.style.height = `${(data.hourly[3].pop + data.hourly[4].pop) / 2}%`;
-    weatherByHoursRainBar5.style.height = `${(data.hourly[4].pop + data.hourly[5].pop) / 2}%`;
-    weatherByHoursRainBar6.style.height = `${(data.hourly[5].pop + data.hourly[6].pop) / 2}%`;
-    weatherByHoursRainBar7.style.height = `${(data.hourly[6].pop + data.hourly[7].pop) / 2}%`;
-    weatherByHoursRainBar8.style.height = `${(data.hourly[7].pop + data.hourly[8].pop) / 2}%`;
-    weatherByHoursRainBar9.style.height = `${(data.hourly[8].pop + data.hourly[9].pop) / 2}%`;
+    weatherByHoursRainBar1.style.height = `${Math.round((data.hourly[0].pop + data.hourly[1].pop) / 2)}%`;
+    weatherByHoursRainBar2.style.height = `${Math.round((data.hourly[1].pop + data.hourly[2].pop) / 2)}%`;
+    weatherByHoursRainBar3.style.height = `${Math.round((data.hourly[2].pop + data.hourly[3].pop) / 2)}%`;
+    weatherByHoursRainBar4.style.height = `${Math.round((data.hourly[3].pop + data.hourly[4].pop) / 2)}%`;
+    weatherByHoursRainBar5.style.height = `${Math.round((data.hourly[4].pop + data.hourly[5].pop) / 2)}%`;
+    weatherByHoursRainBar6.style.height = `${Math.round((data.hourly[5].pop + data.hourly[6].pop) / 2)}%`;
+    weatherByHoursRainBar7.style.height = `${Math.round((data.hourly[6].pop + data.hourly[7].pop) / 2)}%`;
+    weatherByHoursRainBar8.style.height = `${Math.round((data.hourly[7].pop + data.hourly[8].pop) / 2)}%`;
+    weatherByHoursRainBar9.style.height = `${Math.round((data.hourly[8].pop + data.hourly[9].pop) / 2)}%`;
 
 }
 
@@ -228,6 +222,12 @@ const feelsLikeTempProgress = document.querySelector('#feelsLikeTempProgress');
 const feelsLikeTempWidth = 50;
 
 const windSpeedMini = document.querySelector('#windSpeedMini');
+const windSpeedProgress1 = document.querySelector('#windSpeedProgress1');
+const windSpeedProgress2 = document.querySelector('#windSpeedProgress2');
+const windSpeedProgress3 = document.querySelector('#windSpeedProgress3');
+const windSpeedProgress4 = document.querySelector('#windSpeedProgress4');
+const windSpeedProgress5 = document.querySelector('#windSpeedProgress5');
+const windSpeedArr = document.querySelector('#windSpeedArr');
 
 const uvIndexMini = document.querySelector('#uvIndexMini');
 const uvI1 = document.querySelector('#uvI1');
@@ -259,59 +259,95 @@ const humidityBar3 = document.querySelector('#humidityBar3');
 // Mini dashboards function ============================================
 function insertWeatherInfoInMiniDashboards(data) {
     // Feels like ======================
-    feelsLikeTempMini.innerHTML = `${data.current.feels_like}&#8451;`;
-    const feelsLikeTempFinalWidth = data.current.feels_like + feelsLikeTempWidth;
+    feelsLikeTempMini.innerHTML = `${Math.round(data.current.feels_like)}&#8451;`;
+    const feelsLikeTempFinalWidth = Math.round(data.current.feels_like) + feelsLikeTempWidth;
     feelsLikeTempProgress.style.width = `${feelsLikeTempFinalWidth}%`;
 
     // Wind ======================
-    windSpeedMini.innerHTML = `${data.current.wind_speed}m/s`;
+    windSpeedMini.innerHTML = `${Math.round(data.current.wind_speed)}m/s`;
+    if (data.current.wind_speed < 5) {
+        windSpeedArr.style.transform = `rotateZ(${((Math.round(data.current.wind_speed)) * 2.5) - 102}deg)`;
+        windSpeedProgress1.style.width = `${Math.round(data.current.wind_speed) * 20}%`;
+        windSpeedProgress2.style.width = `0%`;
+        windSpeedProgress3.style.width = `0%`;
+        windSpeedProgress4.style.width = `0%`;
+        windSpeedProgress5.style.width = `0%`;
+    }   else if (data.current.wind_speed > 5 && data.current.wind_speed < 10) {
+        windSpeedArr.style.transform = `rotateZ(${((Math.round(data.current.wind_speed)) * 2.5) - 102}deg)`;
+        windSpeedProgress1.style.width = `100%`;
+        windSpeedProgress2.style.width = `${Math.round(data.current.wind_speed) * 20}%`;
+        windSpeedProgress3.style.width = `0%`;
+        windSpeedProgress4.style.width = `0%`;
+        windSpeedProgress5.style.width = `0%`;
+    }   else if (data.current.wind_speed > 10 && data.current.wind_speed < 20) {
+        windSpeedArr.style.transform = `rotateZ(${((Math.round(data.current.wind_speed)) * 2.5) - 102}deg)`;
+        windSpeedProgress1.style.width = `100%`;
+        windSpeedProgress2.style.width = `100%`;
+        windSpeedProgress3.style.width = `${Math.round(data.current.wind_speed) * 20}%`;
+        windSpeedProgress4.style.width = `0%`;
+        windSpeedProgress5.style.width = `0%`;
+    }   else if (data.current.wind_speed > 20 && data.current.wind_speed < 30) {
+        windSpeedArr.style.transform = `rotateZ(${((Math.round(data.current.wind_speed)) * 2.5) - 102}deg)`;
+        windSpeedProgress1.style.width = `100%`;
+        windSpeedProgress2.style.width = `100%`;
+        windSpeedProgress3.style.width = `100%`;
+        windSpeedProgress4.style.width = `${Math.round(data.current.wind_speed) * 20}%`;
+        windSpeedProgress5.style.width = `0%`;
+    }   else if (data.current.wind_speed > 30 && data.current.wind_speed < 40) {
+        windSpeedArr.style.transform = `rotateZ(${((Math.round(data.current.wind_speed)) * 2.5) - 102}deg)`;
+        windSpeedProgress1.style.width = `100%`;
+        windSpeedProgress2.style.width = `100%`;
+        windSpeedProgress3.style.width = `100%`;
+        windSpeedProgress4.style.width = `100%`;
+        windSpeedProgress5.style.width = `${Math.round(data.current.wind_speed) * 20}%`
+    }
 
     // UV Index ======================
     if (data.current.uvi < 2) {
-        uvIndexMini.innerHTML = `${data.current.uvi} Low`
-        uvI1.style.width = `${data.current.uvi * 20}%`;
+        uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} Low`
+        uvI1.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
         uvI2.style.width = '0%';
         uvI3.style.width = '0%';
         uvI4.style.width = '0%';
         uvI5.style.width = '0%';
     }   else if (data.current.uvi > 2 && data.current.uvi < 5) {
-        uvIndexMini.innerHTML = `${data.current.uvi} Medium`
+        uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} Medium`
         uvI1.style.width = '100%';
-        uvI2.style.width = `${data.current.uvi * 20}%`;
+        uvI2.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
         uvI3.style.width = '0%';
         uvI4.style.width = '0%';
         uvI5.style.width = '0%';
     }   else if (data.current.uvi > 5 && data.current.uvi < 7) {
-        uvIndexMini.innerHTML = `${data.current.uvi} Medium`
+        uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} Medium`
         uvI1.style.width = '100%';
         uvI2.style.width = '100%';
-        uvI3.style.width = `${data.current.uvi * 20}%`;
+        uvI3.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
         uvI4.style.width = '0%';
         uvI5.style.width = '0%';
     }   else if (data.current.uvi > 7 && data.current.uvi < 10) {
-        uvIndexMini.innerHTML = `${data.current.uvi} High`
+        uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} High`
         uvI1.style.width = '100%';
         uvI2.style.width = '100%';
         uvI3.style.width = '100%';
-        uvI4.style.width = `${data.current.uvi * 20}%`;
+        uvI4.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
         uvI5.style.width = '0%';
     }   else if (data.current.uvi > 10) {
-        uvIndexMini.innerHTML = `${data.current.uvi} High`
+        uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} High`
         uvI1.style.width = '100%';
         uvI2.style.width = '100%';
         uvI3.style.width = '100%';
         uvI4.style.width = '100%';
-        uvI5.style.width = `${data.current.uvi * 20}%`;
+        uvI5.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
     }
 
     // Probability of precipitation ======================
-    chanceOfRainMini.innerHTML = `${data.hourly[0].pop}%`;
-    chanceOfRainBar.style.width = `${data.hourly[0].pop}%`;
+    chanceOfRainMini.innerHTML = `${Math.ceil(data.hourly[0].pop)}%`;
+    chanceOfRainBar.style.width = `${Math.ceil(data.hourly[0].pop)}%`;
 
     // Precipitation ======================
-    precipitationMini.innerHTML = `${data.minutely[0].precipitation * 10}cm`;
+    precipitationMini.innerHTML = `${Math.ceil(data.minutely[0].precipitation) * 10}mm`;
     if ((data.minutely[0].precipitation * 10) < 1) {
-        precipitationBar1.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar1.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar2.style.width = '0%';
         precipitationBar3.style.width = '0%';
         precipitationBar4.style.width = '0%';
@@ -323,7 +359,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar10.style.width = '0%';
     }   else if ((data.minutely[0].precipitation * 10) > 1 && (data.minutely[0].precipitation * 10) < 2) {
         precipitationBar1.style.width = '100%';
-        precipitationBar2.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar2.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar3.style.width = '0%';
         precipitationBar4.style.width = '0%';
         precipitationBar5.style.width = '0%';
@@ -335,7 +371,7 @@ function insertWeatherInfoInMiniDashboards(data) {
     }   else if ((data.minutely[0].precipitation * 10) > 2 && (data.minutely[0].precipitation * 10) < 3) {
         precipitationBar1.style.width = '100%';
         precipitationBar2.style.width = '100%';
-        precipitationBar3.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar3.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar4.style.width = '0%';
         precipitationBar5.style.width = '0%';
         precipitationBar6.style.width = '0%';
@@ -347,7 +383,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar1.style.width = '100%';
         precipitationBar2.style.width = '100%';
         precipitationBar3.style.width = '100%';
-        precipitationBar4.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar4.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar5.style.width = '0%';
         precipitationBar6.style.width = '0%';
         precipitationBar7.style.width = '0%';
@@ -359,7 +395,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar2.style.width = '100%';
         precipitationBar3.style.width = '100%';
         precipitationBar4.style.width = '100%';
-        precipitationBar5.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar5.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar6.style.width = '0%';
         precipitationBar7.style.width = '0%';
         precipitationBar8.style.width = '0%';
@@ -371,7 +407,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar3.style.width = '100%';
         precipitationBar4.style.width = '100%';
         precipitationBar5.style.width = '100%';
-        precipitationBar6.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar6.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar7.style.width = '0%';
         precipitationBar8.style.width = '0%';
         precipitationBar9.style.width = '0%';
@@ -383,7 +419,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar4.style.width = '100%';
         precipitationBar5.style.width = '100%';
         precipitationBar6.style.width = '100%';
-        precipitationBar7.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar7.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar8.style.width = '0%';
         precipitationBar9.style.width = '0%';
         precipitationBar10.style.width = '0%';
@@ -395,7 +431,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar5.style.width = '100%';
         precipitationBar6.style.width = '100%';
         precipitationBar7.style.width = '100%';
-        precipitationBar8.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar8.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar9.style.width = '0%';
         precipitationBar10.style.width = '0%';
     }   else if ((data.minutely[0].precipitation * 10) > 8 && (data.minutely[0].precipitation * 10) < 9) {
@@ -407,7 +443,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar6.style.width = '100%';
         precipitationBar7.style.width = '100%';
         precipitationBar8.style.width = '100%';
-        precipitationBar9.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar9.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar10.style.width = '0%';
     }   else if ((data.minutely[0].precipitation * 10) > 9) {
         precipitationBar1.style.width = '100%';
@@ -419,25 +455,25 @@ function insertWeatherInfoInMiniDashboards(data) {
         precipitationBar7.style.width = '100%';
         precipitationBar8.style.width = '100%';
         precipitationBar9.style.width = '100%';
-        precipitationBar10.style.width = `${data.minutely[0].precipitation * 10}%`;
+        precipitationBar10.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
     }
 
     // Humidity ======================
     if (data.current.humidity < 33.33) {
-        humidityMini.innerHTML = `${data.current.humidity}% Good`;
-        humidityBar1.style.width = `${data.current.humidity}%`;
+        humidityMini.innerHTML = `${Math.round(data.current.humidity)}% Good`;
+        humidityBar1.style.width = `${Math.round(data.current.humidity)}%`;
         humidityBar2.style.width = '0%';
         humidityBar3.style.width = '0%';
     }   else if (data.current.humidity > 33.33 && data.current.humidity < 66.66) {
-        humidityMini.innerHTML = `${data.current.humidity}% Normal`;
+        humidityMini.innerHTML = `${Math.round(data.current.humidity)}% Normal`;
         humidityBar1.style.width = '100%';
-        humidityBar2.style.width = `${data.current.humidity}%`;
+        humidityBar2.style.width = `${Math.round(data.current.humidity)}%`;
         humidityBar3.style.width = '0%';
     }   else if (data.current.humidity > 66.66) {
-        humidityMini.innerHTML = `${data.current.humidity}% Bad`;
+        humidityMini.innerHTML = `${Math.round(data.current.humidity)}% Bad`;
         humidityBar1.style.width = '100%';
         humidityBar2.style.width = '100%';
-        humidityBar3.style.width = `${data.current.humidity}%`;
+        humidityBar3.style.width = `${Math.round(data.current.humidity)}%`;
     }
 }
 

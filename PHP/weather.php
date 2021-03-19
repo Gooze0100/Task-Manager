@@ -233,7 +233,7 @@ require_once './Inc/navigation.php';
                     </div>
                     <div class="mini-dashboard-main-info">
                         <div class="line-of-wind">
-                            <div class="wind-both-numbers-progress">
+                            <div>
                                 <div class="wind-by-meters">
                                     <small class="wind-1">0</small>
                                     <small class="wind-2">5</small>
@@ -243,16 +243,28 @@ require_once './Inc/navigation.php';
                                     <small class="wind-6">40</small>
                                 </div>
                                 <div class="wind-speed-back">
-                                    <div class="wind-speed-progress-1"></div>
-                                    <div class="wind-speed-progress-2"></div>
-                                    <div class="wind-speed-progress-3"></div>
-                                    <div class="wind-speed-progress-4"></div>
-                                    <div class="wind-speed-progress-5"></div>
+                                    <div class="wind-speed-prog-back-1">
+                                        <div class="wind-speed-progress-1" id="windSpeedProgress1"></div>
+                                    </div>
+                                    <div class="wind-speed-prog-back-2">
+                                        <div class="wind-speed-progress-2" id="windSpeedProgress2"></div>
+                                    </div>
+                                    <div class="wind-speed-prog-back-3">
+                                        <div class="wind-speed-progress-3" id="windSpeedProgress3"></div>
+                                    </div>
+                                    <div class="wind-speed-prog-back-4">
+                                        <div class="wind-speed-progress-4" id="windSpeedProgress4"></div>
+                                    </div>
+                                    <div class="wind-speed-prog-back-5">
+                                        <div class="wind-speed-progress-5" id="windSpeedProgress5"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="custom-arrow">
-                                <div class="arrow-front"></div>
-                                <div class="arrow-back"></div>
+                                <div class="rotate-arr" id="windSpeedArr">
+                                    <div class="arrow-front"></div>
+                                    <div class="arrow-back"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="info" id="windSpeedMini">N/A</div>

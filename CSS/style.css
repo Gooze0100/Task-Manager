@@ -1519,6 +1519,7 @@ footer .footer-info-about-me .copyrights p {
   border-radius: 10px;
   margin: 15px;
   padding: 10px;
+  height: 150px;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-weather-dashboard-title {
@@ -1532,15 +1533,15 @@ footer .footer-info-about-me .copyrights p {
   right: 0;
   width: 95%;
   margin: 0 auto;
-  height: 40px;
+  height: 45px;
   background-color: #6a6f8c;
   border: 1px solid whitesmoke;
   border-radius: 10px;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 5px;
+  margin-top: 20px;
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .info {
@@ -1578,34 +1579,155 @@ footer .footer-info-about-me .copyrights p {
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   width: 100%;
+  margin-top: 20px;
 }
 
-.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-both-numbers-progress .wind-by-meters {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters {
   width: 100%;
+  position: relative;
 }
 
-.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-both-numbers-progress .wind-speed-back {
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters .wind-1 {
+  position: absolute;
+  transform: translate(60px, 35px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters .wind-2 {
+  position: absolute;
+  transform: translate(78px, 0px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters .wind-3 {
+  position: absolute;
+  transform: translate(110px, -28px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters .wind-4 {
+  position: absolute;
+  transform: translate(165px, -28px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters .wind-5 {
+  position: absolute;
+  transform: translate(208px, 0px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-by-meters .wind-6 {
+  position: absolute;
+  transform: translate(225px, 35px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: aliceblue;
   width: 100%;
-  height: 8px;
-  border-radius: 10px / 140px;
+  height: 30px;
+  position: relative;
 }
 
-.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-both-numbers-progress .wind-speed-back .wind-speed-progress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-1 {
+  position: absolute;
+  background: aliceblue;
+  transform: translate(-65px, 20px) rotate(-70deg);
+  width: 10%;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-1 .wind-speed-progress-1 {
+  background: crimson;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-2 {
+  position: absolute;
+  background: aliceblue;
+  width: 12%;
+  height: 10px;
+  border-radius: 10px;
+  transform: translate(-40px, -10px) rotate(-35deg);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-2 .wind-speed-progress-2 {
+  background: crimson;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-3 {
+  position: absolute;
+  background: aliceblue;
+  width: 12%;
+  height: 10px;
+  border-radius: 10px;
+  transform: translate(0px, -22px) rotate(0deg);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-3 .wind-speed-progress-3 {
+  background: crimson;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-4 {
+  position: absolute;
+  background: aliceblue;
+  width: 12%;
+  height: 10px;
+  border-radius: 10px;
+  transform: translate(40px, -10px) rotate(35deg);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-4 .wind-speed-progress-4 {
+  background: crimson;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-5 {
+  position: absolute;
+  background: aliceblue;
+  width: 10%;
+  height: 10px;
+  border-radius: 10px;
+  transform: translate(65px, 20px) rotate(70deg);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .wind-speed-back .wind-speed-prog-back-5 .wind-speed-progress-5 {
+  background: crimson;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .custom-arrow {
+  position: relative;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .custom-arrow .rotate-arr {
+  transform: rotateZ(102deg);
+  width: 100%;
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .custom-arrow .rotate-arr .arrow-front {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 28px solid crimson;
+  transform: translate(145px, -35px);
+}
+
+.mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-wind .custom-arrow .rotate-arr .arrow-back {
+  position: absolute;
+  background-color: crimson;
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  transform: translate(145px, 0px);
 }
 
 .mini-weather-dashboards-all .mini-weather-dashboards .mini-weather-dashboard .mini-dashboard-main-info .line-of-uv-index {

@@ -100,12 +100,12 @@ const weatherMap = document.querySelector('#weatherMap');
 let map;
 
 // padaryti kad centruotu pagal tavo lat lng
-function initMap() {
-    map = new google.maps.Map(weatherMap, {
-        center: { lat: 55.2147363, lng: 23.481464 },
-        zoom: 7,
-      });
-}
+// function initMap() {
+//     map = new google.maps.Map(weatherMap, {
+//         center: { lat: 55.2147363, lng: 23.481464 },
+//         zoom: 7,
+//       });
+// }
 
 function weatherMaps() {
     const fetchDataForMaps = 'https://tile.openweathermap.org/map/temp_new/7/72/40.png?appid=d56f587af66879843da809947c13fb2f';
@@ -305,7 +305,7 @@ function insertWeatherInfoInMiniDashboards(data) {
     // UV Index ======================
     if (data.current.uvi < 2) {
         uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} Low`
-        uvI1.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
+        uvI1.style.width = `${Math.ceil(data.current.uvi) * 50}%`;
         uvI2.style.width = '0%';
         uvI3.style.width = '0%';
         uvI4.style.width = '0%';
@@ -313,7 +313,7 @@ function insertWeatherInfoInMiniDashboards(data) {
     }   else if (data.current.uvi > 2 && data.current.uvi < 5) {
         uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} Medium`
         uvI1.style.width = '100%';
-        uvI2.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
+        uvI2.style.width = `${Math.ceil(data.current.uvi) * 50}%`;
         uvI3.style.width = '0%';
         uvI4.style.width = '0%';
         uvI5.style.width = '0%';
@@ -321,7 +321,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} Medium`
         uvI1.style.width = '100%';
         uvI2.style.width = '100%';
-        uvI3.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
+        uvI3.style.width = `${Math.ceil(data.current.uvi) * 50}%`;
         uvI4.style.width = '0%';
         uvI5.style.width = '0%';
     }   else if (data.current.uvi > 7 && data.current.uvi < 10) {
@@ -329,7 +329,7 @@ function insertWeatherInfoInMiniDashboards(data) {
         uvI1.style.width = '100%';
         uvI2.style.width = '100%';
         uvI3.style.width = '100%';
-        uvI4.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
+        uvI4.style.width = `${Math.ceil(data.current.uvi) * 50}%`;
         uvI5.style.width = '0%';
     }   else if (data.current.uvi > 10) {
         uvIndexMini.innerHTML = `${Math.ceil(data.current.uvi)} High`
@@ -337,15 +337,22 @@ function insertWeatherInfoInMiniDashboards(data) {
         uvI2.style.width = '100%';
         uvI3.style.width = '100%';
         uvI4.style.width = '100%';
-        uvI5.style.width = `${Math.ceil(data.current.uvi) * 20}%`;
+        uvI5.style.width = `${Math.ceil(data.current.uvi) * 50}%`;
     }
 
     // Probability of precipitation ======================
-    chanceOfRainMini.innerHTML = `${Math.ceil(data.hourly[0].pop)}%`;
-    chanceOfRainBar.style.width = `${Math.ceil(data.hourly[0].pop)}%`;
+    chanceOfRainMini.innerHTML = `${Math.ceil(data.daily[0].pop)}%`;
+    chanceOfRainBar.style.width = `${Math.ceil(data.daily[0].pop)}%`;
 
     // Precipitation ======================
-    precipitationMini.innerHTML = `${Math.ceil(data.minutely[0].precipitation) * 10}mm`;
+    if (data.daily[0].snow !== 'undefined') {
+        precipitationMini.innerHTML = `${Math.ceil(data.daily[0].snow)}mm`;
+    }   else if (data.daily[0].rain !== 'undefined') {
+        precipitationMini.innerHTML = `${Math.ceil(data.daily[0].rain)}mm`;
+    }
+
+    // display snow icon if snow
+
     if ((data.minutely[0].precipitation * 10) < 1) {
         precipitationBar1.style.width = `${Math.ceil(data.minutely[0].precipitation) * 10}%`;
         precipitationBar2.style.width = '0%';
